@@ -1,0 +1,46 @@
+2017-01-23 11:44:44,357 - softwarecenter.ui.gtk3.app - INFO - setting up proxy 'None'
+2017-01-23 11:44:45,277 - softwarecenter.region - WARNING - failed to use geoclue: 'org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Geoclue.Master was not provided by any .service files'
+2017-01-23 11:44:45,557 - softwarecenter.backend.reviews - WARNING - Could not get usefulness from server, no username in config file
+2017-01-23 11:44:45,568 - softwarecenter.plugin - INFO - activating plugin '<module 'webapps_activation' from '/usr/share/software-center/softwarecenter/plugins/webapps_activation.pyc'>'
+2017-01-23 11:44:45,783 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2017-01-23 11:44:46,781 - softwarecenter.db.update - WARNING - failed to load file /var/lib/apt-xapian-index/cataloged_times.p: 
+2017-01-23 11:44:47,970 - softwarecenter.ui.gtk3.views.lobbyview - WARNING - skipping exhibit for: 'u'leadwerks\r\nleadwerks-indie'' not available
+2017-01-23 11:44:50,059 - softwarecenter.backend.reviews - WARNING - error creating bsddb: '(22, 'Invalid argument -- BDB0054 illegal flag combination specified to DB_ENV->open')' (corrupted?)
+2017-01-23 11:44:50,059 - softwarecenter.backend.reviews - ERROR - trying to repair DB failed
+Traceback (most recent call last):
+  File "/usr/share/software-center/softwarecenter/backend/reviews/__init__.py", line 358, in _save_review_stats_cache_blocking
+    self._dump_bsddbm_for_unity(outfile, outdir)
+  File "/usr/share/software-center/softwarecenter/backend/reviews/__init__.py", line 377, in _dump_bsddbm_for_unity
+    0600)
+DBInvalidArgError: (22, 'Invalid argument -- BDB0054 illegal flag combination specified to DB_ENV->open')
+2017-01-23 11:44:50,284 - softwarecenter.db.update - WARNING - failed to load file /var/lib/apt-xapian-index/cataloged_times.p: 
+2017-01-23 11:44:52,658 - softwarecenter.region - WARNING - failed to use geoclue: 'org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Geoclue.Master was not provided by any .service files'
+2017-01-23 11:44:55,241 - softwarecenter.db.utils - INFO - software-center-agent finished with status 0
+2017-01-23 12:17:33,064 - softwarecenter.ui.gtk3.app - INFO - setting up proxy 'None'
+2017-01-23 12:17:33,215 - softwarecenter.region - WARNING - failed to use geoclue: 'org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Geoclue.Master was not provided by any .service files'
+2017-01-23 12:17:33,509 - softwarecenter.backend.reviews - WARNING - Could not get usefulness from server, no username in config file
+2017-01-23 12:17:33,511 - softwarecenter.plugin - INFO - activating plugin '<module 'webapps_activation' from '/usr/share/software-center/softwarecenter/plugins/webapps_activation.pyc'>'
+2017-01-23 12:17:33,632 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2017-01-23 12:17:35,109 - softwarecenter.backend.reviews - WARNING - error creating bsddb: '(22, 'Invalid argument -- BDB0054 illegal flag combination specified to DB_ENV->open')' (corrupted?)
+2017-01-23 12:17:35,111 - softwarecenter.backend.reviews - ERROR - trying to repair DB failed
+Traceback (most recent call last):
+  File "/usr/share/software-center/softwarecenter/backend/reviews/__init__.py", line 358, in _save_review_stats_cache_blocking
+    self._dump_bsddbm_for_unity(outfile, outdir)
+  File "/usr/share/software-center/softwarecenter/backend/reviews/__init__.py", line 377, in _dump_bsddbm_for_unity
+    0600)
+DBInvalidArgError: (22, 'Invalid argument -- BDB0054 illegal flag combination specified to DB_ENV->open')
+2017-01-23 12:17:35,618 - softwarecenter.db.update - WARNING - failed to load file /var/lib/apt-xapian-index/cataloged_times.p: 
+2017-01-23 12:17:37,141 - softwarecenter.db.update - WARNING - failed to load file /var/lib/apt-xapian-index/cataloged_times.p: 
+2017-01-23 12:17:37,397 - softwarecenter.ui.gtk3.views.lobbyview - WARNING - skipping exhibit for: 'u'leadwerks\r\nleadwerks-indie'' not available
+2017-01-23 12:17:42,238 - softwarecenter.backend.spawn_helper - WARNING - exit code 1 from helper for '['/usr/share/software-center/piston_generic_helper.py', '--datadir', '/usr/share/software-center/', 'SoftwareCenterRecommenderAPI', 'recommend_app', '{"pkgname": "code"}']'
+2017-01-23 12:17:42,249 - softwarecenter.backend.spawn_helper - WARNING - got error from helper: 'WARNING:__main__:404: {'status': '404', 'content-length': '53', 'via': '1.1 papeda.canonical.com:3128 (squid/2.7.STABLE7)', 'x-cache': 'HIT from papeda.canonical.com', 'age': '12', 'strict-transport-security': 'max-age=2592000', 'server': 'Apache', 'etag': '"486a668598caf1deb93376714b0aa688"', 'cache-control': 'max-age=300', 'date': 'Mon, 23 Jan 2017 17:17:30 GMT', 'content-type': 'text/html; charset=utf-8', 'x-cache-lookup': 'HIT from papeda.canonical.com:3128'}
+'
+2017-01-23 12:17:42,249 - softwarecenter.db.categories - WARNING - Error while accessing the recommender service: WARNING:__main__:404: {'status': '404', 'content-length': '53', 'via': '1.1 papeda.canonical.com:3128 (squid/2.7.STABLE7)', 'x-cache': 'HIT from papeda.canonical.com', 'age': '12', 'strict-transport-security': 'max-age=2592000', 'server': 'Apache', 'etag': '"486a668598caf1deb93376714b0aa688"', 'cache-control': 'max-age=300', 'date': 'Mon, 23 Jan 2017 17:17:30 GMT', 'content-type': 'text/html; charset=utf-8', 'x-cache-lookup': 'HIT from papeda.canonical.com:3128'}
+
+2017-01-23 12:17:42,249 - softwarecenter.ui.gtk3.widgets.recommendations - WARNING - Error while accessing the recommender agent: WARNING:__main__:404: {'status': '404', 'content-length': '53', 'via': '1.1 papeda.canonical.com:3128 (squid/2.7.STABLE7)', 'x-cache': 'HIT from papeda.canonical.com', 'age': '12', 'strict-transport-security': 'max-age=2592000', 'server': 'Apache', 'etag': '"486a668598caf1deb93376714b0aa688"', 'cache-control': 'max-age=300', 'date': 'Mon, 23 Jan 2017 17:17:30 GMT', 'content-type': 'text/html; charset=utf-8', 'x-cache-lookup': 'HIT from papeda.canonical.com:3128'}
+
+2017-01-23 12:17:42,524 - softwarecenter.db.pkginfo_impl.aptcache - ERROR - simulate failed
+None
+2017-01-23 12:17:42,883 - softwarecenter.region - WARNING - failed to use geoclue: 'org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Geoclue.Master was not provided by any .service files'
+2017-01-23 12:17:47,188 - softwarecenter.db.utils - INFO - software-center-agent finished with status 0
+2017-01-23 12:22:10,020 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()

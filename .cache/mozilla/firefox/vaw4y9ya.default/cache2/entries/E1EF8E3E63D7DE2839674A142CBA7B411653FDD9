@@ -1,0 +1,116 @@
+if (!window.mraid) {document.write('\x3cdiv class="GoogleActiveViewClass" ' +'id="DfaVisibilityIdentifier_1996677405"\x3e');}document.write('\x3cdiv style\x3d\x22display:table; width: 100%; height: 100%\x22\x3e\x3cdiv style\x3d\x22display:table-cell; vertical-align: middle\x22\x3e');
+        (function() {
+          var dcmAdResponseConfig = {
+            clickTags: [{name:'clickTag',url:'https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssx8q2_JGsPuVc0hCgRScc9KQImkA1epF7Y0iBc_upwpwY6BwMBtNgazNTxlB00giAClbKa7RIj2Glda1bfgyRTaBA2VTqc6JmP0CdkdWEE1lf8_nSrRw&sig=Cg0ArKJSzMjanLshXNaVEAE&urlfix=1&adurl=https://adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DC-NmRHLCbVqauN8-EBdbVDa2Yn-AG3cCD344BwI23ARABIABg_YiXgegDggEXY2EtcHViLTQ4MDc0NTc5NTczOTI1MDjIAQmoAwGqBHxP0EEtQw-jQK0FUQHFILfpv08PEHcWyVJmWq2O48htP-QUDR6bcdEggXODIqfF9vidF6T22pAvBmRn-qpuVyNXt5Em_ePHVaQLZULBYCWkajbV2P-_EfE_KODux6jaGH9kb_ERXI9EBM2QteoXgtxbH1QcPds_wGmB3Da1gAaQg-LKltvc-A-gBiHYBwA%26num%3D1%26sig%3DAOD64_2aErK0QRIwZssNwzW6ew3W8WKejA%26client%3Dca-pub-4807457957392508%26adurl%3Dhttp://www.consumer.equifax.ca/partnerca/macld/free_en.html'}],
+            creativeIframeId: "creativeIframe28334181",
+            primaryAssetPath: "https://s0.2mdn.net/4508181/1438090735127/en_Equifax_Red_728x90_swiffy.html",
+            creativeWidth: '728',
+            creativeHeight: '90',
+            backupImageUrl: "https://s0.2mdn.net/4508181/1-en_Equifax_Red_728x90.jpg",
+            backupImageClickTagUrl: "https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssx8q2_JGsPuVc0hCgRScc9KQImkA1epF7Y0iBc_upwpwY6BwMBtNgazNTxlB00giAClbKa7RIj2Glda1bfgyRTaBA2VTqc6JmP0CdkdWEE1lf8_nSrRw&sig=Cg0ArKJSzMjanLshXNaVEAE&urlfix=1&adurl=https://adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DC-NmRHLCbVqauN8-EBdbVDa2Yn-AG3cCD344BwI23ARABIABg_YiXgegDggEXY2EtcHViLTQ4MDc0NTc5NTczOTI1MDjIAQmoAwGqBHxP0EEtQw-jQK0FUQHFILfpv08PEHcWyVJmWq2O48htP-QUDR6bcdEggXODIqfF9vidF6T22pAvBmRn-qpuVyNXt5Em_ePHVaQLZULBYCWkajbV2P-_EfE_KODux6jaGH9kb_ERXI9EBM2QteoXgtxbH1QcPds_wGmB3Da1gAaQg-LKltvc-A-gBiHYBwA%26num%3D1%26sig%3DAOD64_2aErK0QRIwZssNwzW6ew3W8WKejA%26client%3Dca-pub-4807457957392508%26adurl%3Dhttp://www.consumer.equifax.ca/partnerca/macld/free_en.html",
+            backupTargetWindow: "_blank",
+            featureChecks: [],
+            centerStyle: "display:block; margin-left:auto; margin-right:auto",
+            modernizrSrc: "/ads/studio/cached_libs/modernizr_2.8.3_ec185bb44fe5e6bf7455d6e8ef37ed0e_no-classes.js",
+            servingDomain: "//s0.2mdn.net",
+            isInApp: "" == "1",
+            expandWidth: '728',
+            expandHeight: '90'
+          };
+          var $goog$now$$ = Date.now || function() {
+  return +new Date;
+};
+var $studio$codegen$DcmHtml5AdResponse$PROTOCOL_$$ = "https:" == window.location.protocol ? "https:" : "http:", $opt_object$$inline_17$$ = function($dcmAdResponseConfig$$) {
+  var $modernizrSrc_onloadRender$$ = $studio$codegen$DcmHtml5AdResponse$PROTOCOL_$$ + $dcmAdResponseConfig$$.servingDomain + $dcmAdResponseConfig$$.modernizrSrc, $isInApp_script$$3$$ = $dcmAdResponseConfig$$.isInApp, $creativeIframeId$$ = $dcmAdResponseConfig$$.creativeIframeId, $renderingMethod$$ = "renderCreative" + $goog$now$$(), $isMraid$$ = window.mraid && window.mraid.open, $divId$$ = "div_" + $studio$codegen$DcmHtml5AdResponse$escapeHtml_$$($creativeIframeId$$) + "_" + (new Date).getTime();
+  document.write('<div id="' + $divId$$ + '"></div>');
+  window.$dcmHtml5Rendering$ || (window.$dcmHtml5Rendering$ = {}, window.$dcmHtml5Rendering$[$renderingMethod$$] = {}, window.$dcmHtml5Rendering$[$renderingMethod$$].$config$ = $dcmAdResponseConfig$$, window.$dcmHtml5Rendering$.$modernizrLoaded$ = !1);
+  $studio$codegen$DcmHtml5AdResponse$listen_$$(window, "message", $studio$codegen$DcmHtml5AdResponse$handleClickTagMessage_$$);
+  $isInApp_script$$3$$ && ($isInApp_script$$3$$ = $studio$codegen$DcmHtml5AdResponse$getScript_$$("mraid.js", $isMraid$$ ? "text/x-do-not-download" : "text/javascript"), document.getElementById($divId$$).appendChild($isInApp_script$$3$$));
+  window.$dcmHtml5Rendering$.$modernizrLoaded$ ? setTimeout(function() {
+    $studio$codegen$DcmHtml5AdResponse$renderAd_$$($dcmAdResponseConfig$$, $divId$$);
+  }, 0) : (window.$dcmHtml5Rendering$[$renderingMethod$$].$renderAd$ = $studio$codegen$DcmHtml5AdResponse$renderAd_$$, $isInApp_script$$3$$ = $studio$codegen$DcmHtml5AdResponse$getScript_$$($modernizrSrc_onloadRender$$, "text/javascript"), $modernizrSrc_onloadRender$$ = function() {
+    window.$dcmHtml5Rendering$[$renderingMethod$$].$renderAd$(window.$dcmHtml5Rendering$[$renderingMethod$$].$config$, $divId$$);
+  }, $isInApp_script$$3$$.onload = $modernizrSrc_onloadRender$$, $studio$codegen$DcmHtml5AdResponse$scriptOnload_$$($isInApp_script$$3$$, $modernizrSrc_onloadRender$$), document.getElementById($divId$$).appendChild($isInApp_script$$3$$));
+}, $parts$$inline_19$$ = ["studio", "codegen", "DcmHtml5AdResponse", "bootstrap"], $cur$$inline_20$$ = this;
+$parts$$inline_19$$[0] in $cur$$inline_20$$ || !$cur$$inline_20$$.execScript || $cur$$inline_20$$.execScript("var " + $parts$$inline_19$$[0]);
+for (var $part$$inline_21$$;$parts$$inline_19$$.length && ($part$$inline_21$$ = $parts$$inline_19$$.shift());) {
+  $parts$$inline_19$$.length || void 0 === $opt_object$$inline_17$$ ? $cur$$inline_20$$ = $cur$$inline_20$$[$part$$inline_21$$] ? $cur$$inline_20$$[$part$$inline_21$$] : $cur$$inline_20$$[$part$$inline_21$$] = {} : $cur$$inline_20$$[$part$$inline_21$$] = $opt_object$$inline_17$$;
+}
+var $studio$codegen$DcmHtml5AdResponse$renderAd_$$ = function($dcmAdResponseConfig$$1$$, $divId$$1$$) {
+  var $anchor$$inline_25_clickTags$$ = $dcmAdResponseConfig$$1$$.clickTags, $creativeIframeId$$1$$ = $dcmAdResponseConfig$$1$$.creativeIframeId, $primaryAssetPath$$ = $dcmAdResponseConfig$$1$$.primaryAssetPath, $creativeWidth$$ = $dcmAdResponseConfig$$1$$.creativeWidth, $creativeHeight$$ = $dcmAdResponseConfig$$1$$.creativeHeight, $backupImageUrl$$ = $dcmAdResponseConfig$$1$$.backupImageUrl, $backupImageClickTagUrl_image$$inline_29$$ = $dcmAdResponseConfig$$1$$.backupImageClickTagUrl, $backupTargetWindow$$ = 
+  $dcmAdResponseConfig$$1$$.backupTargetWindow, $featureChecks$$1$$ = $dcmAdResponseConfig$$1$$.featureChecks, $centerStyle$$ = $dcmAdResponseConfig$$1$$.centerStyle, $isInApp$$1$$ = $dcmAdResponseConfig$$1$$.isInApp, $expandWidth$$ = $dcmAdResponseConfig$$1$$.expandWidth, $expandHeight$$ = $dcmAdResponseConfig$$1$$.expandHeight, $div$$ = document.getElementById($divId$$1$$);
+  $featureChecks$$1$$.push("!!window.postMessage");
+  window.$dcmHtml5Rendering$.$modernizrLoaded$ = !0;
+  $studio$codegen$DcmHtml5AdResponse$checkHtml5Features_$$($featureChecks$$1$$) ? (0 == $creativeWidth$$ && ($creativeWidth$$ = $expandWidth$$ || 0), 0 == $creativeHeight$$ && ($creativeHeight$$ = $expandHeight$$ || 0), $studio$codegen$DcmHtml5AdResponse$renderHtml5Creative_$$($div$$, $creativeIframeId$$1$$, $isInApp$$1$$, $anchor$$inline_25_clickTags$$, $creativeWidth$$, $creativeHeight$$, $primaryAssetPath$$)) : ($anchor$$inline_25_clickTags$$ = document.createElement("a"), $anchor$$inline_25_clickTags$$.href = 
+  $studio$codegen$DcmHtml5AdResponse$escapeHtml_$$($backupImageClickTagUrl_image$$inline_29$$), $anchor$$inline_25_clickTags$$.target = $studio$codegen$DcmHtml5AdResponse$escapeHtml_$$($backupTargetWindow$$), $backupImageClickTagUrl_image$$inline_29$$ = document.createElement("img"), $backupImageClickTagUrl_image$$inline_29$$.border = 0, $backupImageClickTagUrl_image$$inline_29$$.src = $studio$codegen$DcmHtml5AdResponse$escapeHtml_$$($backupImageUrl$$), $backupImageClickTagUrl_image$$inline_29$$.style.cssText = 
+  $studio$codegen$DcmHtml5AdResponse$escapeHtml_$$($centerStyle$$), $anchor$$inline_25_clickTags$$.appendChild($backupImageClickTagUrl_image$$inline_29$$), $studio$codegen$DcmHtml5AdResponse$renderCreative_$$($div$$, $anchor$$inline_25_clickTags$$));
+}, $studio$codegen$DcmHtml5AdResponse$renderHtml5Creative_$$ = function($div$$2$$, $creativeIframeId$$2$$, $isInApp$$2$$, $clickTags$$1$$, $creativeWidth$$1_iframe$$, $creativeHeight$$1$$, $primaryAssetPath$$1$$) {
+  $creativeWidth$$1_iframe$$ = $studio$codegen$DcmHtml5AdResponse$getIframe_$$($creativeIframeId$$2$$, $primaryAssetPath$$1$$, $creativeWidth$$1_iframe$$, $creativeHeight$$1$$);
+  $studio$codegen$DcmHtml5AdResponse$listen_$$($creativeWidth$$1_iframe$$, "load", function() {
+    document.getElementById($creativeIframeId$$2$$).contentWindow.postMessage(JSON.stringify({clickTags:$clickTags$$1$$, relegateNavigation:window.mraid && window.mraid.open && $isInApp$$2$$ ? "parent" : "inline", isInitClickTag:!0}), "*");
+  });
+  $studio$codegen$DcmHtml5AdResponse$renderCreative_$$($div$$2$$, $creativeWidth$$1_iframe$$);
+}, $studio$codegen$DcmHtml5AdResponse$checkHtml5Features_$$ = function($featureChecks$$2$$) {
+  for (var $i$$12$$ = 0;$i$$12$$ < $featureChecks$$2$$.length;$i$$12$$++) {
+    if (!eval($featureChecks$$2$$[$i$$12$$])) {
+      return !1;
+    }
+  }
+  return !0;
+}, $studio$codegen$DcmHtml5AdResponse$renderCreative_$$ = function($div$$3$$, $creative$$) {
+  $div$$3$$.$isRendered$ || ($div$$3$$.appendChild($creative$$), $div$$3$$.$isRendered$ = !0);
+}, $studio$codegen$DcmHtml5AdResponse$getScript_$$ = function($src$$11$$, $type$$94$$) {
+  var $script$$4$$ = document.createElement("script");
+  $script$$4$$.src = $src$$11$$;
+  $script$$4$$.type = $type$$94$$;
+  return $script$$4$$;
+}, $studio$codegen$DcmHtml5AdResponse$getIframe_$$ = function($id$$4$$, $src$$13$$, $width$$12$$, $height$$11$$) {
+  var $iframe$$1$$ = document.createElement("iframe");
+  $iframe$$1$$.id = $studio$codegen$DcmHtml5AdResponse$escapeHtml_$$($id$$4$$);
+  $iframe$$1$$.src = $studio$codegen$DcmHtml5AdResponse$escapeHtml_$$($src$$13$$);
+  $iframe$$1$$.width = $studio$codegen$DcmHtml5AdResponse$escapeHtml_$$($width$$12$$);
+  $iframe$$1$$.height = $studio$codegen$DcmHtml5AdResponse$escapeHtml_$$($height$$11$$);
+  $iframe$$1$$.frameBorder = "0";
+  $iframe$$1$$.scrolling = "no";
+  $iframe$$1$$.style.display = "block";
+  $iframe$$1$$.style.marginLeft = "auto";
+  $iframe$$1$$.style.marginRight = "auto";
+  return $iframe$$1$$;
+}, $studio$codegen$DcmHtml5AdResponse$escapeHtml_$$ = function($text$$10$$) {
+  var $div$$4$$ = document.createElement("div");
+  $div$$4$$.appendChild(document.createTextNode($text$$10$$));
+  return $div$$4$$.innerHTML;
+}, $studio$codegen$DcmHtml5AdResponse$handleClickTagMessage_$$ = function($e$$9$$) {
+  try {
+    var $eventData$$ = JSON.parse($e$$9$$.data);
+  } catch ($err$$) {
+    return;
+  }
+  $eventData$$.isPostClickTag && window.mraid && window.mraid.open && $eventData$$.clickTag && window.mraid.open($eventData$$.clickTag);
+}, $studio$codegen$DcmHtml5AdResponse$listen_$$ = function($target$$45$$, $type$$95$$, $handler$$3$$) {
+  window.addEventListener ? $target$$45$$.addEventListener($type$$95$$, $handler$$3$$, !1) : $target$$45$$.attachEvent("on" + $type$$95$$, $handler$$3$$);
+}, $studio$codegen$DcmHtml5AdResponse$scriptOnload_$$ = function($script$$5$$, $onload$$) {
+  "loaded" == $script$$5$$.readyState || "completed" == $script$$5$$.readyState ? $onload$$() : setTimeout(function() {
+    $studio$codegen$DcmHtml5AdResponse$scriptOnload_$$($script$$5$$, $onload$$);
+  }, 50);
+};
+
+
+          studio.codegen.DcmHtml5AdResponse.bootstrap(dcmAdResponseConfig);
+        })();
+      document.write('\n\x3cnoscript\x3e\x3ca href\x3d\x22https://adclick.g.doubleclick.net/pcs/click?xai\x3dAKAOjssx8q2_JGsPuVc0hCgRScc9KQImkA1epF7Y0iBc_upwpwY6BwMBtNgazNTxlB00giAClbKa7RIj2Glda1bfgyRTaBA2VTqc6JmP0CdkdWEE1lf8_nSrRw\x26sig\x3dCg0ArKJSzMjanLshXNaVEAE\x26urlfix\x3d1\x26adurl\x3dhttps://adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DC-NmRHLCbVqauN8-EBdbVDa2Yn-AG3cCD344BwI23ARABIABg_YiXgegDggEXY2EtcHViLTQ4MDc0NTc5NTczOTI1MDjIAQmoAwGqBHxP0EEtQw-jQK0FUQHFILfpv08PEHcWyVJmWq2O48htP-QUDR6bcdEggXODIqfF9vidF6T22pAvBmRn-qpuVyNXt5Em_ePHVaQLZULBYCWkajbV2P-_EfE_KODux6jaGH9kb_ERXI9EBM2QteoXgtxbH1QcPds_wGmB3Da1gAaQg-LKltvc-A-gBiHYBwA%26num%3D1%26sig%3DAOD64_2aErK0QRIwZssNwzW6ew3W8WKejA%26client%3Dca-pub-4807457957392508%26adurl%3Dhttp://www.consumer.equifax.ca/partnerca/macld/free_en.html\x22 target\x3d\x22_blank\x22\x3e\x3cimg border\x3d\x220\x22 style\x3d\x22display:block; margin-left:auto; margin-right:auto\x22 alt\x3d\x22Backup Image\x22 src\x3d\x22https://s0.2mdn.net/4508181/1-en_Equifax_Red_728x90.jpg\x22 /\x3e\x3c/a\x3e\x3c/noscript\x3e\x3c/div\x3e\x3c/div\x3e');if (!window.mraid) {document.write('\x3c/div\x3e');}if (!window.mraid) {(function() {var avDiv = document.getElementById("DfaVisibilityIdentifier_1996677405");if (avDiv) {avDiv['_avi_'] = 'BJ6j1HbCbVq_GGsz7BZPdoagNAAAAABABOAHgBAKIBZTB-wOgBj8';avDiv['_avihost_'] = 'pagead2.googlesyndication.com';avDiv['_avm_'] = 'la\x3d0\x26';}var glidar = document.createElement('script');glidar.type = 'text/javascript';glidar.async = true;glidar.src = '//pagead2.googlesyndication.com/pagead/js/lidar.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(glidar, s);})();} else {document.write('\x3cimg src="//pagead2.googlesyndication.com/activeview?id=lidar2&avi=BJ6j1HbCbVq_GGsz7BZPdoagNAAAAABABOAHgBAKIBZTB-wOgBj8&r=w&rs=5j" style="display:none;"\x3e\x3c/img\x3e');}ÅH¼ã—      V›°V›°<>4      ª:https://bid.g.doubleclick.net/xbbe/creative/adj?d=APEucNUQPJ0r3F1IElP0OKbo9Y-62L1MBgYAVcFa-qwqUHoECXifWmxbAGDQdLW09pZ6gruQECmeGNW6h5xXOcSHVbnO4aD41qNxx9yWKB3JJ5dBpiRstZoLd-5Zfh0H-ngxq3MONP4gAG-Iz-PlOD0FtsuBrdd2o9MuSfaQprK9IY9SYlVH49MH1pGuKZr5ZsD0heyjOz_SXYGPGl-RJIxpX-r4vQeMbr1HsOkjvBQexZ-ATtGxLKH3FJk3c7jpdhAwO8ukLnfto5ID8wrua0uKqMcqfKOvqGELr7XabwANzihxA0TF4BjDkbzlQgTKMQLEdmPIyF__dcJHiF5FdIUYoExYNZMG1tbenSQ4MwfMbt7Q828fZA9Pod05MjX9AI7ohWf-g9oH&pr=VpuwHAAN1yYKAUJPAANq1qgp-MT7PQj6mUpJww&c=https://adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DC-NmRHLCbVqauN8-EBdbVDa2Yn-AG3cCD344BwI23ARABIABg_YiXgegDggEXY2EtcHViLTQ4MDc0NTc5NTczOTI1MDjIAQmoAwGqBHxP0EEtQw-jQK0FUQHFILfpv08PEHcWyVJmWq2O48htP-QUDR6bcdEggXODIqfF9vidF6T22pAvBmRn-qpuVyNXt5Em_ePHVaQLZULBYCWkajbV2P-_EfE_KODux6jaGH9kb_ERXI9EBM2QteoXgtxbH1QcPds_wGmB3Da1gAaQg-LKltvc-A-gBiHYBwA%26num%3D1%26sig%3DAOD64_2aErK0QRIwZssNwzW6ew3W8WKejA%26client%3Dca-pub-4807457957392508%26adurl%3D necko:classified 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAQAAgAAAAAAAAAAAAAAAAAAAAAB4vFIJp5wRkeyPxAQ9RJGKPqbqVvKO0mKuIl8ec8o/uhmCjImkVxP+7sgiYWmMt8F+O2DZM7ZTG6GukivU8OT5gAAAAAAAAVWMIIFUjCCBDqgAwIBAgIIJvmX13c3DDYwDQYJKoZIhvcNAQELBQAwSTELMAkGA1UEBhMCVVMxEzARBgNVBAoTCkdvb2dsZSBJbmMxJTAjBgNVBAMTHEdvb2dsZSBJbnRlcm5ldCBBdXRob3JpdHkgRzIwHhcNMTYwMTA3MTIwMTQ3WhcNMTYwNDA2MDAwMDAwWjBtMQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNTW91bnRhaW4gVmlldzETMBEGA1UECgwKR29vZ2xlIEluYzEcMBoGA1UEAwwTKi5nLmRvdWJsZWNsaWNrLm5ldDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAILheT5ix/uqr+x9jsaXJUsjCFdQsGpDddQO1scStigJ8nOK3Cwl/4bcpeY92TIhUtiBRO1G17Lux/IQf5+xG8UzXxe3NOhCfSmsgzUzIC4Th/AXxcxC+SRAB2vshFvBwyRJXI3eV2oikJNoNMOKrOL3Np3EpSBeFKEaE2Ah1sxkyJ53o7jcKMEl1uq3mUo5gx24n9JJ1H7lUygpItebiHP3xLo3uvKFrWlxghkKgDTovlLeDW/rNmWE0W4To00vjqxFWUcrfUtmPKQbEVNKZ4BzVBYQjyWwFhAJ2gRV8KuI8eVdHXpf/z24HU2efuyJLPqfpirZAr2+fcj9cYb53ZECAwEAAaOCAhgwggIUMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjCB5QYDVR0RBIHdMIHaghMqLmcuZG91YmxlY2xpY2submV0ghYqLmdvb2dsZWFkc2VydmljZXMuY29tghcqLmdvb2dsZXN5bmRpY2F0aW9uLmNvbYIXKi5nb29nbGV0YWdzZXJ2aWNlcy5jb22CESouaW52aXRlbWVkaWEuY29tghFnLmRvdWJsZWNsaWNrLm5ldIIUZ29vZ2xlYWRzZXJ2aWNlcy5jb22CFWdvb2dsZXN5bmRpY2F0aW9uLmNvbYIVZ29vZ2xldGFnc2VydmljZXMuY29tgg9tZWRpYS5hZG1vYi5jb20waAYIKwYBBQUHAQEEXDBaMCsGCCsGAQUFBzAChh9odHRwOi8vcGtpLmdvb2dsZS5jb20vR0lBRzIuY3J0MCsGCCsGAQUFBzABhh9odHRwOi8vY2xpZW50czEuZ29vZ2xlLmNvbS9vY3NwMB0GA1UdDgQWBBTXLnkacB9bXUfr2/nJWQAvjfYDGjAMBgNVHRMBAf8EAjAAMB8GA1UdIwQYMBaAFErdBhYbvPZotXb1gba7Yhq6WoEvMCEGA1UdIAQaMBgwDAYKKwYBBAHWeQIFATAIBgZngQwBAgIwMAYDVR0fBCkwJzAloCOgIYYfaHR0cDovL3BraS5nb29nbGUuY29tL0dJQUcyLmNybDANBgkqhkiG9w0BAQsFAAOCAQEAbDjknIr/H+HLv93snMYv4tf1i5jPNUv1VsaBzn1YXz1chILdQK23c2Qj75sDFFItOlZqpB9btOrJR1dSenZjYN4c6KPTLPy1Rmvb8J3ih+X7+wbvcPeiHvKaxjFznui3o1ga9gtHyDg0h6cVHKQ8HD2GZm1yoxiBgFmLFzId+ToUyDujvlDDg04IGdZsVudoCmAUJnDZBbTqR8possu8ZccHHolQvRyyE+89HvWzz/QBb90uB83jeNt3YbrMpwaaBBJtYzSUoIqfZvElOeok9wd2L+Wff3lPslh/KXRR+D/b3XiPWPolmC0IZt3d8vIcQSxB+FZWE9/EX39KEmiOvMAvAAMAAAAAAQEAAA== request-method GET response-head HTTP/2.0 200 OK
+P3P: policyref="https://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+Date: Sun, 17 Jan 2016 15:15:41 GMT
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, must-revalidate
+Content-Type: text/javascript; charset=UTF-8
+x-content-type-options: nosniff
+Content-Disposition: attachment; filename="f.txt"
+Server: xbfe
+Content-Length: 13193
+X-XSS-Protection: 1; mode=block
+Alternate-Protocol: 443:quic,p=1
+Alt-Svc: quic=":443"; ma=604800; v="30,29,28,27,26,25"
+X-Firefox-Spdy: h2
+ uncompressed-len 0   3‰

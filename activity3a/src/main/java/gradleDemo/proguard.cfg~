@@ -1,0 +1,6 @@
+-libraryjars <java.home>/lib/rt.jar 
+-printmapping gradledDemo/proguard.map
+-keep public class gradleDemo.GradleDemo {
+	public static void main(java.lang String[]);
+
+}

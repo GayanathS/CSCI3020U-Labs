@@ -1,0 +1,172 @@
+Activating service name='com.ubuntu.OneConf'
+Successfully activated service 'com.ubuntu.OneConf'
+WARNING:oneconf.hosts:Error in loading other_hosts file: [Errno 2] No such file or directory: '/home/gayanath/.cache/oneconf/117791c5cafc98f560a7c7c2569ba968/other_hosts'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='org.freedesktop.PackageKit'
+INFO:Starting service
+Successfully activated service 'org.freedesktop.PackageKit'
+DEBUG:Checking for inactivity (30s)
+DEBUG:Checking for inactivity (60s)
+DEBUG:Checking for inactivity (90s)
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+DEBUG:Checking for inactivity (120s)
+DEBUG:Checking for inactivity (150s)
+DEBUG:Checking for inactivity (180s)
+INFO:Shutting down because of inactivity
+Activating service name='org.freedesktop.thumbnails.Thumbnailer1'
+Successfully activated service 'org.freedesktop.thumbnails.Thumbnailer1'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='org.freedesktop.PackageKit'
+INFO:Starting service
+Successfully activated service 'org.freedesktop.PackageKit'
+INFO:InstallMimeTypes() was called: 69208711, dbus.Array([dbus.UTF8String('application/x-debian-package')], signature=dbus.Signature('s')), hide-confirm-search
+DEBUG:Updating last_timestamp
+DEBUG:Checking for inactivity (20s)
+DEBUG:Checking for inactivity (50s)
+DEBUG:Checking for inactivity (80s)
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+DEBUG:Checking for inactivity (110s)
+DEBUG:Checking for inactivity (140s)
+DEBUG:Checking for inactivity (170s)
+DEBUG:Checking for inactivity (200s)
+Activating service name='org.freedesktop.Notifications'
+Successfully activated service 'org.freedesktop.Notifications'
+DEBUG:Checking for inactivity (274s)
+DEBUG:Checking for inactivity (304s)
+DEBUG:Checking for inactivity (334s)
+DEBUG:Checking for inactivity (364s)
+DEBUG:Checking for inactivity (394s)
+DEBUG:Checking for inactivity (424s)
+DEBUG:Checking for inactivity (454s)
+DEBUG:Checking for inactivity (484s)
+DEBUG:Updating last_timestamp
+DEBUG:Checking for inactivity (5s)
+DEBUG:Checking for inactivity (35s)
+DEBUG:Checking for inactivity (65s)
+DEBUG:Checking for inactivity (95s)
+DEBUG:Checking for inactivity (125s)
+DEBUG:Checking for inactivity (155s)
+DEBUG:Checking for inactivity (185s)
+INFO:Shutting down because of inactivity
+Activating service name='com.ubuntu.OneConf'
+Successfully activated service 'com.ubuntu.OneConf'
+WARNING:oneconf.hosts:Error in loading other_hosts file: [Errno 2] No such file or directory: '/home/gayanath/.cache/oneconf/117791c5cafc98f560a7c7c2569ba968/other_hosts'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='org.freedesktop.PackageKit'
+INFO:Starting service
+Successfully activated service 'org.freedesktop.PackageKit'
+INFO:InstallMimeTypes() was called: 69209609, dbus.Array([dbus.UTF8String('application/x-debian-package')], signature=dbus.Signature('s')), hide-confirm-search
+DEBUG:Updating last_timestamp
+DEBUG:Checking for inactivity (11s)
+DEBUG:Checking for inactivity (41s)
+DEBUG:Checking for inactivity (71s)
+DEBUG:Checking for inactivity (101s)
+DEBUG:Checking for inactivity (131s)
+DEBUG:Checking for inactivity (161s)
+debconf: DbDriver "passwords" warning: could not open /var/cache/debconf/passwords.dat: Permission denied
+debconf: DbDriver "passwords" warning: could not open /var/cache/debconf/passwords.dat: Permission denied
+DEBUG:Checking for inactivity (191s)
+debconf: DbDriver "passwords" warning: could not open /var/cache/debconf/passwords.dat: Permission denied
+DEBUG:Checking for inactivity (221s)
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Reloaded configuration
+Reloaded configuration
+Reloaded configuration
+Reloaded configuration
+Reloaded configuration
+Reloaded configuration
+Reloaded configuration
+Reloaded configuration
+Reloaded configuration
+Reloaded configuration
+Reloaded configuration
+Reloaded configuration
+DEBUG:Checking for inactivity (251s)
+DEBUG:Checking for inactivity (281s)
+DEBUG:Checking for inactivity (311s)
+debconf: DbDriver "passwords" warning: could not open /var/cache/debconf/passwords.dat: Permission denied
+debconf: DbDriver "passwords" warning: could not open /var/cache/debconf/passwords.dat: Permission denied
+debconf: DbDriver "passwords" warning: could not open /var/cache/debconf/passwords.dat: Permission denied
+DEBUG:Updating last_timestamp
+DEBUG:Checking for inactivity (12s)
+DEBUG:Checking for inactivity (42s)
+Activating service name='org.gtk.vfs.Metadata'
+Successfully activated service 'org.gtk.vfs.Metadata'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+DEBUG:Checking for inactivity (72s)
+DEBUG:Checking for inactivity (102s)
+DEBUG:Checking for inactivity (132s)
+DEBUG:Checking for inactivity (162s)
+DEBUG:Checking for inactivity (192s)
+INFO:Shutting down because of inactivity
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+
+** (zeitgeist-fts:2029): WARNING **: Unable to get info on application:///usr/share//applications/code.desktop
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='org.freedesktop.Notifications'
+Successfully activated service 'org.freedesktop.Notifications'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='com.ubuntu.OneConf'
+Successfully activated service 'com.ubuntu.OneConf'
+WARNING:oneconf.hosts:Error in loading other_hosts file: [Errno 2] No such file or directory: '/home/gayanath/.cache/oneconf/117791c5cafc98f560a7c7c2569ba968/other_hosts'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='com.ubuntu.OneConf'
+Successfully activated service 'com.ubuntu.OneConf'
+WARNING:oneconf.hosts:Error in loading other_hosts file: [Errno 2] No such file or directory: '/home/gayanath/.cache/oneconf/117791c5cafc98f560a7c7c2569ba968/other_hosts'
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/oneconf/packagesethandler.py", line 63, in update
+    newpkg_list = self.distro.compute_local_packagelist()
+  File "/usr/lib/python3/dist-packages/oneconf/distributor/Ubuntu.py", line 42, in compute_local_packagelist
+    with apt.Cache() as apt_cache:
+  File "/usr/lib/python3/dist-packages/apt/cache.py", line 107, in __init__
+    self.open(progress)
+  File "/usr/lib/python3/dist-packages/apt/cache.py", line 153, in open
+    self._records = apt_pkg.PackageRecords(self._cache)
+SystemError: E:Could not open file /var/lib/apt/lists/ca.archive.ubuntu.com_ubuntu_dists_trusty_universe_i18n_Translation-en%5fCA - open (2: No such file or directory), E:Could not open file /var/lib/apt/lists/ca.archive.ubuntu.com_ubuntu_dists_trusty_universe_i18n_Translation-en - open (2: No such file or directory), E:Could not open file /var/lib/apt/lists/ca.archive.ubuntu.com_ubuntu_dists_trusty_restricted_i18n_Translation-en - open (2: No such file or directory), E:Could not open file /var/lib/apt/lists/ca.archive.ubuntu.com_ubuntu_dists_trusty_multiverse_i18n_Translation-en - open (2: No such file or directory), E:Could not open file /var/lib/apt/lists/ca.archive.ubuntu.com_ubuntu_dists_trusty_main_i18n_Translation-en%5fCA - open (2: No such file or directory), E:Could not open file /var/lib/apt/lists/ca.archive.ubuntu.com_ubuntu_dists_trusty_main_i18n_Translation-en - open (2: No such file or directory), E:Could not open file /var/lib/apt/lists/ca.archive.ubuntu.com_ubuntu_dists_trusty_multiverse_binary-i386_Packages - open (2: No such file or directory), E:Could not open file /var/lib/apt/lists/ca.archive.ubuntu.com_ubuntu_dists_trusty_universe_binary-i386_Packages - open (2: No such file or directory)
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='com.ubuntu.OneConf'
+Successfully activated service 'com.ubuntu.OneConf'
+WARNING:oneconf.hosts:Error in loading other_hosts file: [Errno 2] No such file or directory: '/home/gayanath/.cache/oneconf/117791c5cafc98f560a7c7c2569ba968/other_hosts'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='ca.desrt.dconf'
+Successfully activated service 'ca.desrt.dconf'
+Activating service name='org.gnome.keyring.SystemPrompter'
+Successfully activated service 'org.gnome.keyring.SystemPrompter'
+Activating service name='org.gnome.keyring.SystemPrompter'
+Successfully activated service 'org.gnome.keyring.SystemPrompter'
+Activating service name='com.ubuntu.OneConf'
+Successfully activated service 'com.ubuntu.OneConf'
+WARNING:oneconf.hosts:Error in loading other_hosts file: [Errno 2] No such file or directory: '/home/gayanath/.cache/oneconf/117791c5cafc98f560a7c7c2569ba968/other_hosts'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='org.freedesktop.thumbnails.Cache1'
+Successfully activated service 'org.freedesktop.thumbnails.Cache1'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'

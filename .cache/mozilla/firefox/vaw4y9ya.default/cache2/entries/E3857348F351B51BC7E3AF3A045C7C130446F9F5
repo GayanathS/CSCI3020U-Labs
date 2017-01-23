@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoWXUFUHV9bAFVL","queueTime":0,"applicationTime":8,"ttGuid":"","agentToken":null,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+
+  <title>Git</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-86a57a8fc9438db2df718f32cf0b8ebe.css" />
+  <script src="/assets/modernizr-10d8d48497292341fc1c4a63d06c6f61.js"></script>
+<script src="/assets/modernizr-tests-0e26a9afd9c6455a99b7b4165485c366.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="home">
+
+  <div class="inner">
+    <header>
+
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>distributed-is-the-new-centralized
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+
+</header>
+
+  </div> <!-- .inner -->
+
+    <div id="masthead">
+  <div class="inner">
+    <p>
+      Git is a <a href="/about/free-and-open-source">free and open source</a>
+      distributed version control system designed to handle everything from small to
+      very large projects with speed and efficiency.
+    </p>
+
+    <p>
+      Git is <a href="/documentation">easy to learn</a> and has a
+      <a href="/about/small-and-fast">tiny footprint with lightning fast performance</a>.
+      It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase
+      with features like <a href="/about/branching-and-merging">cheap local branching</a>,
+      convenient <a href="/about/staging-area">staging areas</a>, and
+      <a href="/about/distributed">multiple workflows</a>.
+    </p>
+
+    <p class="promo">
+      <img src="/images/trygit.png" height="42" width="42" style="float: left; margin: -2px 4px 0 0;"/> Learn Git in your browser for free with <a href="https://try.github.io">Try Git</a>.
+    </p>
+
+    <img class="illustration" src="/images/branching-illustration@2x.png" width="389" height="251" />
+  </div> <!-- .inner -->
+</div> <!-- #masthead -->
+
+    <div id="content-wrapper">
+      <div class="inner">
+        <div id="front-content">
+  <section id="front-navigation">
+    <nav id="front-nav">
+      <ul>
+        <li id="nav-about">
+          <a href="/about">
+            <img src="/images/icons/nav-about@2x.png" width="74" height="74" />
+            <h3>About</h3>
+            <p>The advantages of Git compared to other source control systems.</p>
+</a>        </li>
+        <li id="nav-documentation">
+          <a href="/doc">
+            <img src="/images/icons/nav-documentation@2x.png" width="74" height="74" />
+            <h3>Documentation</h3>
+            <p>Command reference pages, Pro Git book content, videos and other material.</p>
+</a>        </li>
+        <li id="nav-downloads">
+          <a href="/downloads">
+            <img src="/images/icons/nav-downloads@2x.png" width="74" height="74" />
+            <h3>Downloads</h3>
+            <p>GUI clients and binary releases for all major platforms.</p>
+</a>        </li>
+        <li id="nav-community">
+          <a href="/community">
+            <img src="/images/icons/nav-community@2x.png" width="74" height="74" />
+            <h3>Community</h3>
+            <p>Get involved! Bug reporting, mailing list, chat, development and more.</p>
+</a>        </li>
+      </ul>
+    </nav>
+    <div id="front-book">
+      <img src="/images/progit2.png" width="56" height="74" />
+      <p>
+        <strong><a href="/book">Pro Git</a></strong>
+        by Scott Chacon and Ben Straub is available to
+        <a href="/book">read online for free</a>.
+        Dead tree versions are available on <a href="http://www.amazon.com/Pro-Git-Scott-Chacon/dp/1484200772?ie=UTF8&camp=1789&creative=9325&creativeASIN=1430218339&linkCode=as2&tag=git-sfconservancy-20">Amazon.com</a>.
+      </p>
+    </div>
+  </section>
+  <section id="front-downloads">
+    <div class="monitor">
+
+  <h4> Latest source Release </h4>
+
+  <span class="version">
+    2.11.0
+  </span>
+
+  <a href="https://raw.github.com/git/git/master/Documentation/RelNotes/2.11.0.txt">Release Notes</a>
+  <span class="release-date">
+    (2016-11-29)
+  </span>
+
+  <a class="button" id="download-link" href="https://www.kernel.org/pub/software/scm/git/">Download Source Code</a>
+</div>
+
+    <table>
+      <tr>
+        <td nowrap="true"><a class="icon gui" id="gui-link" href="/downloads/guis">Graphical UIs</a></td>
+        <td nowrap="true"><a class="icon older-releases" href="https://www.kernel.org/pub/software/scm/git/">Tarballs</a></td>
+      </tr>
+      <tr>
+        <td nowrap="true"><a class="icon windows" id="alt-link" href="/download/win">Windows Build</a></td>
+        <td nowrap="true"><a class="icon source" href="https://github.com/git/git">Source Code</a></td>
+      </tr>
+    </table>
+</section>
+</div>
+
+<section id="companies-projects">
+  <h3> Companies &amp; Projects Using Git </h3>
+  <ul>
+    <li><a class="google" href="https://github.com/google">Google</a></li>
+    <li><a class="facebook" href="https://github.com/facebook">Facebook</a></li>
+    <li><a class="microsoft" href="https://github.com/Microsoft">Microsoft</a></li>
+    <li><a class="twitter" href="https://github.com/twitter">Twitter</a></li>
+    <li><a class="linked-in" href="https://github.com/linkedin">LinkedIn</a></li>
+    <li><a class="netflix" href="https://github.com/netflix">Netflix</a></li>
+    <li><a class="perl" href="http://perl5.git.perl.org/perl.git">Perl</a></li>
+    <li><a class="postgresql" href="https://git.postgresql.org/gitweb/">PostgreSQL</a></li>
+
+    <li><a class="android" href="https://android-review.googlesource.com/#/q/status:open,n,z">Android</a></li>
+    <li><a class="linux" href="https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git">Linux</a></li>
+    <li><a class="rails" href="https://github.com/rails/rails">Ruby on Rails</a></li>
+    <li><a class="qt" href="https://code.qt.io/cgit/">Qt</a></li>
+    <li><a class="gnome" href="https://git.gnome.org/browse/">Gnome</a></li>
+    <li><a class="eclipse" href="https://git.eclipse.org/c/">Eclipse</a></li>
+    <li><a class="kde" href="https://quickgit.kde.org/">KDE</a></li>
+    <li><a class="x" href="https://cgit.freedesktop.org/xorg/xserver/">X</a></li>
+</ul>
+</section>
+
+        <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-ae4fcd0fbc7a69a0676014f3b0488876.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-e26b28f4c867b7ddf80395d18c42afe3.js"></script>
+<script src="/assets/jquery.defaultvalue-fb4265b0e862acfce66a73a5131528b3.js"></script>
+<script src="/assets/session.min-84e4d7864bab5f4f7b2eafd9c1ebc0ca.js"></script>
+<script src="/assets/site-1dedb2e04243f2cda0b571c1ade66561.js"></script>
+
+      </div> <!-- .inner -->
+    </div> <!-- #content-wrapper -->
+
+</body>
+</html>
+Ë\ø           X†jý=\d           :https://git-scm.com/ strongly-framed 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAQAAgAAAAAAAAAAAAAAAAAAAAAB4vFIJp5wRkeyPxAQ9RJGKPqbqVvKO0mKuIl8ec8o/uhmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAdVMIIHUTCCBjmgAwIBAgIQA2X56m/qgVPwPe3xZp9umTANBgkqhkiG9w0BAQsFADBwMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d3cuZGlnaWNlcnQuY29tMS8wLQYDVQQDEyZEaWdpQ2VydCBTSEEyIEhpZ2ggQXNzdXJhbmNlIFNlcnZlciBDQTAeFw0xNjA0MjMwMDAwMDBaFw0xOTA1MDExMjAwMDBaMGcxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1TYW4gRnJhbmNpc2NvMRUwEwYDVQQKEwxHaXRIdWIsIEluYy4xFDASBgNVBAMTC2dpdC1zY20uY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA56oyWDcnct5dTeefANI+rdvFenaDGV0l8PQjYV8eIxK/eBZh3zRzDr7poljkEu+KQRj7uaChOuTy7qsCOBVjrTTyVkymca51uwDFynenhAnwvC8GQSUow57WKJATzSNQ04OkdfkP3OOgk7VJcVjXYNwhiB61zbdegh1TkFUlw9n8n+mXu28/KtWTKWwduDvMLAl19zUvthptUR0BLYzDdue5ZeuB35JGXXbOok9sKCSy6tkvGzxTZ0KJgrDXsVu9pgvjcpen7kuSnl0rzWsu1L7rQqVl3b0c52nR8txr5yDtwIahggPQqmZJlphmhdRI2kccTHVAjfuCNIQFXeZdyQIDAQABo4ID7jCCA+owHwYDVR0jBBgwFoAUUWj/kK8CB3U8zNllZGKiErhZcjswHQYDVR0OBBYEFGBoebSWGQ+gOojWZZ75lnt2r4cFMCcGA1UdEQQgMB6CC2dpdC1zY20uY29tgg93d3cuZ2l0LXNjbS5jb20wDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjB1BgNVHR8EbjBsMDSgMqAwhi5odHRwOi8vY3JsMy5kaWdpY2VydC5jb20vc2hhMi1oYS1zZXJ2ZXItZzUuY3JsMDSgMqAwhi5odHRwOi8vY3JsNC5kaWdpY2VydC5jb20vc2hhMi1oYS1zZXJ2ZXItZzUuY3JsMEwGA1UdIARFMEMwNwYJYIZIAYb9bAEBMCowKAYIKwYBBQUHAgEWHGh0dHBzOi8vd3d3LmRpZ2ljZXJ0LmNvbS9DUFMwCAYGZ4EMAQICMIGDBggrBgEFBQcBAQR3MHUwJAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmRpZ2ljZXJ0LmNvbTBNBggrBgEFBQcwAoZBaHR0cDovL2NhY2VydHMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0U0hBMkhpZ2hBc3N1cmFuY2VTZXJ2ZXJDQS5jcnQwDAYDVR0TAQH/BAIwADCCAfUGCisGAQQB1nkCBAIEggHlBIIB4QHfAHUApLkJkLQYWBSHuxOizGdwCjw1mAT5G9+443fNDsgN3BAAAAFYEr8S/AAABAMARjBEAiAnl3vK/+u/s6SIUs8++a6qqq+bAUjwc9ppXrqILZqKvwIgBLoO3fibnad8+110J14+G1wp+MVJuDE1No8mtlpFD6UAdwBo9pj4H2SCvjqM7rkoHUz8cVFdZ5PURNEKZ6y7T0/7xAAAAVgSvxLKAAAEAwBIMEYCIQD5855Kv8e7cGcDIzFiyhDArx4+1joeG9yuVVVgJ7QiuAIhAIfPjMycmInkgIpiVDq59STr1d5Bw+qQA7/dnykaIi5NAHYAVhQGmi/XwuzT9eG9RLI+x0Z2ubyZEVzA75SYVdaJ0N0AAAFYEr8TUwAABAMARzBFAiEAzjbujBj06tVpsVDJpNhnuf3wL2b43ERIVFQD9sq0W3MCICzJ4kaAJ/62ZOdk2wWiU3x7xs+A1iU9Xb4/FuRNHwzAAHUA7ku9t3XOYLrhQmkfq+GeZqMPfl+wctiDAMR7iXqo/csAAAFYEr8VfAAABAMARjBEAiBbDhrGWHOVTymcGlsFlHi9W29p6BmsXoJU9KLflEHbMwIgQiBWptNCzVca1UxMQhOyiA7PMMH9nKPfh6JDpC4ZmjAwDQYJKoZIhvcNAQELBQADggEBADKTNSFChGJweL6ZqGLR7iWq/AclJUTKc2Cv1nemBz7UQgX/j/6GZ/ZmlahENSqEae1J0NoQhC/4BpXd0eBOfAxAEjZAhWL1QcfKEYmJg5/ydTWTcH4fjz+4xgH3Ug8STPxqqNVCmB0MpJHUkXj04pVbvqN4LJ/LFaDM21Hf0ZJQiRmcAiXl7ckZnotxjuvqgtn6x8+rq6JRKwjjhwY+tNF+aN/GH/SBrOAuPpV3rm7THbQD/YXiSW5ZiXY2comW9H4W+Bdux97SQiqFPMMK/cnF8vbyZ3sPANzkJVTMu7W2v5A/Q3EBJ0Zm2g3v/jkTOy7NiVO/lXbdfW6IiFLDxXnALwADAAAAAAEBAAA= request-method GET response-head HTTP/1.1 200 OK
+Server: Cowboy
+Date: Mon, 23 Jan 2017 20:43:40 GMT
+Status: 200 OK
+X-Frame-Options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Type: text/html; charset=utf-8
+Content-Length: 12050
+Etag: W/"3bec6016e414cc00f21993482d87f5b6"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 7bd3335d-a417-48c2-a3eb-8763a428a5aa
+X-Runtime: 0.008164
+strict-transport-security: max-age=31536000
+Via: 1.1 vegur
+ original-response-headers Server: Cowboy
+Connection: keep-alive
+Date: Mon, 23 Jan 2017 20:43:40 GMT
+Status: 200 OK
+X-Frame-Options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Type: text/html; charset=utf-8
+Content-Length: 12050
+Etag: W/"3bec6016e414cc00f21993482d87f5b6"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 7bd3335d-a417-48c2-a3eb-8763a428a5aa
+X-Runtime: 0.008164
+strict-transport-security: max-age=31536000
+Via: 1.1 vegur
+ charset UTF-8 uncompressed-len 0 predictor::resource-count 49 predictor::https://git-scm.com/assets/git-scm-86a57a8fc9438db2df718f32cf0b8ebe.css 1,1,0,4096 predictor::https://git-scm.com/assets/modernizr-10d8d48497292341fc1c4a63d06c6f61.js 1,1,0,4096 predictor::https://git-scm.com/assets/modernizr-tests-0e26a9afd9c6455a99b7b4165485c366.js 1,1,0,4096 predictor::https://use.typekit.com/jsq2fql.js 1,1,0,4096 predictor::https://git-scm.com/images/logo@2x.png 1,1,0,4096 predictor::https://git-scm.com/images/trygit.png 1,1,0,4096 predictor::https://git-scm.com/images/branching-illustration@2x.png 1,1,0,4096 predictor::https://git-scm.com/images/icons/nav-about@2x.png 1,1,0,4096 predictor::https://git-scm.com/images/icons/nav-documentation@2x.png 1,1,0,4096 predictor::https://git-scm.com/images/icons/nav-downloads@2x.png 1,1,0,4096 predictor::https://git-scm.com/images/icons/nav-community@2x.png 1,1,0,4096 predictor::https://git-scm.com/images/progit2.png 1,1,0,4096 predictor::https://git-scm.com/assets/jquery-1.7.1.min-ae4fcd0fbc7a69a0676014f3b0488876.js 1,1,0,4096 predictor::https://git-scm.com/assets/jquery-ui-1.8.18.custom.min-e26b28f4c867b7ddf80395d18c42afe3.js 1,1,0,4096 predictor::https://git-scm.com/assets/jquery.defaultvalue-fb4265b0e862acfce66a73a5131528b3.js 1,1,0,4096 predictor::https://git-scm.com/assets/session.min-84e4d7864bab5f4f7b2eafd9c1ebc0ca.js 1,1,0,4096 predictor::https://git-scm.com/assets/site-1dedb2e04243f2cda0b571c1ade66561.js 1,1,0,4096 predictor::https://git-scm.com/images/bg/body.jpg 1,1,0,4096 predictor::https://git-scm.com/images/icons/search.png 1,1,0,4096 predictor::https://git-scm.com/images/bg/isometric-grid.png 1,1,0,4096 predictor::https://git-scm.com/images/monitor-default.png 1,1,0,4096 predictor::https://git-scm.com/images/icons/gui.png 1,1,0,4096 predictor::https://git-scm.com/images/icons/box.png 1,1,0,4096 predictor::https://git-scm.com/images/icons/windows.png 1,1,0,4096 predictor::https://git-scm.com/images/icons/source-code.png 1,1,0,4096 predictor::https://git-scm.com/images/company-project-logos/google.png 1,1,0,4096 predictor::https://git-scm.com/images/company-project-logos/facebook.png 1,1,0,4096 predictor::https://git-scm.com/images/company-project-logos/microsoft.png 1,1,0,4096 predictor::https://git-scm.com/images/company-project-logos/twitter.png 1,1,0,4096 predictor::https://git-scm.com/images/company-project-logos/linked-in.png 1,1,0,4096 predictor::https://git-scm.com/images/company-project-logos/netflix.png 1,1,0,4096 predictor::https://git-scm.com/images/company-project-logos/perl.png 1,1,0,4096 predictor::https://git-scm.com/images/company-project-logos/postgresql.png 1,1,0,4096 predictor::https://git-scm.com/images/company-project-logos/android.png 1,1,0,4096 predictor::https://git-scm.com/images/company-project-logos/linux.png 1,1,0,4096 predictor::https://git-scm.com/images/company-project-logos/rails.png 1,1,0,4096 predictor::https://git-scm.com/images/company-project-logos/qt.png 1,1,0,4096 predictor::https://git-scm.com/images/company-project-logos/gnome.png 1,1,0,4096 predictor::https://git-scm.com/images/company-project-logos/eclipse.png 1,1,0,4096 predictor::https://git-scm.com/images/company-project-logos/kde.png 1,1,0,4096 predictor::https://git-scm.com/images/company-project-logos/x.png 1,1,0,4096 predictor::https://git-scm.com/images/icons/code.png 1,1,0,4096 predictor::https://www.google.com/jsapi?callback=gloader_ready 1,1,0,4097 predictor::https://secure.gaug.es/track.js 1,1,0,4096 predictor::https://git-scm.com/images/icons/apple.png 1,1,0,4096 predictor::https://git-scm.com/images/monitor-linux.png 1,1,0,4096 predictor::https://secure.gaug.es/track.gif?h[site_id]=4f919d1df5a1f504b3000026&h[resource]=https%3A%2F%2Fgit-scm.com%2F&h[referrer]=&h[title]=Git&h[user_agent]=Mozilla%2F5.0%20(X11%3B%20Ubuntu%3B%20Linux%20x86_64%3B%20rv%3A50.0)%20Gecko%2F20100101%20Firefox%2F50.0&h[unique]=0&h[unique_hour]=1&h[unique_day]=0&h[unique_month]=0&h[unique_year]=0&h[screenx]=1920&h[browserx]=1920&h[browsery]=855&timestamp=1485204221423 1,1,0,4097 predictor::https://js-agent.newrelic.com/nr-1016.min.js 1,1,0,4096 predictor::https://bam.nr-data.net/1/20c4a8c482?a=454369&v=1016.8b58850&to=dl5cQkcLXF9XRBoWXUFUHV9bAFVL&rst=2809&ref=https://git-scm.com/&ap=8&be=1851&fe=867&dc=590&perf=%7B%22timing%22:%7B%22of%22:1485204218796,%22n%22:0,%22f%22:2,%22dn%22:2,%22dne%22:127,%22c%22:127,%22ce%22:127,%22rq%22:1697,%22rp%22:1728,%22rpe%22:1779,%22dl%22:1797,%22di%22:2420,%22ds%22:2440,%22de%22:2468,%22dc%22:2717,%22l%22:2717,%22le%22:2720%7D,%22navigation%22:%7B%7D%7D&jsonp=NREUM.setToken 1,1,0,4097   /

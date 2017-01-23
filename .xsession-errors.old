@@ -1,0 +1,24 @@
+openConnection: connect: No such file or directory
+cannot connect to brltty at :0
+Script for none started at run_im.
+Script for auto started at run_im.
+Script for default started at run_im.
+init: upstart-event-bridge main process (1647) terminated with status 1
+init: upstart-event-bridge main process ended, respawning
+init: upstart-dbus-session-bridge main process (1671) terminated with status 1
+init: upstart-dbus-session-bridge main process ended, respawning
+init: upstart-dbus-system-bridge main process (1672) terminated with status 1
+init: upstart-dbus-system-bridge main process ended, respawning
+init: upstart-file-bridge main process (1677) terminated with status 1
+init: upstart-file-bridge main process ended, respawning
+init: upstart-event-bridge main process (3117) terminated with status 1
+init: upstart-event-bridge main process ended, respawning
+init: upstart-dbus-session-bridge main process (3131) terminated with status 1
+init: upstart-dbus-session-bridge main process ended, respawning
+init: upstart-dbus-system-bridge main process (3133) terminated with status 1
+init: upstart-dbus-system-bridge main process ended, respawning
+init: upstart-file-bridge main process (3135) terminated with status 1
+init: upstart-file-bridge main process ended, respawning
+init: update-notifier-release main process (3126) killed by TERM signal
+init: startxfce4 main process (1747) killed by TERM signal
+init: Disconnected from notified D-Bus bus

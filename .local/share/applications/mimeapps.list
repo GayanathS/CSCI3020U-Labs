@@ -1,0 +1,9 @@
+[Default Applications]
+text/plain=abiword.desktop
+image/png=gimp.desktop
+application/x-sharedlib=abiword.desktop
+
+[Added Associations]
+text/plain=abiword.desktop;
+image/png=firefox.desktop;gimp.desktop;
+application/x-sharedlib=abiword.desktop;

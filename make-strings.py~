@@ -1,0 +1,16 @@
+import sys
+import os 
+
+if len(sys.argv) < 4:
+	print "Usage: N w f"
+	sys.exit(0)
+
+N = int(sys.argv[1])
+w = int(sys.argv[2]_
+filename = sys.argv[3]
+
+
+def randchr():
+	return chr(random.randint(65, 65+26)
+
+

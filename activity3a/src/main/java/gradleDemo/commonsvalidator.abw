@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE abiword PUBLIC "-//ABISOURCE//DTD AWML 1.0 Strict//EN" "http://www.abisource.com/awml.dtd">
+<abiword template="false" xmlns:ct="http://www.abisource.com/changetracking.dtd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:math="http://www.w3.org/1998/Math/MathML" xid-max="81" xmlns:dc="http://purl.org/dc/elements/1.1/" styles="unlocked" fileformat="1.1" xmlns:svg="http://www.w3.org/2000/svg" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.9.1" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:en-CA; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
+<!-- ======================================================================== -->
+<!-- This file is an AbiWord document.                                        -->
+<!-- AbiWord is a free, Open Source word processor.                           -->
+<!-- More information about AbiWord is available at http://www.abisource.com/ -->
+<!-- You should not edit this file by hand.                                   -->
+<!-- ======================================================================== -->
+
+<metadata>
+<m key="abiword.date_last_changed">Thu Jan 28 10:58:34 2016
+</m>
+<m key="abiword.generator">AbiWord</m>
+<m key="dc.creator">Gayanath Sasitharanathan</m>
+<m key="dc.date">Thu Jan 28 10:32:05 2016
+</m>
+<m key="dc.format">application/x-abiword</m>
+</metadata>
+<rdf>
+</rdf>
+<history version="18" edit-time="1656" last-saved="1453996714" uid="ca287b0c-c5d3-11e5-87ec-990a0296ddd5">
+<version id="1" started="1453995125" uid="4925ee08-c5d4-11e5-87ec-990a0296ddd5" auto="0" top-xid="12"/>
+<version id="18" started="1453995385" uid="fc2ee2cc-c5d7-11e5-9eb3-f44119ef83f9" auto="0" top-xid="31"/>
+</history>
+<styles>
+<s type="P" name="Normal" followedby="Current Settings" props="font-family:Times New Roman; margin-top:0pt; color:000000; margin-left:0pt; bgcolor:transparent; widows:2; font-style:normal; text-indent:0in; text-position:normal; margin-bottom:0pt; font-weight:normal; line-height:1.0; text-align:left; font-variant:normal; text-decoration:none; margin-right:0pt; font-size:12pt; font-stretch:normal"/>
+</styles>
+<pagesize pagetype="Letter" orientation="portrait" width="8.500000" height="11.000000" units="in" page-scale="1.000000"/>
+<section xid="11" props="page-margin-footer:0.5000in; page-margin-header:0.5000in; page-margin-right:1.0000in; page-margin-left:1.0000in; page-margin-top:1.0000in; page-margin-bottom:1.0000in">
+<p style="Normal" xid="12">apply plugin: ‘java’<c></c></p>
+<p style="Normal" xid="1"><c></c><c></c></p>
+<p style="Normal" xid="2">repositories {<c></c></p>
+<p style="Normal" xid="3">	mavenCentral()<c></c></p>
+<p style="Normal" xid="4">}<c></c></p>
+<p style="Normal" xid="5"><c></c><c></c></p>
+<p style="Normal" xid="6">dependencies {<c></c></p>
+<p style="Normal" xid="7"><c></c><c></c></p>
+<p style="Normal" xid="8">	compile group: ‘commons-validator’, name: ‘commons-validator’, version: ‘1.5.0’</p>
+<p style="Normal" xid="9">}<c></c></p>
+<p style="Normal" xid="10"><c></c></p>
+<p style="Normal" xid="13">sourceCompatability = 1.7</p>
+<p style="Normal" xid="32">version ‘1.0.1‘</p>
+<p style="Normal" xid="33">jar {</p>
+<p style="Normal" xid="34"><c></c></p>
+<p style="Normal" xid="35">	manifest {</p>
+<p style="Normal" xid="36"><c></c></p>
+<p style="Normal" xid="37">		attributes ‘Main-Class’: </p>
+<p style="Normal" xid="56">‘gradleDemo’ , </p>
+<p style="Normal" xid="57">		 ‘Implementation-Title’:</p>
+<p style="Normal" xid="38">‘Gradle Demo v1.0.1‘,</p>
+<p style="Normal" xid="39">		‘Implementation-Version’;</p>
+<p style="Normal" xid="40"><c></c></p>
+<p style="Normal" xid="41">version</p>
+<p style="Normal" xid="42"> 	}	</p>
+<p style="Normal" xid="43">}</p>
+<p style="Normal" xid="14"><c></c></p>
+<p style="Normal" xid="15">task(sayHello) {</p>
+<p style="Normal" xid="44"><c></c></p>
+<p style="Normal" xid="45">	doFirst {</p>
+<p style="Normal" xid="46"><c></c></p>
+<p style="Normal" xid="47">		println ‘DoFirst’</p>
+<p style="Normal" xid="48">	}</p>
+<p style="Normal" xid="50"><c></c></p>
+<p style="Normal" xid="51">	doLast {</p>
+<p style="Normal" xid="52">		println ‘DoLast’</p>
+<p style="Normal" xid="53">	}</p>
+<p style="Normal" xid="54">}</p>
+<p style="Normal" xid="49"><c></c></p>
+<p style="Normal" xid="16"><c></c></p>
+<p style="Normal" xid="17"><c></c></p>
+<p style="Normal" xid="18">task(howAreYou, dependsOn: ‘sayHello’) {</p>
+<p style="Normal" xid="58">	doLast {</p>
+<p style="Normal" xid="59"><c></c></p>
+<p style="Normal" xid="60">		println ‘How ya DOin? ‘</p>
+<p style="Normal" xid="61">	}</p>
+<p style="Normal" xid="62">}</p>
+<p style="Normal" xid="63"><c></c></p>
+<p style="Normal" xid="64">task(run, dependsOn: ‘classes’, type:JavaExec) { </p>
+<p style="Normal" xid="69">    main = ‘gradleDemo.GradleDemo’</p>
+<p style="Normal" xid="66">    classpath = sourceSets.main.runtimesClasspath</p>
+<p style="Normal" xid="67">}</p>
+<p style="Normal" xid="68"><c></c></p>
+<p style="Normal" xid="19">task(minify, dependsOn: ‘jar’, type:</p>
+<p style="Normal" xid="74">proguard.gradle.ProguardTast) {</p>
+<p style="Normal" xid="75"><c></c></p>
+<p style="Normal" xid="77">	configuration ‘proguard.cfg’</p>
+<p style="Normal" xid="78"><c></c></p>
+<p style="Normal" xid="79">	injars ‘build/libs/activity03a-1.0.1.jar’</p>
+<p style="Normal" xid="80">	outjars ‘build/libs/activity03a-1.0.1.min.jar’</p>
+<p style="Normal" xid="81"><c></c></p>
+<p style="Normal" xid="76">}</p>
+<p style="Normal" xid="20"><c></c></p>
+<p style="Normal" xid="21"><c></c></p>
+<p style="Normal" xid="22"><c></c></p>
+<p style="Normal" xid="23"><c></c></p>
+<p style="Normal" xid="24"><c></c></p>
+<p style="Normal" xid="25"><c></c></p>
+<p style="Normal" xid="26"><c></c></p>
+<p style="Normal" xid="55"><c></c>static final String cardNum = “1111111112222233333444“;</p>
+<p style="Normal" xid="27"><c></c></p>
+<p style="Normal" xid="28">CreditCardValidator validator = new CreditCardValidator(CreditCardValidator.AMEX + CreditCardValidator.VISA);</p>
+<p style="Normal" xid="29"><c></c></p>
+<p style="Normal" xid="30">boolean valid  = validator.isValid(cardNum);</p>
+<p style="Normal" xid="31">System.out.println(cardNum + “is valid?” + valid);</p>
+<p style="Normal" xid="70"><c></c></p>
+<p style="Normal" xid="71"><c></c></p>
+<p style="Normal" xid="72">proguard5.2.1/lib</p>
+<p style="Normal" xid="73"><c></c></p>
+</section>
+</abiword>

@@ -1,0 +1,734 @@
+<style type="text/css">
+#snippetContainer div.snippet img.icon {
+  margin: -0.75em 1em 0 0;
+  float: left;
+}
+
+ 
+   .snippet {
+       position: relative;
+   }
+
+   .snippet .icon {
+       position: absolute;
+       right: 400px;
+       top: 5px;
+       height: 50px;
+   }
+
+   .snippet p {
+       display: table-cell;
+       height: 40px;
+       padding-left: 80px;
+       vertical-align: middle;
+       width: 400px;
+   }
+ 
+
+ 
+</style>
+<script type="text/javascript">
+//<![CDATA[
+  // Generated on 2016-10-21 22:55:09.459289
+  // Included snippets:
+
+  //  - 5797
+
+  //  - 5740
+
+  //  - 5741
+
+  //  - 5799
+
+  //  - 5806
+
+  //  - 5814
+
+  //  - 5815
+
+  var ABOUTHOME_SNIPPETS = JSON.parse('[{\u0022code\u0022: \u0022\u003Cdiv data\u002Dsnippet\u002Did\u003D\u005C\u00225797\u005C\u0022 data\u002Dweight\u003D\u005C\u0022100\u005C\u0022 data\u002Dcampaign\u003D\u005C\u0022\u005C\u0022 class\u003D\u005C\u0022snippet\u002Dmetadata\u005C\u0022 data\u002Dcountries\u003D\u005C\u0022us\u005C\u0022\u003E\u003Cdiv class\u003D\u005C\u0022snippet\u005C\u0022 id\u003D\u005C\u0022mofo\u002Dmass\u002Dsurveillance\u002D5797\u005C\u0022\u003E\u005Cn  \u003Cstyle type\u003D\u005C\u0022text/css\u005C\u0022\u003E\u005Cn    #mofo\u002Dmass\u002Dsurveillance\u002D5797 .front {\u005Cn      height: 100%\u003B\u005Cn      width: 100%\u003B\u005Cn    }\u005Cn\u005Cn    #mofo\u002Dmass\u002Dsurveillance\u002D5797 .privacy\u002Deye {\u005Cn      height: 100%\u003B\u005Cn      width: 100%\u003B\u005Cn      position: absolute\u003B\u005Cn      top: 0\u003B\u005Cn      padding: 2px\u003B\u005Cn    }\u005Cn\u005Cn    #mofo\u002Dmass\u002Dsurveillance\u002D5797 .eye\u002Dcontainer {\u005Cn      height: 39px\u003B\u005Cn      width: 39px\u003B\u005Cn      flex\u002Dshrink: 0\u003B\u005Cn      margin\u002Dright: 26px\u003B\u005Cn      position: relative\u003B\u005Cn    }\u005Cn\u005Cn    #mofo\u002Dmass\u002Dsurveillance\u002D5797 .container {\u005Cn      display: flex\u003B\u005Cn      align\u002Ditems: center\u003B\u005Cn    }\u005Cn\u005Cn    #mofo\u002Dmass\u002Dsurveillance\u002D5797 * {\u005Cn      box\u002Dsizing: border\u002Dbox\u003B\u005Cn    }\u005Cn\u005Cn    #mofo\u002Dmass\u002Dsurveillance\u002D5797 .eyelid {\u005Cn      height: 100%\u003B\u005Cn      margin: 0 auto\u003B\u005Cn      position: relative\u003B\u005Cn      width: 100%\u003B\u005Cn      border\u002Dradius: 50%\u003B\u005Cn      overflow: hidden\u003B\u005Cn    }\u005Cn\u005Cn    #mofo\u002Dmass\u002Dsurveillance\u002D5797 .eye\u002Dimage {\u005Cn      margin\u002Dtop: \u002D41px\u003B\u005Cn      margin\u002Dleft: \u002D21px\u003B\u005Cn      pointer\u002Devents: none\u003B\u005Cn    }\u005Cn\u005Cn    #mofo\u002Dmass\u002Dsurveillance\u002D5797 .eyelid::before,\u005Cn    #mofo\u002Dmass\u002Dsurveillance\u002D5797 .eyelid::after {\u005Cn      background: #4D4E53\u003B\u005Cn      content: \u0027\u0027\u003B\u005Cn      display: block\u003B\u005Cn      height: 50%\u003B\u005Cn      position: absolute\u003B\u005Cn      width: 100%\u003B\u005Cn      \u002Dwebkit\u002Danimation: real\u002Deyelids\u002D5797 7s infinite\u003B\u005Cn      \u002Do\u002Danimation: real\u002Deyelids\u002D5797 7s infinite\u003B\u005Cn      \u002Dmoz\u002Danimation: real\u002Deyelids\u002D5797 7s infinite\u003B\u005Cn      animation: real\u002Deyelids\u002D5797 7s infinite\u003B\u005Cn    }\u005Cn\u005Cn    #mofo\u002Dmass\u002Dsurveillance\u002D5797 .eyelid::before {\u005Cn      top: 0\u003B\u005Cn      z\u002Dindex: 100\u003B\u005Cn    }\u005Cn\u005Cn    #mofo\u002Dmass\u002Dsurveillance\u002D5797 .eyelid::after {\u005Cn      bottom: 0\u003B\u005Cn    }\u005Cn\u005Cn    #mofo\u002Dmass\u002Dsurveillance\u002D5797 .sclera {\u005Cn      width: 100%\u003B\u005Cn      height: 100%\u003B\u005Cn      position: relative\u003B\u005Cn    }\u005Cn\u005Cn    #mofo\u002Dmass\u002Dsurveillance\u002D5797 .iris {\u005Cn      border: 2px solid #4D4E53\u003B\u005Cn      border\u002Dradius: 50%\u003B\u005Cn      height: 60%\u003B\u005Cn      width: 60%\u003B\u005Cn      padding: 8.5%\u003B\u005Cn      position: relative\u003B\u005Cn      top: 19.5%\u003B\u005Cn      left: 20.5%\u003B\u005Cn    }\u005Cn\u005Cn    #mofo\u002Dmass\u002Dsurveillance\u002D5797 .privacy\u002Deye.wander .iris {\u005Cn      \u002Dwebkit\u002Danimation: searching\u002Deye\u002D5797 7s infinite\u003B\u005Cn      \u002Do\u002Danimation: searching\u002Deye\u002D5797 7s infinite\u003B\u005Cn      \u002Dmoz\u002Danimation: searching\u002Deye\u002D5797 7s infinite\u003B\u005Cn      animation: searching\u002Deye\u002D5797 7s infinite\u003B\u005Cn    }\u005Cn\u005Cn    #mofo\u002Dmass\u002Dsurveillance\u002D5797 .privacy\u002Deye.focus .iris {\u005Cn      padding: 20%\u003B\u005Cn    }\u005Cn\u005Cn    #mofo\u002Dmass\u002Dsurveillance\u002D5797 .privacy\u002Deye.smooth .iris {\u005Cn      transition: padding .3s, transform .2s\u003B\u005Cn    }\u005Cn\u005Cn    #mofo\u002Dmass\u002Dsurveillance\u002D5797 .privacy\u002Deye .iris {\u005Cn      transition: padding .3s\u003B\u005Cn    }\u005Cn\u005Cn    #mofo\u002Dmass\u002Dsurveillance\u002D5797 .pupil {\u005Cn      background: #4D4E53\u003B\u005Cn      border\u002Dradius: 50%\u003B\u005Cn      height: 100%\u003B\u005Cn      width: 100%\u003B\u005Cn      position: relative\u003B\u005Cn    }\u005Cn\u005Cn    @\u002Dwebkit\u002Dkeyframes real\u002Deyelids\u002D5797 {\u005Cn      0%,\u005Cn      90%,\u005Cn      100% {\u005Cn        height: 0\u003B\u005Cn      }\u005Cn      95% {\u005Cn        height: 60%\u003B\u005Cn      }\u005Cn    }\u005Cn\u005Cn    @\u002Do\u002Dkeyframes real\u002Deyelids\u002D5797 {\u005Cn      0%,\u005Cn      90%,\u005Cn      100% {\u005Cn        height: 0\u003B\u005Cn      }\u005Cn      95% {\u005Cn        height: 60%\u003B\u005Cn      }\u005Cn    }\u005Cn\u005Cn    @\u002Dmoz\u002Dkeyframes real\u002Deyelids\u002D5797 {\u005Cn      0%,\u005Cn      90%,\u005Cn      100% {\u005Cn        height: 0\u003B\u005Cn      }\u005Cn      95% {\u005Cn        height: 60%\u003B\u005Cn      }\u005Cn    }\u005Cn\u005Cn    @keyframes real\u002Deyelids\u002D5797 {\u005Cn      0%,\u005Cn      90%,\u005Cn      100% {\u005Cn        height: 0\u003B\u005Cn      }\u005Cn      95% {\u005Cn        height: 60%\u003B\u005Cn      }\u005Cn    }\u005Cn\u005Cn    @\u002Dwebkit\u002Dkeyframes searching\u002Deye\u002D5797 {\u005Cn      0%,\u005Cn      85.714285716%,\u005Cn      100% {\u005Cn        top: 17.5%\u003B\u005Cn        left: 17.5%\u003B\u005Cn      }\u005Cn      14.285714286% {\u005Cn        top: 17.5%\u003B\u005Cn        left: 8%\u003B\u005Cn      }\u005Cn      28.571428572% {\u005Cn        top: 30%\u003B\u005Cn        left: 8%\u003B\u005Cn      }\u005Cn      42.857142858% {\u005Cn        top: 30%\u003B\u005Cn        left: 30%\u003B\u005Cn      }\u005Cn      57.142857144% {\u005Cn        top: 8%\u003B\u005Cn        left: 30%\u003B\u005Cn      }\u005Cn      71.42857143% {\u005Cn        top: 8%\u003B\u005Cn        left: 8%\u003B\u005Cn      }\u005Cn      85.7142857% {\u005Cn        top: 0\u003B\u005Cn        left: 17.5%\u003B\u005Cn      }\u005Cn    }\u005Cn\u005Cn    @\u002Do\u002Dkeyframes searching\u002Deye\u002D5797 {\u005Cn      0%,\u005Cn      85.714285716%,\u005Cn      100% {\u005Cn        top: 17.5%\u003B\u005Cn        left: 17.5%\u003B\u005Cn      }\u005Cn      14.285714286% {\u005Cn        top: 17.5%\u003B\u005Cn        left: 8%\u003B\u005Cn      }\u005Cn      28.571428572% {\u005Cn        top: 30%\u003B\u005Cn        left: 8%\u003B\u005Cn      }\u005Cn      42.857142858% {\u005Cn        top: 30%\u003B\u005Cn        left: 30%\u003B\u005Cn      }\u005Cn      57.142857144% {\u005Cn        top: 8%\u003B\u005Cn        left: 30%\u003B\u005Cn      }\u005Cn      71.42857143% {\u005Cn        top: 8%\u003B\u005Cn        left: 8%\u003B\u005Cn      }\u005Cn      85.7142857% {\u005Cn        top: 0\u003B\u005Cn        left: 17.5%\u003B\u005Cn      }\u005Cn    }\u005Cn\u005Cn    @\u002Dmoz\u002Dkeyframes searching\u002Deye\u002D5797 {\u005Cn      0%,\u005Cn      85.714285716%,\u005Cn      100% {\u005Cn        top: 17.5%\u003B\u005Cn        left: 17.5%\u003B\u005Cn      }\u005Cn      14.285714286% {\u005Cn        top: 17.5%\u003B\u005Cn        left: 8%\u003B\u005Cn      }\u005Cn      28.571428572% {\u005Cn        top: 30%\u003B\u005Cn        left: 8%\u003B\u005Cn      }\u005Cn      42.857142858% {\u005Cn        top: 30%\u003B\u005Cn        left: 30%\u003B\u005Cn      }\u005Cn      57.142857144% {\u005Cn        top: 8%\u003B\u005Cn        left: 30%\u003B\u005Cn      }\u005Cn      71.42857143% {\u005Cn        top: 8%\u003B\u005Cn        left: 8%\u003B\u005Cn      }\u005Cn      85.7142857% {\u005Cn        top: 0\u003B\u005Cn        left: 17.5%\u003B\u005Cn      }\u005Cn    }\u005Cn\u005Cn    @keyframes searching\u002Deye\u002D5797 {\u005Cn      0%,\u005Cn      85.714285716%,\u005Cn      100% {\u005Cn        top: 17.5%\u003B\u005Cn        left: 17.5%\u003B\u005Cn      }\u005Cn      14.285714286% {\u005Cn        top: 17.5%\u003B\u005Cn        left: 8%\u003B\u005Cn      }\u005Cn      28.571428572% {\u005Cn        top: 30%\u003B\u005Cn        left: 8%\u003B\u005Cn      }\u005Cn      42.857142858% {\u005Cn        top: 30%\u003B\u005Cn        left: 30%\u003B\u005Cn      }\u005Cn      57.142857144% {\u005Cn        top: 8%\u003B\u005Cn        left: 30%\u003B\u005Cn      }\u005Cn      71.42857143% {\u005Cn        top: 8%\u003B\u005Cn        left: 8%\u003B\u005Cn      }\u005Cn      85.7142857% {\u005Cn        top: 0\u003B\u005Cn        left: 17.5%\u003B\u005Cn      }\u005Cn    }\u005Cn  \u003C/style\u003E\u005Cn  \u003Cdiv class\u003D\u005C\u0022container\u005C\u0022\u003E\u005Cn    \u003Cdiv class\u003D\u005C\u0022eye\u002Dcontainer\u005C\u0022\u003E\u005Cn      \u003Cimg class\u003D\u005C\u0022eye\u002Dimage\u005C\u0022 height\u003D\u005C\u0022120\u005C\u0022 width\u003D\u005C\u002282\u005C\u0022 src\u003D\u005C\u0022data:image/svg+xml\u003Bbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTI1cHgiIGhlaWdodD0iMTAzcHgiIHZpZXdCb3g9IjAgMCAxMjUgMTAzIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjUgMTAzIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiM0RDRFNTMiIGQ9Ik02MS40NSwyNS4xMzVjLTMwLjMxMSwwLTQ2Ljk5MiwyNS43My00Ni45OTIsMjUuNzNTMzEuMTQsNzcuNDQzLDYxLjQ1LDc3LjQ0Mw0KCQljMzAuMzE1LDAsNDcuMDU5LTI2LjU3OCw0Ny4wNTktMjYuNTc4UzkxLjc2NiwyNS4xMzYsNjEuNDUsMjUuMTM1eiBNNjEuOTE0LDc1LjQwMmMtMTMuMzg4LDAtMjQuMjc4LTEwLjg0LTI0LjI3OC0yNC4yMjgNCgkJUzQ4LjUyNiwyNyw2MS45MTQsMjdjMC4wMDEsMCwwLjAwMSwwLDAuMDAyLDBjNi40ODQsMCwxMi41ODEsMi40MzMsMTcuMTY3LDcuMDE5YzQuNTg1LDQuNTg2LDcuMTEsMTAuNTkxLDcuMTEsMTcuMDc2DQoJCUM4Ni4xOTMsNjQuNDgxLDc1LjMwMiw3NS40LDYxLjkxNCw3NS40MDJ6IE05OS4wMTcsNTguMTMyYy0wLjIyOCwwLjI0My0wLjU3MywwLjM2LTAuOTIyLDAuMzZjLTAuODk2LDAtMS44MTItMC43NzEtMC44MS0yLjE2NQ0KCQljMi4xNDEtMi45NzksMS4xMDQtNi4zOTktMC42NTUtOS4wODFjLTAuODg2LTEuMzQ5LTAuMTQyLTMsMC45MjktM2MwLjMwMiwwLDAuNjI5LDAuMTMsMC45NTIsMC40MzUNCgkJYzEuMDc0LDEuMDEzLDEuMjE3LDIuMDk4LDMuNjExLDQuMzg3YzIuMTExLDIuMDIyLDIuMTg5LDIuOTgzLDAuNjM1LDQuMzkyQzEwMS4wMiw1NS4wMjksMTAwLjI3Miw1Ni43ODgsOTkuMDE3LDU4LjEzMnoiLz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBmaWxsPSIjNEQ0RTUzIiBkPSJNNjEuNzI5LDg5LjQyM2MtMC41OTksMC0xLjA4NC0wLjQ4NS0xLjA4NC0xLjA4NHYtNS4wNzJjMC0wLjU5OSwwLjQ4NS0xLjA4NCwxLjA4NC0xLjA4NA0KCQkJczEuMDg0LDAuNDg1LDEuMDg0LDEuMDg0djUuMDcyQzYyLjgxMiw4OC45MzgsNjIuMzI3LDg5LjQyMyw2MS43MjksODkuNDIzeiIvPg0KCTwvZz4NCgk8Zz4NCgkJPHBhdGggZmlsbD0iIzRENEU1MyIgZD0iTTUwLjc1LDg4LjE3NWMtMC4wOTMsMC0wLjE4OC0wLjAxMi0wLjI4MS0wLjAzOGMtMC41NzktMC4xNTUtMC45MjItMC43NDktMC43NjgtMS4zMjhsMS4zMTItNC44OTkNCgkJCWMwLjE1NS0wLjU3OSwwLjc1LTAuOTI0LDEuMzI4LTAuNzY3YzAuNTc5LDAuMTU1LDAuOTIyLDAuNzQ5LDAuNzY4LDEuMzI4bC0xLjMxMiw0Ljg5OUM1MS42NjcsODcuODU1LDUxLjIyOSw4OC4xNzUsNTAuNzUsODguMTc1DQoJCQl6Ii8+DQoJPC9nPg0KCTxnPg0KCQk8cGF0aCBmaWxsPSIjNEQ0RTUzIiBkPSJNMzkuODQsODQuNDE3Yy0wLjE4NCwwLTAuMzctMC4wNDctMC41NDEtMC4xNDVjLTAuNTE5LTAuMjk5LTAuNjk2LTAuOTYyLTAuMzk3LTEuNDgxbDIuNTM0LTQuMzkzDQoJCQljMC4zLTAuNTE5LDAuOTYxLTAuNjk2LDEuNDgxLTAuMzk3YzAuNTE5LDAuMjk5LDAuNjk2LDAuOTYyLDAuMzk3LDEuNDgxbC0yLjUzNCw0LjM5M0M0MC41NzksODQuMjIyLDQwLjIxNSw4NC40MTcsMzkuODQsODQuNDE3eg0KCQkJIi8+DQoJPC9nPg0KCTxnPg0KCQk8cGF0aCBmaWxsPSIjNEQ0RTUzIiBkPSJNMzAuOTI2LDc5LjE5OGMtMC4yNzcsMC0wLjU1NS0wLjEwNi0wLjc2Ny0wLjMxN2MtMC40MjQtMC40MjMtMC40MjQtMS4xMS0wLjAwMS0xLjUzNGwzLjU4NC0zLjU4OA0KCQkJYzAuNDI0LTAuNDI0LDEuMTEtMC40MjMsMS41MzQsMGMwLjQyNCwwLjQyMywwLjQyNCwxLjExLDAuMDAxLDEuNTM0bC0zLjU4NCwzLjU4OEMzMS40ODEsNzkuMDkyLDMxLjIwMyw3OS4xOTgsMzAuOTI2LDc5LjE5OHoiLz4NCgk8L2c+DQoJPGc+DQoJCTxnPg0KCQkJPHBhdGggZmlsbD0iIzRENEU1MyIgZD0iTTczLjEyMSw4OC4xNzVjLTAuNDc5LDAtMC45MTctMC4zMi0xLjA0Ny0wLjgwNGwtMS4zMTItNC44OTljLTAuMTU0LTAuNTc5LDAuMTg4LTEuMTczLDAuNzY4LTEuMzI4DQoJCQkJYzAuNTc3LTAuMTU4LDEuMTczLDAuMTg4LDEuMzI4LDAuNzY3bDEuMzEyLDQuODk5YzAuMTU0LDAuNTc5LTAuMTg4LDEuMTczLTAuNzY4LDEuMzI4DQoJCQkJQzczLjMwOSw4OC4xNjMsNzMuMjE0LDg4LjE3NSw3My4xMjEsODguMTc1eiIvPg0KCQk8L2c+DQoJCTxnPg0KCQkJPHBhdGggZmlsbD0iIzRENEU1MyIgZD0iTTg0LjAyOSw4NC40MTdjLTAuMzc1LDAtMC43MzktMC4xOTQtMC45NC0wLjU0MmwtMi41MzUtNC4zOTNDODAuMjU1LDc4Ljk2Myw4MC40MzMsNzguMyw4MC45NTEsNzgNCgkJCQljMC41MjEtMC4yOTksMS4xODItMC4xMjEsMS40ODEsMC4zOTdsMi41MzUsNC4zOTNjMC4yOTksMC41MTksMC4xMjEsMS4xODItMC4zOTcsMS40ODENCgkJCQlDODQuMzk5LDg0LjM3LDg0LjIxMyw4NC40MTcsODQuMDI5LDg0LjQxN3oiLz4NCgkJPC9nPg0KCQk8Zz4NCgkJCTxwYXRoIGZpbGw9IiM0RDRFNTMiIGQ9Ik05Mi45NDQsNzkuMTk4Yy0wLjI3NywwLTAuNTU2LTAuMTA2LTAuNzY3LTAuMzE4bC0zLjU4Ni0zLjU4OGMtMC40MjQtMC40MjQtMC40MjQtMS4xMSwwLTEuNTM0DQoJCQkJYzAuNDI0LTAuNDIzLDEuMTExLTAuNDIzLDEuNTMzLDBsMy41ODYsMy41ODhjMC40MjQsMC40MjQsMC40MjQsMS4xMSwwLDEuNTM0QzkzLjQ5OSw3OS4wOTIsOTMuMjIyLDc5LjE5OCw5Mi45NDQsNzkuMTk4eiIvPg0KCQk8L2c+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGZpbGw9IiM0RDRFNTMiIGQ9Ik02MS43MjksMTguOTE1Yy0wLjU5OSwwLTEuMDg0LTAuNDg1LTEuMDg0LTEuMDg0di01LjA3MWMwLTAuNTk5LDAuNDg1LTEuMDg0LDEuMDg0LTEuMDg0DQoJCQlzMS4wODQsMC40ODUsMS4wODQsMS4wODR2NS4wNzFDNjIuODEyLDE4LjQyOSw2Mi4zMjcsMTguOTE1LDYxLjcyOSwxOC45MTV6Ii8+DQoJPC9nPg0KCTxnPg0KCQk8cGF0aCBmaWxsPSIjNEQ0RTUzIiBkPSJNNTIuMDYsMTkuOTkxYy0wLjQ3OSwwLTAuOTE3LTAuMzItMS4wNDctMC44MDVsLTEuMzEyLTQuODk5Yy0wLjE1NC0wLjU3OSwwLjE4OC0xLjE3MywwLjc2OC0xLjMyOA0KCQkJYzAuNTc4LTAuMTU2LDEuMTczLDAuMTg4LDEuMzI4LDAuNzY3bDEuMzEyLDQuODk5YzAuMTU0LDAuNTc5LTAuMTg4LDEuMTczLTAuNzY4LDEuMzI4QzUyLjI0NywxOS45NzksNTIuMTUyLDE5Ljk5MSw1Mi4wNiwxOS45OTENCgkJCXoiLz4NCgk8L2c+DQoJPGc+DQoJCTxwYXRoIGZpbGw9IiM0RDRFNTMiIGQ9Ik00Mi4zNzYsMjMuMjQyYy0wLjM3NSwwLTAuNzM5LTAuMTk0LTAuOTQtMC41NDJsLTIuNTM0LTQuMzkzYy0wLjI5OS0wLjUxOS0wLjEyMS0xLjE4MiwwLjM5Ny0xLjQ4MQ0KCQkJYzAuNTIxLTAuMjk5LDEuMTgyLTAuMTIxLDEuNDgxLDAuMzk3bDIuNTM0LDQuMzkzYzAuMjk5LDAuNTE5LDAuMTIxLDEuMTgyLTAuMzk3LDEuNDgxQzQyLjc0NiwyMy4xOTUsNDIuNTYsMjMuMjQyLDQyLjM3NiwyMy4yNDINCgkJCXoiLz4NCgk8L2c+DQoJPGc+DQoJCTxwYXRoIGZpbGw9IiM0RDRFNTMiIGQ9Ik0zNC41MSwyNy42NTZjLTAuMjc3LDAtMC41NTYtMC4xMDYtMC43NjgtMC4zMThsLTMuNTg0LTMuNTg3Yy0wLjQyMy0wLjQyNC0wLjQyMy0xLjExLDAuMDAxLTEuNTM0DQoJCQljMC40MjQtMC40MjMsMS4xMS0wLjQyMywxLjUzNCwwbDMuNTg0LDMuNTg3YzAuNDIzLDAuNDI0LDAuNDIzLDEuMTEtMC4wMDEsMS41MzRDMzUuMDY0LDI3LjU1LDM0Ljc4NywyNy42NTYsMzQuNTEsMjcuNjU2eiIvPg0KCTwvZz4NCgk8Zz4NCgkJPGc+DQoJCQk8cGF0aCBmaWxsPSIjNEQ0RTUzIiBkPSJNNzEuODExLDE5Ljk5MWMtMC4wOTMsMC0wLjE4OC0wLjAxMi0wLjI4MS0wLjAzOGMtMC41NzktMC4xNTUtMC45MjItMC43NS0wLjc2OC0xLjMyOGwxLjMxMi00Ljg5OQ0KCQkJCWMwLjE1NS0wLjU3OSwwLjc1MS0wLjkyMiwxLjMyOC0wLjc2N2MwLjU3OSwwLjE1NSwwLjkyMiwwLjc1LDAuNzY4LDEuMzI4bC0xLjMxMiw0Ljg5OQ0KCQkJCUM3Mi43MjgsMTkuNjcxLDcyLjI4OSwxOS45OTEsNzEuODExLDE5Ljk5MXoiLz4NCgkJPC9nPg0KCQk8Zz4NCgkJCTxwYXRoIGZpbGw9IiM0RDRFNTMiIGQ9Ik04MS40OTIsMjMuMjQyYy0wLjE4NCwwLTAuMzctMC4wNDctMC41NDEtMC4xNDVjLTAuNTE5LTAuMy0wLjY5Ni0wLjk2My0wLjM5Ny0xLjQ4MWwyLjUzNS00LjM5Mw0KCQkJCWMwLjMtMC41MTksMC45NjItMC42OTYsMS40ODEtMC4zOTdjMC41MTksMC4zLDAuNjk2LDAuOTYzLDAuMzk3LDEuNDgxbC0yLjUzNSw0LjM5M0M4Mi4yMzEsMjMuMDQ3LDgxLjg2NywyMy4yNDIsODEuNDkyLDIzLjI0MnoNCgkJCQkiLz4NCgkJPC9nPg0KCQk8Zz4NCgkJCTxwYXRoIGZpbGw9IiM0RDRFNTMiIGQ9Ik04OS4zNTgsMjcuNjU2Yy0wLjI3NywwLTAuNTU1LTAuMTA2LTAuNzY3LTAuMzE3Yy0wLjQyNC0wLjQyNC0wLjQyNC0xLjExLDAtMS41MzRsMy41ODYtMy41ODcNCgkJCQljMC40MjItMC40MjQsMS4xMDktMC40MjMsMS41MzMsMGMwLjQyNCwwLjQyNCwwLjQyNCwxLjExLDAsMS41MzRsLTMuNTg2LDMuNTg3Qzg5LjkxNCwyNy41NSw4OS42MzYsMjcuNjU2LDg5LjM1OCwyNy42NTZ6Ii8+DQoJCTwvZz4NCgk8L2c+DQo8L2c+DQo8L3N2Zz4NCg\u003D\u003D\u005C\u0022/\u003E\u005Cn      \u003Cdiv class\u003D\u005C\u0022privacy\u002Deye wander\u005C\u0022\u003E\u005Cn        \u003Cdiv class\u003D\u005C\u0022front\u005C\u0022\u003E\u005Cn          \u003Cdiv class\u003D\u005C\u0022eyelid\u005C\u0022\u003E\u005Cn            \u003Cdiv class\u003D\u005C\u0022sclera\u005C\u0022\u003E\u005Cn              \u003Cdiv class\u003D\u005C\u0022iris\u005C\u0022\u003E\u005Cn                \u003Cdiv class\u003D\u005C\u0022pupil\u005C\u0022\u003E\u003C/div\u003E\u005Cn              \u003C/div\u003E\u005Cn            \u003C/div\u003E\u005Cn          \u003C/div\u003E\u005Cn        \u003C/div\u003E\u005Cn      \u003C/div\u003E\u005Cn    \u003C/div\u003E\u005Cn    \u003Cdiv class\u003D\u005C\u0022text\u002Dcontainer\u005C\u0022\u003E\u005Cn      October is Cyber Security Awareness Month. Time to reflect on the difference between being watched over and \u003Cstrong\u003E\u003Ca href\u003D\u005C\u0022https://blog.mozilla.org/internetcitizen/2016/10/10/different\u002Dworld/?utm_source\u003Ddesktop\u002Dsnippet\u0026amp\u003Butm_campaign\u003Dprivacy\u002Dvideo\u0026amp\u003Butm_medium\u003Dsnippet\u0026amp\u003Butm_term\u003D5797\u005C\u0022\u003Ebeing watched. \u003C/a\u003E\u003C/strong\u003E\u005Cn    \u003C/div\u003E\u005Cn  \u003C/div\u003E\u005Cn\u005Cn  \u003Cscript type\u003D\u005C\u0022text/javascript\u005C\u0022\u003E\u005Cn      //\u003C![CDATA[\u005Cn      (function() {\u005Cn          var snippet \u003D document.getElementById(\u0027mofo\u002Dmass\u002Dsurveillance\u002D5797\u0027)\u003B\u005Cn          snippet.addEventListener(\u0027show_snippet\u0027, function() {\u005Cn              (function () {\u005Cn\u005Cn                var\u005Cn                rectangle,\u005Cn                  radius \u003D 4.5,\u005Cn                  iris \u003D document.querySelector(\u0027.iris\u0027),\u005Cn                  center\u003B\u005Cn\u005Cn                function measureThings() {\u005Cn                  rectangle \u003D iris.getBoundingClientRect()\u003B\u005Cn                  center \u003D {\u005Cn                    x: (rectangle.width / 2) + (rectangle.left),\u005Cn                    y: (rectangle.height / 2) + (rectangle.top)\u005Cn                  }\u003B\u005Cn                }\u005Cn\u005Cn                function doMaths(x, y, radius) {\u005Cn                  var\u005Cn                  pythagoras \u003D Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2)),\u005Cn                    coordinates \u003D {\u005Cn                      x: x,\u005Cn                      y: y\u005Cn                    }\u003B\u005Cn                  if (pythagoras !\u003D\u003D 0) {\u005Cn                    coordinates.x \u003D x * radius / pythagoras\u003B\u005Cn                    coordinates.y \u003D y * radius / pythagoras\u003B\u005Cn                  }\u005Cn                  return coordinates\u003B\u005Cn                }\u005Cn\u005Cn                function translatePupil(coords) {\u005Cn                  var transform \u003D \u0027translate(\u0027 + Math.round(coords.x) + \u0027px, \u0027 + Math.round(coords.y) + \u0027px)\u0027\u003B\u005Cn                  iris.style.transform \u003D transform\u003B\u005Cn                }\u005Cn\u005Cn                var mousemoveTime \u003D Date.now()\u003B\u005Cn                var eye \u003D document.querySelector(\u0027.privacy\u002Deye\u0027)\u003B\u005Cn\u005Cn                function checkMovement() {\u005Cn                  var nowTime \u003D Date.now()\u003B\u005Cn                  var diffTime \u003D (nowTime \u002D mousemoveTime) / 1000\u003B\u005Cn                  if (diffTime \u003E 3 \u0026\u0026 !eye.classList.contains(\u0027focus\u0027)) {\u005Cn                    iris.style.transform \u003D \u0027translate(0, 0)\u0027\u003B\u005Cn                    eye.classList.add(\u0027smooth\u0027)\u003B\u005Cn                    eye.classList.add(\u0027wander\u0027)\u003B\u005Cn                  }\u005Cn\u005Cn                  setTimeout(checkMovement, 1000)\u003B\u005Cn                }\u005Cn\u005Cn                checkMovement()\u003B\u005Cn\u005Cn                function onMouseMove(e) {\u005Cn                  mousemoveTime \u003D Date.now()\u003B\u005Cn                  eye.classList.remove(\u0027wander\u0027)\u003B\u005Cn                  eye.classList.remove(\u0027smooth\u0027)\u003B\u005Cn                  measureThings()\u003B\u005Cn                  translatePupil(doMaths(e.pageX \u002D center.x, e.pageY \u002D center.y, radius))\u003B\u005Cn                }\u005Cn\u005Cn                function onMouseEnter() {\u005Cn                  eye.classList.add(\u0027smooth\u0027)\u003B\u005Cn                  eye.classList.add(\u0027focus\u0027)\u003B\u005Cn                  iris.style.transform \u003D \u0027translate(0, 0)\u0027\u003B\u005Cn                  window.removeEventListener(\u005C\u0022mousemove\u005C\u0022, onMouseMove)\u003B\u005Cn                }\u005Cn\u005Cn                function onMouseLeave() {\u005Cn                  eye.classList.remove(\u0027focus\u0027)\u003B\u005Cn                  eye.classList.remove(\u0027smooth\u0027)\u003B\u005Cn                  window.addEventListener(\u005C\u0022mousemove\u005C\u0022, onMouseMove)\u003B\u005Cn                }\u005Cn\u005Cn                if (iris) {\u005Cn                  eye.addEventListener(\u005C\u0022mouseenter\u005C\u0022, onMouseEnter)\u003B\u005Cn                  eye.addEventListener(\u005C\u0022mouseleave\u005C\u0022, onMouseLeave)\u003B\u005Cn                  window.addEventListener(\u005C\u0022mousemove\u005C\u0022, onMouseMove)\u003B\u005Cn                }\u005Cn              })()\u003B\u005Cn          }, false)\u003B\u005Cn      })()\u003B\u005Cn      //]]\u003E\u005Cn  \u003C/script\u003E\u005Cn\u003C/div\u003E\u003C/div\u003E\u0022, \u0022campaign\u0022: \u0022\u0022, \u0022weight\u0022: 100, \u0022countries\u0022: [\u0022us\u0022], \u0022exclude_from_search_engines\u0022: [], \u0022client_options\u0022: {\u0022version_lower_bound\u0022: \u0022any\u0022, \u0022is_default_browser\u0022: \u0022any\u0022, \u0022has_fxaccount\u0022: \u0022any\u0022, \u0022has_testpilot\u0022: \u0022any\u0022, \u0022version_upper_bound\u0022: \u0022any\u0022}, \u0022id\u0022: 5797}, {\u0022code\u0022: \u0022\u003Cdiv data\u002Dsnippet\u002Did\u003D\u005C\u00225740\u005C\u0022 data\u002Dweight\u003D\u005C\u0022100\u005C\u0022 data\u002Dcampaign\u003D\u005C\u0022\u005C\u0022 class\u003D\u005C\u0022snippet\u002Dmetadata\u005C\u0022\u003E\u005Cn\u003Cstyle\u003E\u005Cndiv.switch#brandLogo {\u005Cn   background\u002Dsize: 192px auto\u003B\u005Cn}\u005Cn\u005Cn.switch#brandLogo {\u005Cn   height: 192px\u003B\u005Cn   width: 192px\u003B\u005Cn}\u005Cn\u005Cn#snippetContainer div.snippet {\u005Cn   margin: 10px 5px\u003B\u005Cn}\u005Cn\u005Cn#snippetContainer div.snippet img.icon {\u005Cn    margin: 5px 8px 5px 5px\u003B\u005Cn    float: none\u003B\u005Cn}\u005Cn\u005Cn.snippet p {\u005Cn    padding\u002Dleft: 0\u003B\u005Cn}\u005Cn\u005Cn.snippet .icon {\u005Cn    position: relative\u003B\u005Cn    right: 0\u003B\u005Cn    top: 0\u003B\u005Cn    display: inline\u002Dblock\u003B\u005Cn    height: auto\u003B\u005Cn    max\u002Dheight: 64px\u003B\u005Cn    vertical\u002Dalign: middle\u003B\u005Cn}\u005Cn\u005Cn\u005Cn\u005Cn\u005Cn\u005Cn .snippet .display\u002Ditem {\u005Cn     display: table\u002Dcell\u003B\u005Cn     vertical\u002Dalign: middle\u003B\u005Cn }\u005Cn .snippet .display\u002Dcontainer {\u005Cn     display: table\u003B\u005Cn }\u005Cn\u005Cn .button\u002Dlink {\u005Cn     white\u002Dspace: nowrap\u003B\u005Cn     margin: 5px\u003B\u005Cn     background: #D3D9DD\u003B\u005Cn     color: #000\u003B\u005Cn     font\u002Dsize: 16px\u003B\u005Cn     padding: 5px 13px\u003B\u005Cn     border\u002Dradius: 6px\u003B\u005Cn }\u005Cn\u005Cn .button\u002Dlink:hover {\u005Cn     background: #2B9EEF\u003B\u005Cn     color: #FFF\u003B\u005Cn }\u005Cn\u005Cn \u005Cn\u005Cn\u003C/style\u003E\u005Cn\u005Cn  \u003Cdiv class\u003D\u005C\u0022snippet\u005C\u0022 id\u003D\u005C\u0022snippet\u005C\u0022\u003E\u005Cn    \u005Cn        \u003Cdiv class\u003D\u005C\u0022display\u002Dcontainer\u005C\u0022\u003E\u005Cn          \u003Cdiv class\u003D\u005C\u0022display\u002Ditem\u005C\u0022\u003E\u005Cn            \u005Cn              \u003Ca href\u003D\u005C\u0022https://testpilot.firefox.com/experiments/page\u002Dshot?utm_source\u003Ddesktop\u002Dsnippet\u0026amp\u003Butm_campaign\u003Dtestpilot\u0026amp\u003Butm_medium\u003Dsnippet\u0026amp\u003Butm_term\u003D5740\u005C\u0022\u003E\u005Cn            \u005Cn                  \u003Cimg class\u003D\u005C\u0022icon\u005C\u0022 src\u003D\u005C\u0022data:image/png\u003Bbase64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAABIppVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDUuNC4wIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iCiAgICAgICAgICAgIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgICAgICAgICAgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIj4KICAgICAgICAgPHhtcE1NOkRlcml2ZWRGcm9tIHJkZjpwYXJzZVR5cGU9IlJlc291cmNlIj4KICAgICAgICAgICAgPHN0UmVmOmluc3RhbmNlSUQ+eG1wLmlpZDo2N2Y5MzI1Yi1hZDkwLTQyZGItOGQ2Ny00M2FlMWQ5NzRiMmI8L3N0UmVmOmluc3RhbmNlSUQ+CiAgICAgICAgICAgIDxzdFJlZjpkb2N1bWVudElEPnhtcC5kaWQ6NjdmOTMyNWItYWQ5MC00MmRiLThkNjctNDNhZTFkOTc0YjJiPC9zdFJlZjpkb2N1bWVudElEPgogICAgICAgICA8L3htcE1NOkRlcml2ZWRGcm9tPgogICAgICAgICA8eG1wTU06RG9jdW1lbnRJRD54bXAuZGlkOjAzOEY2M0REODA0NzExRTY5N0Y1QUJGRUVENkVBMUI1PC94bXBNTTpEb2N1bWVudElEPgogICAgICAgICA8eG1wTU06SW5zdGFuY2VJRD54bXAuaWlkOjAzOEY2M0RDODA0NzExRTY5N0Y1QUJG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\u003D\u003D\u005C\u0022 /\u003E\u005Cn            \u005Cn              \u003C/a\u003E\u005Cn            \u005Cn          \u003C/div\u003E\u005Cn\u005Cn          \u003Cp class\u003D\u005C\u0022display\u002Ditem\u005C\u0022\u003EDo you screenshot a lot? You\u005Cu2019re gonna love what we just dropped in Test Pilot. \u003Ca href\u003D\u005C\u0022https://testpilot.firefox.com/experiments/page\u002Dshot?utm_source\u003Ddesktop\u002Dsnippet\u0026amp\u003Butm_campaign\u003Dtestpilot\u0026amp\u003Butm_medium\u003Dsnippet\u0026amp\u003Butm_term\u003D5740\u005C\u0022\u003ESign up and start testing.\u003C/a\u003E\u005Cn\u005Cn\u005Cn\u005Cn\u003C/p\u003E\u005Cn\u005Cn          \u005Cn        \u003C/div\u003E\u005Cn    \u005Cn\u005Cn    \u005Cn  \u003C/div\u003E\u005Cn\u005Cn\u003Cscript type\u003D\u005C\u0022text/javascript\u005C\u0022\u003E\u005Cn //\u003C![CDATA[\u005Cn (function() {\u005Cn     var snippet \u003D document.getElementById(\u0027snippet\u0027)\u003B\u005Cn\u005Cn     snippet.addEventListener(\u0027show_snippet\u0027, function () {\u005Cn         var overlay \u003D document.getElementById(\u0027block\u002Dsnippet\u002Doverlay\u0027)\u003B\u005Cn         var xbuttons \u003D document.querySelectorAll(\u0027.block\u002Dsnippet\u002Dbutton\u0027)\u003B\u005Cn\u005Cn         \u005Cn\u005Cn         \u005Cn\u005Cn         \u005Cn     })\u003B\u005Cn })()\u003B\u005Cn //]]\u003E\u005Cn\u003C/script\u003E\u003C/div\u003E\u0022, \u0022campaign\u0022: \u0022\u0022, \u0022weight\u0022: 100, \u0022countries\u0022: [], \u0022exclude_from_search_engines\u0022: [], \u0022client_options\u0022: {\u0022version_lower_bound\u0022: \u0022any\u0022, \u0022is_default_browser\u0022: \u0022any\u0022, \u0022has_fxaccount\u0022: \u0022any\u0022, \u0022has_testpilot\u0022: \u0022any\u0022, \u0022version_upper_bound\u0022: \u0022any\u0022}, \u0022id\u0022: 5740}, {\u0022code\u0022: \u0022\u003Cdiv data\u002Dsnippet\u002Did\u003D\u005C\u00225741\u005C\u0022 data\u002Dweight\u003D\u005C\u0022100\u005C\u0022 data\u002Dcampaign\u003D\u005C\u0022\u005C\u0022 class\u003D\u005C\u0022snippet\u002Dmetadata\u005C\u0022\u003E\u005Cn\u003Cstyle\u003E\u005Cndiv.switch#brandLogo {\u005Cn   background\u002Dsize: 192px auto\u003B\u005Cn}\u005Cn\u005Cn.switch#brandLogo {\u005Cn   height: 192px\u003B\u005Cn   width: 192px\u003B\u005Cn}\u005Cn\u005Cn#snippetContainer div.snippet {\u005Cn   margin: 10px 5px\u003B\u005Cn}\u005Cn\u005Cn#snippetContainer div.snippet img.icon {\u005Cn    margin: 5px 8px 5px 5px\u003B\u005Cn    float: none\u003B\u005Cn}\u005Cn\u005Cn.snippet p {\u005Cn    padding\u002Dleft: 0\u003B\u005Cn}\u005Cn\u005Cn.snippet .icon {\u005Cn    position: relative\u003B\u005Cn    right: 0\u003B\u005Cn    top: 0\u003B\u005Cn    display: inline\u002Dblock\u003B\u005Cn    height: auto\u003B\u005Cn    max\u002Dheight: 64px\u003B\u005Cn    vertical\u002Dalign: middle\u003B\u005Cn}\u005Cn\u005Cn\u005Cn\u005Cn\u005Cn\u005Cn .snippet .display\u002Ditem {\u005Cn     display: table\u002Dcell\u003B\u005Cn     vertical\u002Dalign: middle\u003B\u005Cn }\u005Cn .snippet .display\u002Dcontainer {\u005Cn     display: table\u003B\u005Cn }\u005Cn\u005Cn .button\u002Dlink {\u005Cn     white\u002Dspace: nowrap\u003B\u005Cn     margin: 5px\u003B\u005Cn     background: #D3D9DD\u003B\u005Cn     color: #000\u003B\u005Cn     font\u002Dsize: 16px\u003B\u005Cn     padding: 5px 13px\u003B\u005Cn     border\u002Dradius: 6px\u003B\u005Cn }\u005Cn\u005Cn .button\u002Dlink:hover {\u005Cn     background: #2B9EEF\u003B\u005Cn     color: #FFF\u003B\u005Cn }\u005Cn\u005Cn \u005Cn\u005Cn\u003C/style\u003E\u005Cn\u005Cn  \u003Cdiv class\u003D\u005C\u0022snippet\u005C\u0022 id\u003D\u005C\u0022snippet\u005C\u0022\u003E\u005Cn    \u005Cn        \u003Cdiv class\u003D\u005C\u0022display\u002Dcontainer\u005C\u0022\u003E\u005Cn          \u003Cdiv class\u003D\u005C\u0022display\u002Ditem\u005C\u0022\u003E\u005Cn            \u005Cn              \u003Ca href\u003D\u005C\u0022https://testpilot.firefox.com/experiments/min\u002Dvid?utm_source\u003Ddesktop\u002Dsnippet\u0026amp\u003Butm_campaign\u003Dtestpilot\u0026amp\u003Butm_medium\u003Dsnippet\u0026amp\u003Butm_term\u003D5741\u005C\u0022\u003E\u005Cn            \u005Cn                  \u003Cimg class\u003D\u005C\u0022icon\u005C\u0022 src\u003D\u005C\u0022data:image/png\u003Bbase64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsTAAALEwEAmpwYAAALa2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS40LjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgICAgICAgICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iCiAgICAgICAgICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgICAgICAgICAgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iCiAgICAgICAgICAgIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiCiAgICAgICAgICAgIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIgogICAgICAgICAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgICAgICAgICAgIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyI+CiAgICAgICAgIDx0aWZmOlJlc29sdXRpb25Vbml0PjI8L3RpZmY6UmVzb2x1dGlvblVuaXQ+CiAgICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3RpZmY6T3JpZW50YXRpb24+CiAgICAgICAgIDxleGlmOlBpeGVsWERpbWVuc2lvbj42NDwvZXhpZjpQaXhlbFhEaW1lbnNpb24+CiAgICAgICAgIDxleGlmOkNvbG9yU3BhY2U+NjU1MzU8L2V4aWY6Q29sb3JTcGFjZT4KICAgICAgICAgPGV4aWY6UGl4ZWxZRGltZW5zaW9uPjY0PC9leGlmOlBpeGVsWURpbWVuc2lvbj4KICAgICAgICAgPGRjOmZvcm1hdD5pbWFnZS9wbmc8L2RjOmZvcm1hdD4KICAgICAgICAgPHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD54bXAuZGlkOjNmY2YxZDZlLWM1NDItNDZhYy05NDc5LTk1NTJlOWFhYmRlNDwveG1wTU06T3JpZ2luYWxEb2N1bWVudElEPgogICAgICAgICA8eG1wTU06SGlzdG9yeT4KICAgICAgICAgICAgPHJkZjpTZXE+CiAgICAgICAgICAgICAgIDxyZGY6bGkgcmRmOnBhcnNlVHlwZT0iUmVzb3VyY2UiPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6c29mdHdhcmVBZ2VudD5BZG9iZSBQaG90b3Nob3AgQ0MgMjAxNSAoTWFjaW50b3NoKTwvc3RFdnQ6c29mdHdhcmVBZ2VudD4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OmNoYW5nZWQ+Lzwvc3RFdnQ6Y2hhbmdlZD4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OndoZW4+MjAxNi0xMC0xMFQxMzo0NDo0My0wNzowMDwvc3RFdnQ6d2hlbj4KICAgICAgICAgICAgICAgICAgPHN0RXZ0Omluc3RhbmNlSUQ+eG1wLmlpZDo5NGEwNTk2NC1jNTEwLTRlODItOWVkYy05ZWRhYzZiMzYzMTQ8L3N0RXZ0Omluc3RhbmNlSUQ+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDphY3Rpb24+c2F2ZWQ8L3N0RXZ0OmFjdGlvbj4KICAgICAgICAgICAgICAgPC9yZGY6bGk+CiAgICAgICAgICAgICAgIDxyZGY6bGkgcmRmOnBhcnNlVHlwZT0iUmVzb3VyY2UiPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6c29mdHdhcmVBZ2VudD5BZG9iZSBQaG90b3Nob3AgQ0MgMjAxNSAoTWFjaW50b3NoKTwvc3RFdnQ6c29mdHdhcmVBZ2VudD4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OmNoYW5nZWQ+Lzwvc3RFdnQ6Y2hhbmdlZD4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OndoZW4+MjAxNi0xMC0xMFQxMzo0NzozMy0wNzowMDwvc3RFdnQ6d2hlbj4KICAgICAgICAgICAgICAgICAgPHN0RXZ0Omluc3RhbmNlSUQ+eG1wLmlpZDo3NmNkMjYyNS03YjEzLTQ1YzAtYjMzNC1mMTExMmM3NTcyMmQ8L3N0RXZ0Omluc3RhbmNlSUQ+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDphY3Rpb24+c2F2ZWQ8L3N0RXZ0OmFjdGlvbj4KICAgICAgICAgICAgICAgPC9yZGY6bGk+CiAgICAgICAgICAgIDwvcmRmOlNlcT4KICAgICAgICAgPC94bXBNTTpIaXN0b3J5PgogICAgICAgICA8eG1wTU06SW5zdGFuY2VJRD54bXAuaWlkOjc2Y2QyNjI1LTdiMTMtNDVjMC1iMzM0LWYxMTEyYzc1NzIyZDwveG1wTU06SW5zdGFuY2VJRD4KICAgICAgICAgPHhtcE1NOkRvY3VtZW50SUQ+eG1wLmRpZDowMzhGNjNFMTgwNDcxMUU2OTdGNUFCRkVFRDZFQTFCNTwveG1wTU06RG9jdW1lbnRJRD4KICAgICAgICAgPHhtcE1NOkRlcml2ZWRGcm9tIHJkZjpwYXJzZVR5cGU9IlJlc291cmNlIj4KICAgICAgICAgICAgPHN0UmVmOmluc3RhbmNlSUQ+eG1wLmlpZDozZmNmMWQ2ZS1jNTQyLTQ2YWMtOTQ3OS05NTUyZTlhYWJkZTQ8L3N0UmVmOmluc3RhbmNlSUQ+CiAgICAgICAgICAgIDxzdFJlZjpkb2N1bWVudElEPnhtcC5kaWQ6M2ZjZjFkNmUtYzU0Mi00NmFjLTk0NzktOTU1MmU5YWFiZGU0PC9zdFJlZjpkb2N1bWVudElEPgogICAgICAgICA8L3htcE1NOkRlcml2ZWRGcm9tPgogICAgICAgICA8eG1wOk1ldGFkYXRhRGF0ZT4yMDE2LTEwLTEwVDEzOjQ3OjMzLTA3OjAw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\u003D\u005C\u0022 /\u003E\u005Cn            \u005Cn              \u003C/a\u003E\u005Cn            \u005Cn          \u003C/div\u003E\u005Cn\u005Cn          \u003Cp class\u003D\u005C\u0022display\u002Ditem\u005C\u0022\u003EWatch while you email. Watch while you read. Watch while you work. See how we\u005Cu2019re experimenting with \u003Ca href\u003D\u005C\u0022https://testpilot.firefox.com/experiments/min\u002Dvid?utm_source\u003Ddesktop\u002Dsnippet\u0026amp\u003Butm_campaign\u003Dtestpilot\u0026amp\u003Butm_medium\u003Dsnippet\u0026amp\u003Butm_term\u003D5741\u005C\u0022\u003Eonline videos in Test Pilot.\u003C/a\u003E\u005Cn\u005Cn\u003C/p\u003E\u005Cn\u005Cn          \u005Cn        \u003C/div\u003E\u005Cn    \u005Cn\u005Cn    \u005Cn  \u003C/div\u003E\u005Cn\u005Cn\u003Cscript type\u003D\u005C\u0022text/javascript\u005C\u0022\u003E\u005Cn //\u003C![CDATA[\u005Cn (function() {\u005Cn     var snippet \u003D document.getElementById(\u0027snippet\u0027)\u003B\u005Cn\u005Cn     snippet.addEventListener(\u0027show_snippet\u0027, function () {\u005Cn         var overlay \u003D document.getElementById(\u0027block\u002Dsnippet\u002Doverlay\u0027)\u003B\u005Cn         var xbuttons \u003D document.querySelectorAll(\u0027.block\u002Dsnippet\u002Dbutton\u0027)\u003B\u005Cn\u005Cn         \u005Cn\u005Cn         \u005Cn\u005Cn         \u005Cn     })\u003B\u005Cn })()\u003B\u005Cn //]]\u003E\u005Cn\u003C/script\u003E\u003C/div\u003E\u0022, \u0022campaign\u0022: \u0022\u0022, \u0022weight\u0022: 100, \u0022countries\u0022: [], \u0022exclude_from_search_engines\u0022: [], \u0022client_options\u0022: {\u0022version_lower_bound\u0022: \u0022any\u0022, \u0022is_default_browser\u0022: \u0022any\u0022, \u0022has_fxaccount\u0022: \u0022any\u0022, \u0022has_testpilot\u0022: \u0022any\u0022, \u0022version_upper_bound\u0022: \u0022any\u0022}, \u0022id\u0022: 5741}, {\u0022code\u0022: \u0022\u003Cdiv data\u002Dsnippet\u002Did\u003D\u005C\u00225799\u005C\u0022 data\u002Dweight\u003D\u005C\u0022100\u005C\u0022 data\u002Dcampaign\u003D\u005C\u0022\u005C\u0022 class\u003D\u005C\u0022snippet\u002Dmetadata\u005C\u0022\u003E\u005Cn\u003Cstyle\u003E\u005Cndiv.switch#brandLogo {\u005Cn   background\u002Dsize: 192px auto\u003B\u005Cn}\u005Cn\u005Cn.switch#brandLogo {\u005Cn   height: 192px\u003B\u005Cn   width: 192px\u003B\u005Cn}\u005Cn\u005Cn#snippetContainer div.snippet {\u005Cn   margin: 10px 5px\u003B\u005Cn}\u005Cn\u005Cn#snippetContainer div.snippet img.icon {\u005Cn    margin: 5px 8px 5px 5px\u003B\u005Cn    float: none\u003B\u005Cn}\u005Cn\u005Cn.snippet p {\u005Cn    padding\u002Dleft: 0\u003B\u005Cn}\u005Cn\u005Cn.snippet .icon {\u005Cn    position: relative\u003B\u005Cn    right: 0\u003B\u005Cn    top: 0\u003B\u005Cn    display: inline\u002Dblock\u003B\u005Cn    height: auto\u003B\u005Cn    max\u002Dheight: 64px\u003B\u005Cn    vertical\u002Dalign: middle\u003B\u005Cn}\u005Cn\u005Cn\u005Cn\u005Cn\u005Cn\u005Cn .snippet .display\u002Ditem {\u005Cn     display: table\u002Dcell\u003B\u005Cn     vertical\u002Dalign: middle\u003B\u005Cn }\u005Cn .snippet .display\u002Dcontainer {\u005Cn     display: table\u003B\u005Cn }\u005Cn\u005Cn .button\u002Dlink {\u005Cn     white\u002Dspace: nowrap\u003B\u005Cn     margin: 5px\u003B\u005Cn     background: #D3D9DD\u003B\u005Cn     color: #000\u003B\u005Cn     font\u002Dsize: 16px\u003B\u005Cn     padding: 5px 13px\u003B\u005Cn     border\u002Dradius: 6px\u003B\u005Cn }\u005Cn\u005Cn .button\u002Dlink:hover {\u005Cn     background: #2B9EEF\u003B\u005Cn     color: #FFF\u003B\u005Cn }\u005Cn\u005Cn \u005Cn\u005Cn\u003C/style\u003E\u005Cn\u005Cn  \u003Cdiv class\u003D\u005C\u0022snippet\u005C\u0022 id\u003D\u005C\u0022snippet\u005C\u0022\u003E\u005Cn    \u005Cn        \u003Cdiv class\u003D\u005C\u0022display\u002Dcontainer\u005C\u0022\u003E\u005Cn          \u003Cdiv class\u003D\u005C\u0022display\u002Ditem\u005C\u0022\u003E\u005Cn            \u005Cn                  \u003Cimg class\u003D\u005C\u0022icon\u005C\u0022 src\u003D\u005C\u0022data:image/png\u003Bbase64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAABIppVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDUuNC4wIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iCiAgICAgICAgICAgIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgICAgICAgICAgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIj4KICAgICAgICAgPHhtcE1NOkRlcml2ZWRGcm9tIHJkZjpwYXJzZVR5cGU9IlJlc291cmNlIj4KICAgICAgICAgICAgPHN0UmVmOmluc3RhbmNlSUQ+eG1wLmlpZDo2MDUyNTZiMS1jNjAzLTQ3MTctYjdjNy01MmNhOGQ5ZGYxMTg8L3N0UmVmOmluc3RhbmNlSUQ+CiAgICAgICAgICAgIDxzdFJlZjpkb2N1bWVudElEPnhtcC5kaWQ6NjA1MjU2YjEtYzYwMy00NzE3LWI3YzctNTJjYThkOWRmMTE4PC9zdFJlZjpkb2N1bWVudElEPgogICAgICAgICA8L3htcE1NOkRlcml2ZWRGcm9tPgogICAgICAgICA8eG1wTU06RG9jdW1lbnRJRD54bXAuZGlkOkI2MDIwRUY0ODhDMjExRTY4MTQ4RTQ4RDY3RTU3MTlGPC94bXBNTTpEb2N1bWVudElEPgogICAgICAgICA8eG1wTU06SW5zdGFuY2VJRD54bXAuaWlkOkI2MDIwRUYzODhDMjExRTY4MTQ4RTQ4RDY3RTU3MTlGPC94bXBNTTpJbnN0YW5jZUlEPgogICAgICAgICA8eG1wTU06T3JpZ2luYWxEb2N1bWVudElEPnhtcC5kaWQ6NjA1MjU2YjEtYzYwMy00NzE3LWI3YzctNTJjYThkOWRmMTE4PC94bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ+CiAgICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3RpZmY6T3JpZW50YXRpb24+CiAgICAgICAgIDx4bXA6Q3JlYXRvclRvb2w+QWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCk8L3htcDpDcmVhdG9yVG9vbD4KICAgICAgPC9yZGY6RGVzY3JpcHRpb24+CiAgIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+CtECv3wAAA29SURBVHgB5VsLcFTVGf7uvft+5AUJrwAJbypFUMAiBbFFsVU7+LZYrbV1WhirI1ppa+l0Bqdq7dR2WlCrrQNOHaooWB/1LTDVUTAOKC8hIeRFQoCEzWuzz9vv7N272d3s7t1NNsZpz8zm3nse//m/7/znP/8590ZSVRX/10kQkE8S1N3yRHWP7bT6ceGfeD/+y0yuwC3p4CVJyouuBP5nWC+8A1BU+D9pg9pTB9X7INTAdmlBOJiXTvIkJO8EcMQVyO5GOG8ZDciammEPENjfg+DRTma8gHDnQySiIU8YBiVGEBDVclBy+hpLpithmuKOgRclciFgXeQgKaNgmrQKku3avgbDf5dnAuz3w/xVZ2pY7ErtPcvfm6nLhyc3bwREHJ7kqIyMeDosajDEIm+64uHIzxsBnPv3wjK3JCMIeQSnh+ncjHVYSDIl/qYY1ctHeV4IoLJCznWc45mXEvNUK2T7Lw0Vl2xXQ3Lu5YpyQN1jv5XyraLNxo0bBTF2/hRDGVlWyAsBkCxXEHwBl77M3co0EKV8urqn4K50FQmuHJJ5A5zfdcJx3VdgmfMYp1V9x/uVz41x1TziD9l2sO3mfJGQlzhA/bjoQ9hXXJBx/scQ0w14X+1AuG07l8R7uSSeEkURQJL9BkimR2H7VhmUUbEW3oCM6mY/KpwvhN2WVn3QnmWFW9he+JUBpbzEAVR8LJXdB8f1I3PSInhUBEpnGCR1sx0DJMUFU4UblvkOLpUxUd6AguqTdlQ4tsBtro3lR28GRYIgwJQsMednyXUPzHNG5NzONFWCaaogLS1xBuBFlyvFHw7CgC1BNychJ+fEjkX7lTBVSoz0eDtga+zXdxbg9TaChAH7hEERwPm6HOZJboQY2fbu3Ieuza0I8l4dXMifA3idhDL9JtfrIAlwrIN5thP+TzmPQy+z8zNQOBt6nu9Ez5bTtIqc99oDAB9gv7cP1BkOmACa/2g6q6mQiwH7ZU5YFqylNUyESi7U3kMInf4BAsc6EDpB63i3G+EzhoMzAPBC5k6CP24oPE2FARMAyXV3zPkJr22Za4b1IgdgpkMfNY1r+T+5hhfS07cjcHANerZ2Qe2iv68jQWLQEtMAwQshBxMl5fY0oFUg6vxuhnmKFvnJdiAcDfHlIlrEt4ug+kESmN9hgey6CpKjF2rIhd63mrlFVGG9YBTMMxg5KRgEeIHWkhvkxNoDIoBKXxpZsyORH42ocCGBErCPDtBHkxcjLEX1cq50ItR8GTN4LnCAy0ToPba3QXJfjd73Ont6uwM1nmVFFe7tstt8HL5wKTz+SSizfZSoafqnr6UvMi4Z2BSQXb+C5VxXRLyFEZsYaYW7YMcMoHgp4JrNmRC3L1LGsJxnJJZ5CiwLr4dSvFw893jbel47csOTFa5/Mcg5rmlrOQ+N3cvRGyrVno3/zqFFLjWulrpGzqEwO2OYWnoAjhu1AKZgPjd4cWDj+wnRIfoao1ZBC4lLXr8fR5vaeysL3rG4LWdiAxEIW8PdwXK5yFKDsGqCLGW1pNKx4EI6Q5pfYuIGqmDVvDvEYJ1MXikGFglKrjvp/DTEYtTTgRd6RKxiOi1jKuBv1cgInNHmfGsJKgvftLnNiauDWfZFwNOs1Nqz53mc5jb7aFd1ZDeYCC3haSKPN6s4ODyLxDYCDRO43aJ4F88bu+2HqipfKknh11jeL2LMyQIoQKL3b4TrlrFER2AEZ6tI0MTowevtQnVtAyqsG+E2RWN7hcdmRbcB7X+lL6HVRJIUeLf2pvUTCw9ePLnkk4uN5OrlIdXU5Q24G8OqYnWaPWMUOdC3sQCeZb0YCTlvhtTdpmUwz3wRtm9o537FF/U5O12DDFevL4TqhjZUKI/ALUdXLwF+1G/pMybSQo4AretiJBAMFE4BjqD/dE/54VJnPZ3LoFOMBEFAbO5lJVZ2/ZrOj+CZLIw+dU+fRWND8EKGdRpQtp6rpHasKMCLRL9w19ZD921u8449HMkY3J+VbB7bO2RNAM2fTs86E3J042cdn7UaWYHXpSWRILLpCB9YVrnpkhJ7M+dcXlKEBCEpawI493/K0Y86PxHwpfH8Uf16W9sjdzmBj7ZNtgSTHBgxdcSe5QwwpKNt8zbXeWbt0qsO4vqZaJsVARHnB9zG/btW31pu2G/N315Fx2k6vExzPpOUFJbA6m0nOqe8Xt123kF6/cHsvX/BleIh0X2WkaC8FKbxBdz+sgkjOss40TZt8rd14ORndeioqsGsaf9I7fDSto4r0Enoc4wlF5Zvf5ye3SJBVbr8xQ0uS3v2c1ETHQMvHrOyAMby62j+PPRkEs5PtkRu0/2pf3svuiZPwPSyJwYOXheukxB1jGalt0CWQjYuc0898+n6B5o6p32oV83imgBe1DckgOZPr2eeDTkamho4P29vEEdqW7Hw8p0oKanXdIpf6rLQsl+VJBK0cvXKWWW75o20N3LpyCr1Ay9aGQZCPMJeB+uC38B8jswzfQYsS7TeuIbWP78DXXUtMNmtDPpsCNsdaFYVzKzchNIxLVq9wYLXpGh/k+IEvcjjK93r6S3rnFB4YLGel3RNCT7bOOB2mKb1d358nV5+1WLIZhNa3qlC3Zuf4NCBhiTwXDlH/14LcpI0SvXYvvdoquy+vJSWgFBTx7S1O+tu3MF4obOvcuwuJXi9NKMFMPJbAvP0l2FbxvlP51e0tP/8pyVUv/AfHNx3PGL2fSMvwD9IN8udIFPYH0DA0w1rKc8LUqTWXfvQ9MoHmPu7VSlKk7KSLCEQsnl8IVuXy3J2nCCB+wktWAMygje2AOH8zLMzOj+vPwzvnBlYsrIqzuwTwQv1ZYsZRzZsw9HHX4Lv1NkERAL84T8+D0uJ1lVCYaqHJEugYywU4DlIVVsP3ne3N+j6C5tlBK+LTWsBdH4lkEuOwHmTFvq5z6cpE1hcSh3k9AevNzm7vxafrnsKkqJg9LLzMeGai+A5VBcBz4Af4y5fiMk/ukKvbnxNsgQ2aOJvKdf4auPGDKvYZ/o4QHKt4tKn2atwfinA1zScwiTlYTjl6NxV0oMXChXNqkThOZXwHKhF8xu70fJ2FdRwWGgS0Tfd9EgLRljCCL5mPPVbvYoIUBgxIisCRKP0y6AkCefHPS+TVcjtS2LkBfhK5cGsweutJ974Tf2WR4QM5qLgRWbOBITOAO1Px+TxRpj9hvgMo/uUBND5LYIytkjb7dH5xYW+ieBrNPkGIx+vhLAC95TUofTxZ96A8AfxpMS3TbgX4Ft+zlPmZj07qzmvV9avKQmIRH5mHmmLZGEApL2eR09v/MjnDl6IEwA7a8RU7Z+8LW04/OhzqFqzAW1Vn/evoOfkCbwQ148AOj/Oe+V8KAx5RYqOfrc3hGMxs4+CF+UFV8aWOvGYKene3miEu483Y/8Dm3Hw4WcR6NBPiKKS8wheSOzvBCXHT7j0ac5PogtQCiDA1zZyzpvEnI8DLyS0b2IdLhTOpeIpbTICbyl2o/w7i2AbVQLb6BLY+VMYYSakPIMXsvsTAJkEzNDy1RC6T36A2rYiVDr+TvC1CfpoD/Tip/+g3aYhofdkOzo+r0fl9y6hoyuGrbQQ1pFFOPHvj9Dw4s5I24IZE1C+YnEK+dGsIQAvJCcQQOd3QZ/z40FuUEbtKTMqnY8TfOp5q6mXmQTbqGJMuZ1TJSmNv2YJWt7ag0BnD0dcCzeSqmiPQwReCE/0AZFtb9T5iUJJrM8Kgqo4VjdKURK6dxhVjJWbHDaMv3Zp5Nk2Js0J0xCCFx3HCKDzYxyqLIj/NsfEz32nju5GQ8+18ASmRxTN/Cd3EsZetoDToTC1BQwx+AQC+PLyx/zKk++6E5PVFBpSEsQeQQRHwvElpC8AvOgvthfAx/zI2bFiXOzUN0EbHtkHgSON7YEJrrelQmtLxHeIj819wYKQH+NMwbANDqURNoVvgCKJxjVyjeHqIKqqIVoO4y0p8sUNM74g8Em7weBaeF/ej55tbQgKby/mfzTxVbfVv8Uzwb1z/dYD9/yMb17ep7qv81yuwmbyjCkw1+8qdtu8Z6VbUd15M8/x3WyY/XSQFDkT+LX6AaauTj6vMQvQ/1+AvmAS5IK1JGAF9wJuTgs7fO/zS4+mO6X5XZv4zs3El40cL4SpWEgowzbildkunht8vd03GU1tIcwoeBImWQQx2VtCipFfzT4eE30MRRIW0I8AvSOCMnMvcA0/g1lLG/VJ8zszvodn/TF8a/wZ3xqPOHbKBTn4OSpcL0bFZUFCf7MfUvBCsaQpoEPXrmQ+IM3v3SLNOzuX3/0sSizt/8T6zVB9/PlR6vKh3X8OQqoeyRlMh2EAryPg0Bgn3dSNa8r14iMpm4UvNBk/JH7kkIaEYQQv8GRFgDFwvYZaJj5zpUPQM5KuSSQMM3ihXEIonKRtTo/0AQq/+53CjybVnsBMnhkHYY8tifGioiSE+L9Ena/E7+eHfM7Ha6Hfp3WCeoVcriRhLFeDe46emXubxRxyTXR/kC3BwwI+oxPMBbhel77ixGN7Hnp6f+v8p8qduznUWaVhAa9rlmcfEBHbxA8Zmjy+smN6Jxmuwwpe6JV3AlavXt3O/+rYtO3wmicMvugYdvBDQoAQmgUJXwrwQ0aAAQlfGvBCz7yuAkJgcuLeoZjf613//XPvv8ok+1+ioxyy2D65b6PnhL2AUeX/1fL/AqSbtUFKpHMqAAAAAElFTkSuQmCC\u005C\u0022 /\u003E\u005Cn            \u005Cn          \u003C/div\u003E\u005Cn\u005Cn          \u003Cp class\u003D\u005C\u0022display\u002Ditem\u005C\u0022\u003EQuick! Name the last time you played hooky. If you can\u005Cu2019t remember, you\u005Cu2019re probably overdue.\u003C/p\u003E\u005Cn\u005Cn          \u005Cn        \u003C/div\u003E\u005Cn    \u005Cn\u005Cn    \u005Cn  \u003C/div\u003E\u005Cn\u005Cn\u003Cscript type\u003D\u005C\u0022text/javascript\u005C\u0022\u003E\u005Cn //\u003C![CDATA[\u005Cn (function() {\u005Cn     var snippet \u003D document.getElementById(\u0027snippet\u0027)\u003B\u005Cn\u005Cn     snippet.addEventListener(\u0027show_snippet\u0027, function () {\u005Cn         var overlay \u003D document.getElementById(\u0027block\u002Dsnippet\u002Doverlay\u0027)\u003B\u005Cn         var xbuttons \u003D document.querySelectorAll(\u0027.block\u002Dsnippet\u002Dbutton\u0027)\u003B\u005Cn\u005Cn         \u005Cn\u005Cn         \u005Cn\u005Cn         \u005Cn     })\u003B\u005Cn })()\u003B\u005Cn //]]\u003E\u005Cn\u003C/script\u003E\u003C/div\u003E\u0022, \u0022campaign\u0022: \u0022\u0022, \u0022weight\u0022: 100, \u0022countries\u0022: [], \u0022exclude_from_search_engines\u0022: [], \u0022client_options\u0022: {\u0022version_lower_bound\u0022: \u0022any\u0022, \u0022is_default_browser\u0022: \u0022any\u0022, \u0022has_fxaccount\u0022: \u0022any\u0022, \u0022has_testpilot\u0022: \u0022any\u0022, \u0022version_upper_bound\u0022: \u0022any\u0022}, \u0022id\u0022: 5799}, {\u0022code\u0022: \u0022\u003Cdiv data\u002Dsnippet\u002Did\u003D\u005C\u00225806\u005C\u0022 data\u002Dweight\u003D\u005C\u002250\u005C\u0022 data\u002Dcampaign\u003D\u005C\u0022\u005C\u0022 class\u003D\u005C\u0022snippet\u002Dmetadata\u005C\u0022\u003E\u005Cn\u003Cstyle\u003E\u005Cndiv.switch#brandLogo {\u005Cn   background\u002Dsize: 192px auto\u003B\u005Cn}\u005Cn\u005Cn.switch#brandLogo {\u005Cn   height: 192px\u003B\u005Cn   width: 192px\u003B\u005Cn}\u005Cn\u005Cn#snippetContainer div.snippet {\u005Cn   margin: 10px 5px\u003B\u005Cn}\u005Cn\u005Cn#snippetContainer div.snippet img.icon {\u005Cn    margin: 5px 8px 5px 5px\u003B\u005Cn    float: none\u003B\u005Cn}\u005Cn\u005Cn.snippet p {\u005Cn    padding\u002Dleft: 0\u003B\u005Cn}\u005Cn\u005Cn.snippet .icon {\u005Cn    position: relative\u003B\u005Cn    right: 0\u003B\u005Cn    top: 0\u003B\u005Cn    display: inline\u002Dblock\u003B\u005Cn    height: auto\u003B\u005Cn    max\u002Dheight: 64px\u003B\u005Cn    vertical\u002Dalign: middle\u003B\u005Cn}\u005Cn\u005Cn\u005Cn\u005Cn\u005Cn\u005Cn .snippet .display\u002Ditem {\u005Cn     display: table\u002Dcell\u003B\u005Cn     vertical\u002Dalign: middle\u003B\u005Cn }\u005Cn .snippet .display\u002Dcontainer {\u005Cn     display: table\u003B\u005Cn }\u005Cn\u005Cn .button\u002Dlink {\u005Cn     white\u002Dspace: nowrap\u003B\u005Cn     margin: 5px\u003B\u005Cn     background: #D3D9DD\u003B\u005Cn     color: #000\u003B\u005Cn     font\u002Dsize: 16px\u003B\u005Cn     padding: 5px 13px\u003B\u005Cn     border\u002Dradius: 6px\u003B\u005Cn }\u005Cn\u005Cn .button\u002Dlink:hover {\u005Cn     background: #2B9EEF\u003B\u005Cn     color: #FFF\u003B\u005Cn }\u005Cn\u005Cn \u005Cn\u005Cn\u003C/style\u003E\u005Cn\u005Cn  \u003Cdiv class\u003D\u005C\u0022snippet\u005C\u0022 id\u003D\u005C\u0022snippet\u005C\u0022\u003E\u005Cn    \u005Cn        \u003Cdiv class\u003D\u005C\u0022display\u002Dcontainer\u005C\u0022\u003E\u005Cn          \u003Cdiv class\u003D\u005C\u0022display\u002Ditem\u005C\u0022\u003E\u005Cn            \u005Cn              \u003Ca href\u003D\u005C\u0022https://www.mozilla.org/en\u002DUS/newsletter/mozilla/?utm_source\u003Ddesktop\u002Dsnippet\u0026amp\u003Butm_campaign\u003Dvp\u0026amp\u003Butm_medium\u003Dsnippet\u0026amp\u003Butm_term\u003D5806\u005C\u0022\u003E\u005Cn            \u005Cn                  \u003Cimg class\u003D\u005C\u0022icon\u005C\u0022 src\u003D\u005C\u0022data:image/png\u003Bbase64,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\u003D\u003D\u005C\u0022 /\u003E\u005Cn            \u005Cn              \u003C/a\u003E\u005Cn            \u005Cn          \u003C/div\u003E\u005Cn\u005Cn          \u003Cp class\u003D\u005C\u0022display\u002Ditem\u005C\u0022\u003EJoin the fight for an Internet that\u005Cu2019s open and accessible to everyone, everywhere. \u003Ca href\u003D\u005C\u0022https://www.mozilla.org/en\u002DUS/newsletter/mozilla/?utm_source\u003Ddesktop\u002Dsnippet\u0026amp\u003Butm_campaign\u003Dvp\u0026amp\u003Butm_medium\u003Dsnippet\u0026amp\u003Butm_term\u003D5806\u005C\u0022\u003ESign up for the Mozilla newsletter\u003C/a\u003E to get involved.\u003C/p\u003E\u005Cn\u005Cn          \u005Cn        \u003C/div\u003E\u005Cn    \u005Cn\u005Cn    \u005Cn  \u003C/div\u003E\u005Cn\u005Cn\u003Cscript type\u003D\u005C\u0022text/javascript\u005C\u0022\u003E\u005Cn //\u003C![CDATA[\u005Cn (function() {\u005Cn     var snippet \u003D document.getElementById(\u0027snippet\u0027)\u003B\u005Cn\u005Cn     snippet.addEventListener(\u0027show_snippet\u0027, function () {\u005Cn         var overlay \u003D document.getElementById(\u0027block\u002Dsnippet\u002Doverlay\u0027)\u003B\u005Cn         var xbuttons \u003D document.querySelectorAll(\u0027.block\u002Dsnippet\u002Dbutton\u0027)\u003B\u005Cn\u005Cn         \u005Cn\u005Cn         \u005Cn\u005Cn         \u005Cn     })\u003B\u005Cn })()\u003B\u005Cn //]]\u003E\u005Cn\u003C/script\u003E\u003C/div\u003E\u0022, \u0022campaign\u0022: \u0022\u0022, \u0022weight\u0022: 50, \u0022countries\u0022: [], \u0022exclude_from_search_engines\u0022: [], \u0022client_options\u0022: {\u0022version_lower_bound\u0022: \u0022any\u0022, \u0022is_default_browser\u0022: \u0022any\u0022, \u0022has_fxaccount\u0022: \u0022any\u0022, \u0022has_testpilot\u0022: \u0022any\u0022, \u0022version_upper_bound\u0022: \u0022any\u0022}, \u0022id\u0022: 5806}, {\u0022code\u0022: \u0022\u003Cdiv data\u002Dsnippet\u002Did\u003D\u005C\u00225814\u005C\u0022 data\u002Dweight\u003D\u005C\u002250\u005C\u0022 data\u002Dcampaign\u003D\u005C\u0022\u005C\u0022 class\u003D\u005C\u0022snippet\u002Dmetadata\u005C\u0022\u003E\u005Cn\u003Cstyle\u003E\u005Cndiv.switch#brandLogo {\u005Cn   background\u002Dsize: 192px auto\u003B\u005Cn}\u005Cn\u005Cn.switch#brandLogo {\u005Cn   height: 192px\u003B\u005Cn   width: 192px\u003B\u005Cn}\u005Cn\u005Cn#snippetContainer div.snippet {\u005Cn   margin: 10px 5px\u003B\u005Cn}\u005Cn\u005Cn#snippetContainer div.snippet img.icon {\u005Cn    margin: 5px 8px 5px 5px\u003B\u005Cn    float: none\u003B\u005Cn}\u005Cn\u005Cn.snippet p {\u005Cn    padding\u002Dleft: 0\u003B\u005Cn}\u005Cn\u005Cn.snippet .icon {\u005Cn    position: relative\u003B\u005Cn    right: 0\u003B\u005Cn    top: 0\u003B\u005Cn    display: inline\u002Dblock\u003B\u005Cn    height: auto\u003B\u005Cn    max\u002Dheight: 64px\u003B\u005Cn    vertical\u002Dalign: middle\u003B\u005Cn}\u005Cn\u005Cn\u005Cn\u005Cn\u005Cn\u005Cn .snippet .display\u002Ditem {\u005Cn     display: table\u002Dcell\u003B\u005Cn     vertical\u002Dalign: middle\u003B\u005Cn }\u005Cn .snippet .display\u002Dcontainer {\u005Cn     display: table\u003B\u005Cn }\u005Cn\u005Cn .button\u002Dlink {\u005Cn     white\u002Dspace: nowrap\u003B\u005Cn     margin: 5px\u003B\u005Cn     background: #D3D9DD\u003B\u005Cn     color: #000\u003B\u005Cn     font\u002Dsize: 16px\u003B\u005Cn     padding: 5px 13px\u003B\u005Cn     border\u002Dradius: 6px\u003B\u005Cn }\u005Cn\u005Cn .button\u002Dlink:hover {\u005Cn     background: #2B9EEF\u003B\u005Cn     color: #FFF\u003B\u005Cn }\u005Cn\u005Cn \u005Cn\u005Cn\u003C/style\u003E\u005Cn\u005Cn  \u003Cdiv class\u003D\u005C\u0022snippet\u005C\u0022 id\u003D\u005C\u0022snippet\u005C\u0022\u003E\u005Cn    \u005Cn        \u003Cdiv class\u003D\u005C\u0022display\u002Dcontainer\u005C\u0022\u003E\u005Cn          \u003Cdiv class\u003D\u005C\u0022display\u002Ditem\u005C\u0022\u003E\u005Cn            \u005Cn              \u003Ca href\u003D\u005C\u0022https://www.mozilla.org/en\u002DUS/newsletter/mozilla/?utm_source\u003Ddesktop\u002Dsnippet\u0026amp\u003Butm_campaign\u003Dvp\u0026amp\u003Butm_medium\u003Dsnippet\u0026amp\u003Butm_term\u003D5814\u005C\u0022\u003E\u005Cn            \u005Cn                  \u003Cimg class\u003D\u005C\u0022icon\u005C\u0022 src\u003D\u005C\u0022data:image/png\u003Bbase64,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\u003D\u003D\u005C\u0022 /\u003E\u005Cn            \u005Cn              \u003C/a\u003E\u005Cn            \u005Cn          \u003C/div\u003E\u005Cn\u005Cn          \u003Cp class\u003D\u005C\u0022display\u002Ditem\u005C\u0022\u003EProtect yourself, protect the Web. \u003Ca href\u003D\u005C\u0022https://www.mozilla.org/en\u002DUS/newsletter/mozilla/?utm_source\u003Ddesktop\u002Dsnippet\u0026amp\u003Butm_campaign\u003Dvp\u0026amp\u003Butm_medium\u003Dsnippet\u0026amp\u003Butm_term\u003D5814\u005C\u0022\u003ESign up for the Mozilla newsletter\u003C/a\u003E to get tips and tricks that keep us all safe online.\u005Cn\u003C/p\u003E\u005Cn\u005Cn          \u005Cn        \u003C/div\u003E\u005Cn    \u005Cn\u005Cn    \u005Cn  \u003C/div\u003E\u005Cn\u005Cn\u003Cscript type\u003D\u005C\u0022text/javascript\u005C\u0022\u003E\u005Cn //\u003C![CDATA[\u005Cn (function() {\u005Cn     var snippet \u003D document.getElementById(\u0027snippet\u0027)\u003B\u005Cn\u005Cn     snippet.addEventListener(\u0027show_snippet\u0027, function () {\u005Cn         var overlay \u003D document.getElementById(\u0027block\u002Dsnippet\u002Doverlay\u0027)\u003B\u005Cn         var xbuttons \u003D document.querySelectorAll(\u0027.block\u002Dsnippet\u002Dbutton\u0027)\u003B\u005Cn\u005Cn         \u005Cn\u005Cn         \u005Cn\u005Cn         \u005Cn     })\u003B\u005Cn })()\u003B\u005Cn //]]\u003E\u005Cn\u003C/script\u003E\u003C/div\u003E\u0022, \u0022campaign\u0022: \u0022\u0022, \u0022weight\u0022: 50, \u0022countries\u0022: [], \u0022exclude_from_search_engines\u0022: [], \u0022client_options\u0022: {\u0022version_lower_bound\u0022: \u0022any\u0022, \u0022is_default_browser\u0022: \u0022any\u0022, \u0022has_fxaccount\u0022: \u0022any\u0022, \u0022has_testpilot\u0022: \u0022any\u0022, \u0022version_upper_bound\u0022: \u0022any\u0022}, \u0022id\u0022: 5814}, {\u0022code\u0022: \u0022\u003Cdiv data\u002Dsnippet\u002Did\u003D\u005C\u00225815\u005C\u0022 data\u002Dweight\u003D\u005C\u002250\u005C\u0022 data\u002Dcampaign\u003D\u005C\u0022\u005C\u0022 class\u003D\u005C\u0022snippet\u002Dmetadata\u005C\u0022\u003E\u005Cn\u003Cstyle\u003E\u005Cndiv.switch#brandLogo {\u005Cn   background\u002Dsize: 192px auto\u003B\u005Cn}\u005Cn\u005Cn.switch#brandLogo {\u005Cn   height: 192px\u003B\u005Cn   width: 192px\u003B\u005Cn}\u005Cn\u005Cn#snippetContainer div.snippet {\u005Cn   margin: 10px 5px\u003B\u005Cn}\u005Cn\u005Cn#snippetContainer div.snippet img.icon {\u005Cn    margin: 5px 8px 5px 5px\u003B\u005Cn    float: none\u003B\u005Cn}\u005Cn\u005Cn.snippet p {\u005Cn    padding\u002Dleft: 0\u003B\u005Cn}\u005Cn\u005Cn.snippet .icon {\u005Cn    position: relative\u003B\u005Cn    right: 0\u003B\u005Cn    top: 0\u003B\u005Cn    display: inline\u002Dblock\u003B\u005Cn    height: auto\u003B\u005Cn    max\u002Dheight: 64px\u003B\u005Cn    vertical\u002Dalign: middle\u003B\u005Cn}\u005Cn\u005Cn\u005Cn\u005Cn\u005Cn\u005Cn .snippet .display\u002Ditem {\u005Cn     display: table\u002Dcell\u003B\u005Cn     vertical\u002Dalign: middle\u003B\u005Cn }\u005Cn .snippet .display\u002Dcontainer {\u005Cn     display: table\u003B\u005Cn }\u005Cn\u005Cn .button\u002Dlink {\u005Cn     white\u002Dspace: nowrap\u003B\u005Cn     margin: 5px\u003B\u005Cn     background: #D3D9DD\u003B\u005Cn     color: #000\u003B\u005Cn     font\u002Dsize: 16px\u003B\u005Cn     padding: 5px 13px\u003B\u005Cn     border\u002Dradius: 6px\u003B\u005Cn }\u005Cn\u005Cn .button\u002Dlink:hover {\u005Cn     background: #2B9EEF\u003B\u005Cn     color: #FFF\u003B\u005Cn }\u005Cn\u005Cn \u005Cn\u005Cn\u003C/style\u003E\u005Cn\u005Cn  \u003Cdiv class\u003D\u005C\u0022snippet\u005C\u0022 id\u003D\u005C\u0022snippet\u005C\u0022\u003E\u005Cn    \u005Cn        \u003Cdiv class\u003D\u005C\u0022display\u002Dcontainer\u005C\u0022\u003E\u005Cn          \u003Cdiv class\u003D\u005C\u0022display\u002Ditem\u005C\u0022\u003E\u005Cn            \u005Cn              \u003Ca href\u003D\u005C\u0022https://www.mozilla.org/en\u002DUS/newsletter/mozilla/?utm_source\u003Ddesktop\u002Dsnippet\u0026amp\u003Butm_campaign\u003Dvp\u0026amp\u003Butm_medium\u003Dsnippet\u0026amp\u003Butm_term\u003D5815\u005C\u0022\u003E\u005Cn            \u005Cn                  \u003Cimg class\u003D\u005C\u0022icon\u005C\u0022 src\u003D\u005C\u0022data:image/png\u003Bbase64,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\u003D\u003D\u005C\u0022 /\u003E\u005Cn            \u005Cn              \u003C/a\u003E\u005Cn            \u005Cn          \u003C/div\u003E\u005Cn\u005Cn          \u003Cp class\u003D\u005C\u0022display\u002Ditem\u005C\u0022\u003EBe the Web\u002Dsavviest person at the dinner table \u005Cu2014 or any table. \u003Ca href\u003D\u005C\u0022https://www.mozilla.org/en\u002DUS/newsletter/mozilla/?utm_source\u003Ddesktop\u002Dsnippet\u0026amp\u003Butm_campaign\u003Dvp\u0026amp\u003Butm_medium\u003Dsnippet\u0026amp\u003Butm_term\u003D5815\u005C\u0022\u003ESign up for the Mozilla newsletter\u003C/a\u003E to get smart on the issues affecting your life online.\u003C/p\u003E\u005Cn\u005Cn          \u005Cn        \u003C/div\u003E\u005Cn    \u005Cn\u005Cn    \u005Cn  \u003C/div\u003E\u005Cn\u005Cn\u003Cscript type\u003D\u005C\u0022text/javascript\u005C\u0022\u003E\u005Cn //\u003C![CDATA[\u005Cn (function() {\u005Cn     var snippet \u003D document.getElementById(\u0027snippet\u0027)\u003B\u005Cn\u005Cn     snippet.addEventListener(\u0027show_snippet\u0027, function () {\u005Cn         var overlay \u003D document.getElementById(\u0027block\u002Dsnippet\u002Doverlay\u0027)\u003B\u005Cn         var xbuttons \u003D document.querySelectorAll(\u0027.block\u002Dsnippet\u002Dbutton\u0027)\u003B\u005Cn\u005Cn         \u005Cn\u005Cn         \u005Cn\u005Cn         \u005Cn     })\u003B\u005Cn })()\u003B\u005Cn //]]\u003E\u005Cn\u003C/script\u003E\u003C/div\u003E\u0022, \u0022campaign\u0022: \u0022\u0022, \u0022weight\u0022: 50, \u0022countries\u0022: [], \u0022exclude_from_search_engines\u0022: [], \u0022client_options\u0022: {\u0022version_lower_bound\u0022: \u0022any\u0022, \u0022is_default_browser\u0022: \u0022any\u0022, \u0022has_fxaccount\u0022: \u0022any\u0022, \u0022has_testpilot\u0022: \u0022any\u0022, \u0022version_upper_bound\u0022: \u0022any\u0022}, \u0022id\u0022: 5815}]');
+  var CURRENT_RELEASE = 49;
+
+  'use strict';
+
+var SNIPPET_METRICS_SAMPLE_RATE = 0.01;
+var SNIPPET_METRICS_URL = 'https://snippets-stats.us-west.moz.works/foo';
+var ABOUTHOME_SHOWN_SNIPPET = null;
+var USER_COUNTRY = null;
+var GEO_CACHE_DURATION = 1000 * 60 * 60 * 24 * 30; // 30 days
+
+// Start MozUITour
+// Copy from https://hg.mozilla.org/mozilla-central/file/tip/browser/components/uitour/UITour-lib.js
+if (typeof Mozilla == 'undefined') {
+    var Mozilla = {};
+}
+
+if (typeof Mozilla.UITour == 'undefined') {
+    Mozilla.UITour = {};
+}
+
+function _sendEvent(action, data) {
+    var event = new CustomEvent('mozUITour', {
+        bubbles: true,
+        detail: {
+            action: action,
+            data: data || {}
+        }
+    });
+
+    document.dispatchEvent(event);
+}
+
+function _generateCallbackID() {
+    return Math.random().toString(36).replace(/[^a-z]+/g, '');
+}
+
+function _waitForCallback(callback) {
+    var id = _generateCallbackID();
+
+    function listener(event) {
+        if (typeof event.detail != 'object')
+            return;
+        if (event.detail.callbackID != id)
+            return;
+
+        document.removeEventListener('mozUITourResponse', listener);
+        callback(event.detail.data);
+    }
+    document.addEventListener('mozUITourResponse', listener);
+
+    return id;
+}
+
+Mozilla.UITour.showHighlight = function(target, effect) {
+    _sendEvent('showHighlight', {
+        target: target,
+        effect: effect
+    });
+};
+
+Mozilla.UITour.hideHighlight = function() {
+    _sendEvent('hideHighlight');
+};
+
+Mozilla.UITour.showMenu = function(name, callback) {
+    var showCallbackID;
+    if (callback)
+        showCallbackID = _waitForCallback(callback);
+
+    _sendEvent('showMenu', {
+        name: name,
+        showCallbackID: showCallbackID
+    });
+};
+
+Mozilla.UITour.hideMenu = function(name) {
+    _sendEvent('hideMenu', {
+        name: name
+    });
+};
+
+Mozilla.UITour.getConfiguration = function(configName, callback) {
+    _sendEvent('getConfiguration', {
+        callbackID: _waitForCallback(callback),
+        configuration: configName,
+    });
+};
+
+Mozilla.UITour.setConfiguration = function(configName, configValue) {
+    _sendEvent('setConfiguration', {
+        configuration: configName,
+        value: configValue
+    });
+};
+// End MozUITour
+
+
+(function(showDefaultSnippets) {
+    'use strict';
+
+    // showDefaultSnippets polyfill, available in about:home v4
+    if (typeof showDefaultSnippets !== 'function') {
+        showDefaultSnippets = function() {
+            localStorage.snippets = '';
+            showSnippets();
+        };
+    }
+
+    // gSnippetsMap polyfill, available in Firefox 22 and above.
+    var gSnippetsMap = null;
+    if (supportsLocalStorage()) {
+        // localStorage is available, so we wrap it with gSnippetsMap.
+        gSnippetsMap = {
+            set: function(key, value) {
+                localStorage[key] = value;
+            },
+            get: function(key) {
+                return localStorage[key];
+            }
+        };
+        window.gSnippetsMap = gSnippetsMap;
+    } else {
+        // localStorage isn't available, use gSnippetsMap (backed by IndexedDB).
+        gSnippetsMap = window.gSnippetsMap;
+    }
+
+
+    var show_snippet = null;
+    if (ABOUTHOME_SNIPPETS.length > 0) {
+        show_snippet = chooseSnippet(ABOUTHOME_SNIPPETS);
+    }
+
+    if (show_snippet) {
+        ABOUTHOME_SHOWN_SNIPPET = show_snippet;
+
+        // Inject the snippet onto the page.
+        var snippetContainer = document.createElement('div');
+        snippetContainer.innerHTML = show_snippet.code;
+        document.getElementById('snippets').appendChild(snippetContainer);
+        activateScriptTags(snippetContainer);
+
+        try {
+            activateSnippetsButtonClick(show_snippet);
+        } catch (err) {
+            // Do nothing, most likely a newer version of Firefox w/o
+            // activateSnippetsButtonClick
+        }
+
+        // By the time show_snippet event reaches #snippets the snippet
+        // will have finished initializing and altering the DOM. It's the
+        // time to modifyLinks() and addSnippetBlockLinks().
+        var snippets = document.getElementById('snippets');
+        snippets.addEventListener('show_snippet', function(event) {
+            var topSection = document.getElementById('topSection');
+            // Add sample rate and snippet ID to currently displayed links.
+            var parameters = ('sample_rate=' + SNIPPET_METRICS_SAMPLE_RATE + '&snippet_name=' +
+                              ABOUTHOME_SHOWN_SNIPPET.id);
+            modifyLinks(topSection.querySelectorAll('a'), parameters);
+            addSnippetBlockLinks(topSection.querySelectorAll('.block-snippet-button'));
+            keypressIsMine(snippetContainer.querySelector('.snippet'));
+            sendImpression();
+        });
+
+        // Trigger show_snippet event
+        var evt = document.createEvent('Event');
+        evt.initEvent('show_snippet', true, true);
+        snippetContainer.querySelector('.snippet').dispatchEvent(evt);
+    } else {
+        showDefaultSnippets();
+    }
+
+    // Update FxAccount Status
+    updateFxAccountStatus();
+
+    // Update Default Browser Status
+    updateDefaultBrowserStatus();
+
+    // Update Selected Search Engine
+    updateSelectedSearchEngine();
+
+    // Fetch user country if we don't have it.
+    if (!haveUserCountry()) {
+        downloadUserCountry();
+    }
+
+    
+    // Choose which snippet to display to the user based on various factors,
+    // such as which country they are in.
+    function chooseSnippet(snippets) {
+        USER_COUNTRY = getUserCountry();
+        if (USER_COUNTRY) {
+            snippets = snippets.filter(
+                function(snippet) {
+                    var countries = snippet.countries;
+                    if (countries.length && countries.indexOf(USER_COUNTRY) === -1) {
+                        return false;
+                    }
+                    return true;
+                }
+            );
+        }
+        else {
+            // If we don't have the user's country, remove all geolocated snippets.
+            // Bug 1140476
+            snippets = snippets.filter(
+                function(snippet) {
+                    return snippet.countries.length === 0;
+                }
+            )
+        }
+
+        // Filter Snippets based on the has_fxaccount attribute.
+        var has_fxaccount = gSnippetsMap.get('fxaccount');
+        if (has_fxaccount === true) {
+            snippets = snippets.filter(
+                function(snippet) {
+                    return (snippet.client_options.has_fxaccount == 'yes' ||
+                            snippet.client_options.has_fxaccount == 'any');
+                }
+            )
+        } else if (has_fxaccount === false) {
+            snippets = snippets.filter(
+                function(snippet) {
+                    return (snippet.client_options.has_fxaccount == 'no' ||
+                            snippet.client_options.has_fxaccount == 'any');
+                }
+            );
+        } else {
+            snippets = snippets.filter(
+                function(snippet) {
+                    return (snippet.client_options.has_fxaccount == 'any');
+                }
+            );
+        }
+
+        // Filter Snippets based on TestPilot addon existence.
+        var has_testpilot = Boolean(window.navigator.testpilotAddon);
+        if (has_testpilot === true) {
+            snippets = snippets.filter(
+                function(snippet) {
+                    return (snippet.client_options.has_testpilot == 'yes' ||
+                            snippet.client_options.has_testpilot == 'any');
+                }
+            )
+        } else {
+            snippets = snippets.filter(
+                function(snippet) {
+                    return (snippet.client_options.has_testpilot == 'no' ||
+                            snippet.client_options.has_testpilot == 'any');
+                }
+            );
+        }
+
+        // Filter Snippets based on whether Firefox is the default browser or now.
+        var is_default_browser = gSnippetsMap.get('is_default_browser');
+        if (is_default_browser === true || is_default_browser === undefined) {
+            snippets = snippets.filter(
+                function(snippet) {
+                    return (snippet.client_options.is_default_browser == 'yes' ||
+                            snippet.client_options.is_default_browser == 'any');
+                }
+            )
+        } else {
+            snippets = snippets.filter(
+                function(snippet) {
+                    return (snippet.client_options.is_default_browser == 'no' ||
+                            snippet.client_options.is_default_browser == 'any');
+                }
+            );
+        }
+
+        // Exclude snippets from search providers.
+        var searchProvider = gSnippetsMap.get('selectedSearchEngine');
+        if (searchProvider) {
+            snippets = snippets.filter(
+                function(snippet) {
+                    var excludeFromSearchEngines = snippet.exclude_from_search_engines;
+                    if (excludeFromSearchEngines.length && excludeFromSearchEngines.indexOf(searchProvider) !== -1) {
+                        return false;
+                    }
+                    return true;
+                }
+            );
+        }
+
+        // Filter Snippets based on TestPilot addon existence.
+        var has_testpilot = Boolean(window.navigator.testpilotAddon);
+        if (has_testpilot === true) {
+            snippets = snippets.filter(
+                function(snippet) {
+                    return (snippet.client_options.has_testpilot == 'yes' ||
+                            snippet.client_options.has_testpilot == 'any');
+                }
+            )
+        } else {
+            snippets = snippets.filter(
+                function(snippet) {
+                    return (snippet.client_options.has_testpilot == 'no' ||
+                            snippet.client_options.has_testpilot == 'any');
+                }
+            );
+        }
+
+        // Filter based on Firefox version
+        var userAgent = window.navigator.userAgent.match(/Firefox\/([0-9]+)\./);
+        var firefox_version  = userAgent ? parseInt(userAgent[1]) : 0;
+        if (firefox_version !== 0) {
+            snippets = snippets.filter(
+                function(snippet) {
+                    var lower_bound = snippet.client_options.version_lower_bound;
+                    var upper_bound = snippet.client_options.version_upper_bound;
+                    if (lower_bound && lower_bound !== 'any') {
+                        if (lower_bound === 'current_release') {
+                            if (firefox_version !== CURRENT_RELEASE)
+                                return false;
+                        }
+                        else {
+                            if (firefox_version < lower_bound) {
+                                return false;
+                            }
+                        }
+                    }
+                    if (upper_bound && upper_bound !== 'any') {
+                        if (upper_bound === 'older_than_current_release') {
+                            if (firefox_version >= CURRENT_RELEASE)
+                                return false;
+                        }
+                        else {
+                            if (firefox_version > upper_bound)
+                                return false;
+                        }
+                    }
+                    return true;
+                });
+        }
+
+        // Exclude snippets in block list.
+        var blockList = getBlockList();
+        snippets = snippets.filter(
+            function (snippet) {
+                if (blockList.indexOf(snippet.id) === -1) {
+                    return true;
+                }
+                return false;
+            }
+        );
+
+        // Choose a random snippet from the snippets list.
+        if (snippets && snippets.length) {
+            var sum = 0;
+            var number_of_snippets = snippets.length;
+            for (var k = 0; k < number_of_snippets; k++) {
+                sum += snippets[k].weight;
+                snippets[k].weight = sum;
+            }
+            var random_number = Math.random() * sum;
+            for (var k = 0; k < number_of_snippets; k++) {
+                if (random_number < snippets[k].weight) {
+                    return snippets[k];
+                }
+            }
+        } else {
+            return null;
+        }
+    }
+    
+
+    function updateFxAccountStatus() {
+        var callback = function(result) {
+            gSnippetsMap.set('fxaccount', result.setup);
+        }
+        var event = new CustomEvent(
+            'mozUITour', {
+                bubbles: true,
+                detail: {
+                    action:'getConfiguration',
+                    data: {
+                        configuration: 'sync',
+                        callbackID: _waitForCallback(callback)
+                    }
+                }
+            }
+        );
+        document.dispatchEvent(event);
+    }
+
+    function updateDefaultBrowserStatus() {
+        var callback = function(result) {
+            gSnippetsMap.set('is_default_browser', result.defaultBrowser);
+        }
+        var event = new CustomEvent(
+            'mozUITour', {
+                bubbles: true,
+                detail: {
+                    action:'getConfiguration',
+                    data: {
+                        configuration: 'appinfo',
+                        callbackID: _waitForCallback(callback)
+                    }
+                }
+            }
+        );
+        document.dispatchEvent(event);
+    }
+
+    function updateSelectedSearchEngine() {
+        var callback = function(result) {
+            gSnippetsMap.set('selectedSearchEngine', result.searchEngineIdentifier);
+        }
+        var event = new CustomEvent(
+            'mozUITour', {
+                bubbles: true,
+                detail: {
+                    action:'getConfiguration',
+                    data: {
+                        configuration: 'selectedSearchEngine',
+                        callbackID: _waitForCallback(callback)
+                    }
+                }
+            }
+        );
+        document.dispatchEvent(event);
+    }
+
+    // Check whether we have the user's country stored and if it is still valid.
+    function haveUserCountry() {
+        // Check if there's an existing country code to use.
+        if (gSnippetsMap.get('geoCountry')) {
+            // Make sure we have a valid lastUpdated date.
+            var lastUpdated = Date.parse(gSnippetsMap.get('geoLastUpdated'));
+            if (lastUpdated) {
+                // Make sure that it is past the lastUpdated date.
+                var now = new Date();
+                if (now < lastUpdated + GEO_CACHE_DURATION) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    function getUserCountry() {
+        if (haveUserCountry()) {
+            return gSnippetsMap.get('geoCountry').toLowerCase();
+        } else {
+            return null;
+        }
+    }
+
+    // Download the user's country using the geolocation service.
+    // Please do not directly use this code or Snippets key.
+    // Contact MLS team for your own credentials.
+    // https://location.services.mozilla.com/contact
+    function downloadUserCountry() {
+        var GEO_URL = "https://location.services.mozilla.com/v1/country?key=fff72d56-b040-4205-9a11-82feda9d83a3";
+        var request = new XMLHttpRequest();
+        request.timeout = 60000;
+        request.onreadystatechange = function() {
+            if (request.readyState == 4 && request.status == 200) {
+                var country_data = JSON.parse(request.responseText);
+
+                try {
+                    gSnippetsMap.set('geoCountry', country_data.country_code);
+                    gSnippetsMap.set('geoLastUpdated', new Date());
+                } catch (e) {
+                    // Most likely failed to load Data file. Continue on without us,
+                    // we'll try again next time.
+                }
+            }
+        };
+        request.open('GET', GEO_URL, true);
+        request.send();
+    }
+
+    // Notifies stats server that the given snippet ID
+    // was shown. No personally-identifiable information
+    // is sent.
+    function sendImpression() {
+        sendMetric('impression');
+    }
+
+    // Modifies the given links to include the specified GET parameters.
+    function modifyLinks(links, parameters) {
+        for (var k = 0, len = links.length; k < len; k++) {
+            var link = links[k];
+            var delimeter = (link.href.indexOf('?') !== -1 ? '&' : '?');
+
+            // Pull the fragment off of the link
+            var fragment_position = link.href.indexOf('#');
+            if (fragment_position === -1) {
+                fragment_position = link.href.length;
+            }
+
+            var href = link.href.substring(0, fragment_position);
+            var fragment = link.href.substring(fragment_position);
+
+            link.href = href + delimeter + parameters + fragment;
+        }
+    }
+
+    // Add links to buttons that block snippets.
+    function addSnippetBlockLinks(elements) {
+        var snippet_id = ABOUTHOME_SHOWN_SNIPPET.id;
+        var blockSnippet = function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            addToBlockList(snippet_id);
+
+            // Waiting for 500ms before reloading the page after user blocks a snippet,
+            // will allow the IndexedDB more time to complete its transaction. While
+            // this is an imperfect non-deterministic solution it will fix the issue
+            // for most of the users. Ideally we would create our own
+            // connection to the iDB and ensure that the write completes
+            // before we reload the page. Bug 1236090.
+            function reloadWindow() {
+                window.location.reload();
+            }
+            sendMetric('snippet-blocked', function() { setTimeout(reloadWindow, 500); })
+        };
+
+        for (var k = 0; k < elements.length; k++) {
+            var button = elements[k];
+            button.addEventListener('click', blockSnippet);
+        }
+    }
+
+    // Bug 1238092. Got fixed in Fx45. We can drop this when Fx44
+    // usage drops significantly.
+    function keypressIsMine(snippet) {
+        snippet.addEventListener('keypress', function(event) {
+            var tagName = event.target.tagName.toLowerCase();
+            if (tagName === 'input' || tagName === 'select') {
+                event.stopPropagation();
+            }
+        });
+    }
+
+    // Check for localStorage support. Copied from Modernizr.
+    function supportsLocalStorage() {
+        var s = 'snippets-test';
+        try {
+            localStorage.setItem(s, s);
+            localStorage.removeItem(s);
+            return true;
+        } catch(e) {
+            return false;
+        }
+    }
+
+    // Scripts injected by innerHTML are inactive, so we have to relocate them
+    // through DOM manipulation to activate their contents.
+    // (Adapted from http://mxr.mozilla.org/mozilla-central/source/browser/base/content/abouthome/aboutHome.js)
+    function activateScriptTags(element) {
+       Array.forEach(element.getElementsByTagName('script'), function(elt) {
+           var relocatedScript = document.createElement('script');
+           relocatedScript.type = 'text/javascript;version=1.8';
+           relocatedScript.text = elt.text;
+           elt.parentNode.replaceChild(relocatedScript, elt);
+       });
+    }
+
+    // Listen for clicks on links, send metrics and handle
+    // about:account custom links.
+    var topSection = document.getElementById('topSection');
+    topSection.addEventListener('click', function(event) {
+        var target = event.target;
+        while (target.tagName && target.tagName.toLowerCase() !== 'a') {
+            // Do not track clicks outside topSection.
+            if (target.id === 'topSection') {
+                return;
+            }
+            target = target.parentNode;
+        }
+
+        // Count snippet clicks.
+        if (target.dataset.eventCounted !== 'true') {
+            target.dataset.eventCounted = 'true';
+            // Fetch custom metric or default to 'click'
+            var metric = target.dataset.metric || 'click';
+            // If user is not opening a new tab, preventDefault action.
+            if (target.href && (event.button === 0 && !(event.metaKey || event.ctrlKey))) {
+                event.preventDefault();
+                var callback = function() {
+                    target.click();
+                }
+            }
+            sendMetric(metric, callback, target.href);
+        }
+
+        // Handle about:accounts clicks.
+        if (target.href && target.href.indexOf('about:accounts') === 0) {
+            var snippet_id = ABOUTHOME_SHOWN_SNIPPET.id;
+            var metric = snippet_id + '-about-accounts-click';
+            var fire_event = function() {
+                var event = new CustomEvent(
+                    'mozUITour',
+                    { bubbles: true, detail: { action:'showFirefoxAccounts', data: {}}}
+                );
+                document.dispatchEvent(event);
+            };
+            sendMetric(metric, fire_event, target.href);
+        }
+    }, false);
+
+
+})(window.showDefaultSnippets);
+
+// Send impressions and other interactions to the service
+// If no parameter is entered, quit function
+function sendMetric(metric, callback, href) {
+    
+    
+      if ((Math.random() > SNIPPET_METRICS_SAMPLE_RATE) || (!metric)) {
+          if (callback) {
+              callback();
+          }
+          return;
+      }
+
+      var locale = 'en-US';
+      var userCountry = USER_COUNTRY || '';
+      var campaign = ABOUTHOME_SHOWN_SNIPPET.campaign;
+      var snippet_id = ABOUTHOME_SHOWN_SNIPPET.id;
+
+      var url = (SNIPPET_METRICS_URL + '?snippet_name=' + snippet_id +
+                 '&locale=' + locale + '&country=' + userCountry +
+                 '&metric=' + metric + '&campaign=' + campaign);
+
+      if (href) {
+          url = url + "&href=" + escape(href);
+      }
+
+      var request = new XMLHttpRequest();
+      request.open('GET', url);
+      if (callback) {
+          request.addEventListener('loadend', callback, false);
+      }
+      request.send();
+      return request;
+    
+}
+
+function popFromBlockList(snippetID) {
+    var blockList = getBlockList();
+    var item = blockList.pop(snippetID);
+    gSnippetsMap.set('blockList', blockList);
+    return item;
+}
+
+function addToBlockList(snippetID) {
+    var blockList = getBlockList();
+    snippetID = parseInt(snippetID, 10);
+    if (blockList.indexOf(snippetID) === -1) {
+        blockList = [snippetID].concat(blockList);
+        gSnippetsMap.set('blockList', blockList);
+    }
+}
+
+function getBlockList() {
+    if (gSnippetsMap.get('blockList') === undefined) {
+        gSnippetsMap.set('blockList', []);
+    }
+    return gSnippetsMap.get('blockList');
+}
+
+//]]>
+</script>†8ML•      X—»X—»=içX2)Œ   ha,:https://snippets.cdn.mozilla.net/us-west/bundles/bundle_84fe327a0b273756af90cd1be4c042e1aedb59f5.html security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAQAAgAAAAAAAAAAAAAAAAAAAAAB4vFIJp5wRkeyPxAQ9RJGKPqbqVvKO0mKuIl8ec8o/uhmCjImkVxP+7sgiYWmMt8F+O2DZM7ZTG6GukivU8OT5gAAAAAAAAUoMIIFJDCCBAygAwIBAgIQBvKITxcFmVFgpBnShsOHcTANBgkqhkiG9w0BAQsFADBNMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMScwJQYDVQQDEx5EaWdpQ2VydCBTSEEyIFNlY3VyZSBTZXJ2ZXIgQ0EwHhcNMTUwMzEyMDAwMDAwWhcNMTcwMzE2MTIwMDAwWjBsMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxHDAaBgNVBAoTE01vemlsbGEgQ29ycG9yYXRpb24xGjAYBgNVBAMMESouY2RuLm1vemlsbGEubmV0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArd1PwIc1JUz3R98ls44sNn/ms5F/GIPiN8wn3vxx+cQTztQGqO4a2+0GyX1RD88e3KlASHe/Mb2HwM2AqmvtUM75NnSLy2Fa/9P0fCuLyqQPQSZdSGrKW9jJL4Zod/YlhHvf/pcLSZo3fRvDLRUE9TYbuy6oNjeoCYXMtjjFpYl5DyzYyL9NKBEfAL2p4a9nqvuN17joKMnrmt5JR3A0g4hLzOXc7o6OnYwfaPgF9db/nna74ROj0lYQHQkP/jBlydiCo0i8Ju8dkS0K1vdg/hio+zmJTU5epUgR5UQygYiiBxyov3kk9ALX5Xlu5OscKhcR/Vu8uslwBy0RKEeGXQIDAQABo4IB3zCCAdswHwYDVR0jBBgwFoAUD4BhHIIxYdUvKOeNRji0LOHG2eIwHQYDVR0OBBYEFEwziXLlFOUjs2Aq/Pa8SoP0+48iMC0GA1UdEQQmMCSCESouY2RuLm1vemlsbGEubmV0gg9jZG4ubW96aWxsYS5uZXQwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBrBgNVHR8EZDBiMC+gLaArhilodHRwOi8vY3JsMy5kaWdpY2VydC5jb20vc3NjYS1zaGEyLWczLmNybDAvoC2gK4YpaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL3NzY2Etc2hhMi1nMy5jcmwwQgYDVR0gBDswOTA3BglghkgBhv1sAQEwKjAoBggrBgEFBQcCARYcaHR0cHM6Ly93d3cuZGlnaWNlcnQuY29tL0NQUzB8BggrBgEFBQcBAQRwMG4wJAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmRpZ2ljZXJ0LmNvbTBGBggrBgEFBQcwAoY6aHR0cDovL2NhY2VydHMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0U0hBMlNlY3VyZVNlcnZlckNBLmNydDAMBgNVHRMBAf8EAjAAMA0GCSqGSIb3DQEBCwUAA4IBAQCWySmCzgXCq5Xt5aNaytCwERbSQIWLzDv8f8AERKCGZGuuB7yJN53YHk0ef5Df0z13jg5zSch9jwNFQZlQC/GDvubla/3gXq8OfLT8GFc/T6pIoXHHUIFsEfA19S627WsiSNcgCYYJpOq/mhaIsWpVUMjOmC4EwDbDvc9bDzoyvR6R8do+G1E1sCMadJ/YS4ONapb5jBsV0Jstrsxmv6bxEHnBAVqFc4CGngmoYvJNVX5aZU9Ois1WIzpZFicECk1gGeNJfVmpPMwqPScaRh4yY2/fEpzY9M9BAgMgU7Bpx4ZFKZY0Feytk5yMqAswc0QeWVJjkSAx2w3dMgIPKQ+BwC8AAwAAAAABAQAA request-method GET response-head HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 116568
+Date: Fri, 21 Oct 2016 22:55:11 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET
+Access-Control-Max-Age: 900
+Last-Modified: Fri, 21 Oct 2016 22:55:10 GMT
+Etag: "ffc00c56890e8a11816361b9c86d6d5a"
+Cache-Control: max-age=2592000
+Accept-Ranges: bytes
+Server: AmazonS3
+Age: 79098
+X-Cache: Hit from cloudfront
+Via: 1.1 f3c502e9ca204e721c5b65ef3266910d.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: JC6QnwC2I94M0T0fD8dgu3sKZgv8eDvBvlp-rDrS4rqrLQIACggh2A==
+ uncompressed-len 0  «X

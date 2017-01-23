@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie ie8"> <![endif]-->
+<!--[if IE 9]><html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<head>
+<!-- Basic -->
+<meta charset="utf-8">
+<title>Clojure File I/O</title>
+<meta name="description" content="Clojure File I/O - Learn Clojure in simple and easy steps starting from Overview, Environment, Basic Syntax, REPL, Data Types, Variables, Operators, Loops, Decision Making, Functions, Numbers, Recursion, File I/O, Strings, Lists, Sets, Vectors, Maps, Namespaces, Exception Handling, Sequences, Regular Expressions, Predicates, Destructuring, Date and Time, Atoms, Metadata, StructMaps, Agents, Watchers, Macros, Reference Values, Databases, Java Interface, Concurrent Programming, Applications, Automated Testing, Libraries." /> 
+<meta name="keywords" content="Clojure, Tutorial, Learning, Overview, Environment, Basic Syntax, REPL, Data Types, Variables, Operators, Loops, Decision Making, Functions, Numbers, Recursion, File I/O, Strings, Lists, Sets, Vectors, Maps, Namespaces, Exception Handling, Sequences, Regular Expressions, Predicates, Destructuring, Date and Time, Atoms, Metadata, StructMaps, Agents, Watchers, Macros, Reference Values, Databases, Java Interface, Concurrent Programming, Applications, Automated Testing, Libraries." /> 
+<base href="https://www.tutorialspoint.com/" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="fb:app_id" content="471319149685276" />
+<meta property="og:site_name" content="www.tutorialspoint.com" />
+<meta name="robots" content="index, follow"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="author" content="tutorialspoint.com">
+<script type="text/javascript" src="/theme/js/script-min-v4.js"></script>
+<link rel="stylesheet" href="/theme/css/style-min.css">
+<!-- Head Libs -->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="/theme/css/ie8.css">
+<![endif]-->
+<style>
+pre.prettyprint.tryit {min-height:37px; background: #eee url(/clojure/images/try-it.jpg) top right no-repeat !important}div.feature-box div.feature-box-icon, .col-md-3 .course-box, li.heading, div.footer-copyright { background: #63b132 url(/images/pattern.png) repeat center center !important;}
+.sub-main-menu .sub-menuu div:hover, .sub-main-menu .viewall, header nav ul.nav-main li a:hover, button.btn-responsive-nav, header div.search button.btn-default { background: #63b132 !important;}
+.submenu-item{ border-bottom: 2px solid #63b132 !important; border-top: 2px solid #63b132 !important }
+</style>
+<script>
+$(document).ready(function() {
+  $('input[name="q"]').keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
+  });
+});
+</script>
+</head>
+<body onload="prettyPrint()">
+<div class="wrapLoader">
+   <div class="imgLoader">
+      <img  src="/images/loading-cg.gif" alt="" width="70" height="70" />
+   </div>
+</div>
+<header>
+   <div class="container">			
+      <h1 class="logo">
+      <a href="index.htm" title="tutorialspoint">
+      <img alt="tutorialspoint" src="/clojure/images/logo.png">
+      </a>
+      </h1>			
+      <nav>
+         <ul class="nav nav-pills nav-top">
+            <li><a href="/about/about_careers.htm" style="background: #fffb09; font-weight: bold;"><i class="icon icon-suitcase"></i> Jobs</a></li>
+            <li> <a href="https://www.send18.com"><i class="fa fa-send"></i> &nbsp;Send18</a> </li>
+            <li> <a href="https://www.tutorialspoint.com/whiteboard.htm"><img src="theme/css/icons/image-editor.png" style="opacity:.6"> &nbsp;Whiteboard</a> </li>
+            <li> <a href="https://www.tutorialspoint.com/netmeeting.php"><i class="fa-camera"></i> &nbsp;Net Meeting</a> </li>
+            <li> <a href="/online_dev_tools.htm"> <i class="dev-tools-menu" style="opacity:.5"></i> Tools </a> </li>
+            <li> <a href="/articles/index.php"><i class="icon icon-file-text-o"></i> &nbsp;Articles</a> </li>            
+            <li class="top-icons">
+              <ul class="social-icons">
+              <li class="facebook"><a href="https://www.facebook.com/tutorialspointindia" target="_blank" data-placement="bottom" title="tutorialspoint @ Facebook">Facebook</a></li>
+              <li class="googleplus"><a href="https://plus.google.com/u/0/116678774017490391259/posts" target="_blank" data-placement="bottom" title="tutorialspoint @ Google+">Google+</a></li>
+              <li class="twitter"><a href="https://www.twitter.com/tutorialspoint" target="_blank" data-placement="bottom" title="tutorialspoint @ Twitter">Twitter</a></li>
+              <li class="linkedin"><a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" data-placement="bottom" title="tutorialspoint @ Linkedin">Linkedin</a></li>
+              <li class="youtube"><a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" data-placement="bottom" title="tutorialspoint YouTube">YouTube</a></li>
+              </ul>
+           </li>
+         </ul>
+      </nav>
+         <!-- search code here  --> 
+      <button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse" id="pull" style="top: 24px!important"> <i class="icon icon-bars"></i> </button>
+   </div>
+   <div class="navbar nav-main">
+      <div class="container">
+         <nav class="nav-main mega-menu">
+            <ul class="nav nav-pills nav-main" id="mainMenu">
+               <li class="dropdown no-sub-menu"> <a class="dropdown" href="index.htm"><i class="icon icon-home"></i> Home</a> </li>   
+               <li class="dropdown" id="liTL"><a class="dropdown" href="javascript:void(0);"><span class="tut-lib"> Tutorials Library <i class="fa-caret-down"></i></span></a></li>
+               <li class="dropdown no-sub-menu"><a class="dropdown" href="codingground.htm"><i class="fa-code"></i> Coding Ground </a> </li>
+               <li class="dropdown no-sub-menu"><a class="dropdown" href="tutor_connect/index.php"><i class="fa-user"> </i> Tutor Connect</a></li>
+               <li class="dropdown no-sub-menu"><a class="dropdown" href="videotutorials/index.htm"><i class="fa-toggle-right"></i> Videos </a></li>
+               <li class="dropdown no-sub-menu">
+                  <div class="searchform-popup">
+                     <input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off">
+                     <div class="magnifying-glass"><i class="icon-search"></i> Search </div>
+                 </div>
+               </li>
+            </ul>
+         </nav>
+         <div class="submenu-item sub-main-menu" id="top-sub-menu"></div>
+         
+      </div>
+   </div>	
+</header>
+<div style="clear:both;"></div>
+<div role="main" class="main">
+<div class="container">
+<div class="row">
+<div class="col-md-2">
+<aside class="sidebar">
+<div class="mini-logo">
+<img src="/clojure/images/clojure-mini-logo.jpg" alt="Clojure Tutorial" />
+</div>
+<ul class="nav nav-list primary left-menu" >
+<li class="heading">Clojure Tutorial</li>
+<li><a href="/clojure/index.htm">Clojure - Home</a></li>
+<li><a href="/clojure/clojure_overview.htm">Clojure - Overview</a></li>
+<li><a href="/clojure/clojure_environment.htm">Clojure - Environment</a></li>
+<li><a href="/clojure/clojure_basic_syntax.htm">Clojure - Basic Syntax</a></li>
+<li><a href="/clojure/clojure_repl.htm">Clojure - REPL</a></li>
+<li><a href="/clojure/clojure_data_types.htm">Clojure - Data Types</a></li>
+<li><a href="/clojure/clojure_variables.htm">Clojure - Variables</a></li>
+<li><a href="/clojure/clojure_operators.htm">Clojure - Operators</a></li>
+<li><a href="/clojure/clojure_loops.htm">Clojure - Loops</a></li>
+<li><a href="/clojure/clojure_decision_making.htm">Clojure - Decision Making</a></li>
+<li><a href="/clojure/clojure_functions.htm">Clojure - Functions</a></li>
+<li><a href="/clojure/clojure_numbers.htm">Clojure - Numbers</a></li>
+<li><a href="/clojure/clojure_recursion.htm">Clojure - Recursion</a></li>
+<li><a href="/clojure/clojure_file_io.htm">Clojure - File I/O</a></li>
+<li><a href="/clojure/clojure_strings.htm">Clojure - Strings</a></li>
+<li><a href="/clojure/clojure_lists.htm">Clojure - Lists</a></li>
+<li><a href="/clojure/clojure_sets.htm">Clojure - Sets</a></li>
+<li><a href="/clojure/clojure_vectors.htm">Clojure - Vectors</a></li>
+<li><a href="/clojure/clojure_maps.htm">Clojure - Maps</a></li>
+<li><a href="/clojure/clojure_namespaces.htm">Clojure - Namespaces</a></li>
+<li><a href="/clojure/clojure_exception_handling.htm">Clojure - Exception Handling</a></li>
+<li><a href="/clojure/clojure_sequences.htm">Clojure - Sequences</a></li>
+<li><a href="/clojure/clojure_regular_expressions.htm">Clojure - Regular Expressions</a></li>
+<li><a href="/clojure/clojure_predicates.htm">Clojure - Predicates</a></li>
+<li><a href="/clojure/clojure_destructuring.htm">Clojure - Destructuring</a></li>
+<li><a href="/clojure/clojure_date_and_time.htm">Clojure - Date &amp; Time</a></li>
+<li><a href="/clojure/clojure_atoms.htm">Clojure - Atoms</a></li>
+<li><a href="/clojure/clojure_metadata.htm">Clojure - Metadata</a></li>
+<li><a href="/clojure/clojure_structmaps.htm">Clojure - StructMaps</a></li>
+<li><a href="/clojure/clojure_agents.htm">Clojure - Agents</a></li>
+<li><a href="/clojure/clojure_watchers.htm">Clojure - Watchers</a></li>
+<li><a href="/clojure/clojure_macros.htm">Clojure - Macros</a></li>
+<li><a href="/clojure/clojure_reference_values.htm">Clojure - Reference Values</a></li>
+<li><a href="/clojure/clojure_databases.htm">Clojure - Databases</a></li>
+<li><a href="/clojure/clojure_java_interface.htm">Clojure - Java Interface</a></li>
+<li><a href="/clojure/clojure_concurrent_programming.htm">Clojure - Concurrent Programming</a></li>
+<li><a href="/clojure/clojure_applications.htm">Clojure - Applications</a></li>
+<li><a href="/clojure/clojure_automated_testing.htm">Clojure - Automated Testing</a></li>
+<li><a href="/clojure/clojure_libraries.htm">Clojure - Libraries</a></li>
+</ul>
+<ul class="nav nav-list primary left-menu" >
+<li class="heading">Clojure Useful Resources</li>
+<li><a href="/clojure/clojure_quick_guide.htm">Clojure - Quick Guide</a></li>
+<li><a href="/clojure/clojure_useful_resources.htm">Clojure - Useful Resources</a></li>
+<li><a href="/clojure/clojure_discussion.htm">Clojure - Discussion</a></li>
+</ul>
+<ul class="nav nav-list primary push-bottom left-menu special">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+</aside>
+</div>
+<!-- PRINTING STARTS HERE -->
+<div class="row">
+<div class="content">
+<div class="col-md-7 middle-col">
+<h1>Clojure - File I/O</h1>
+<div class="topgooglead">
+<hr />
+<div style="padding-bottom:5px;padding-left:10px;">Advertisements</div>
+<script type="text/javascript"><!--
+google_ad_client = "pub-7133395778201029";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "image";
+google_ad_channel = "";
+//--></script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js"> 
+</script>
+</div>
+<hr />
+<div class="pre-btn">
+<a href="/clojure/clojure_recursion.htm"><i class="icon icon-arrow-circle-o-left big-font"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="/clojure/clojure_strings.htm">Next Page <i class="icon icon-arrow-circle-o-right big-font"></i>&nbsp;</a>
+</div>
+<div class="clearer"></div>
+<hr />
+<p>Clojure provides a number of helper methods when working with I/O. It offers easier classes to provide the following functionalities for files.</p>
+<ul class="list">
+<li>Reading files</li>
+<li>Writing to files</li>
+<li>Seeing whether a file is a file or directory</li>
+</ul>
+<p>Let’s explore some of the file operations Clojure has to offer.</p>
+<h2>Reading the Contents of a File as an Entire String</h2>
+<p>If you want to get the entire contents of the file as a string, you can use the <b>clojure.core.slurp</b> method. The slurp command opens a reader on a file and reads all its contents, returning a string.</p>
+<p>Following is an example of how this can be done.</p>
+<pre class="prettyprint notranslate">
+(ns clojure.examples.hello
+   (:gen-class))
+
+;; This program displays Hello World
+(defn Example []
+   (def string1 (slurp "Example.txt"))
+   (println string1))
+(Example)
+</pre>
+<p>If the file contains the following lines, they will be printed as &minus;</p>
+<pre class="result notranslate">
+line : Example1
+line : Example2
+</pre>
+<h2>Reading the Contents of a File One Line at a Time</h2>
+<p>If you want to get the entire contents of the file as a string one line at a time, you can use the <b>clojure.java.io/reader</b> method. The clojure.java.io/reader class creates a reader buffer, which is used to read each line of the file.</p>
+<p>Following is an example that shows how this can be done.</p>
+<pre class="prettyprint notranslate">
+(ns clojure.examples.hello
+   (:gen-class))
+
+;; This program displays Hello World
+(defn Example []
+   (with-open [rdr (clojure.java.io/reader "Example.txt")]
+   (reduce conj [] (line-seq rdr))))
+(Example)
+</pre>
+<p>If the file contains the following lines, they will be printed as &minus;</p>
+<pre class="result notranslate">
+line : Example1
+line : Example2
+</pre>
+<p>The output will be shown as &minus;</p>
+<pre class="result notranslate">
+["line : Example1" "line : Example2"]
+</pre>
+<h2>Writing ‘to’ Files</h2>
+<p>If you want to write ‘to’ files, you can use the <b>clojure.core.spit</b> command to spew entire strings into files. The spit command is the opposite of the slurp method. This method opens a file as a writer, writes content, then closes file.</p>
+<p>Following is an example.</p>
+<pre class="prettyprint notranslate">
+(ns clojure.examples.hello
+   (:gen-class))
+
+;; This program displays Hello World
+(defn Example []
+   (spit "Example.txt"
+      "This is a string"))
+</pre>
+<p>In the above example, if you see the contents of the Example.txt file , you will see the contents of “This is a string”.</p>
+<h2>Writing ‘to’ Files One Line at a Time</h2>
+<p>If you want to write ‘to’ files one line at a time, you can use the <b>clojure.java.io.writer</b> class. The clojure.java.io.writer class is used to create a writer stream wherein bytes of data are fed into the stream and subsequently into the file.</p>
+<p>Following is an example that shows how the spit command can be used.</p>
+<pre class="prettyprint notranslate">
+(ns clojure.examples.hello
+   (:gen-class))
+
+;; This program displays Hello World
+(defn Example []
+   (with-open [w (clojure.java.io/writer "Example.txt" :append true)]
+      (.write w (str "hello" "world"))))
+(Example)
+</pre>
+<p>When the above code is executed, the line “hello world” will be present in the Example.txt file. The append:true option is to append data to the file. If this option is not specified, then the file will be overwritten whenever data is written to the file.</p>
+<h2>Checking to See If a File Exists</h2>
+<p>To check if a file exists, the <b>clojure.java.io.file</b> class can be used to check for the existence of a file. Following is an example that shows how this can be accomplished.</p>
+<pre class="prettyprint notranslate">
+(ns clojure.examples.hello
+   (:gen-class))
+
+;; This program displays Hello World
+(defn Example []
+   (println (.exists (clojure.java.io/file "Example.txt"))))
+(Example)
+</pre>
+<p>If the file Example.txt exists, the output will be true.</p>
+<h2>Reading from the Console</h2>
+<p>To read data from the console, the <b>read-line</b> statement can be used. Following is an example that shows how this can be used.</p>
+<p>If you enter the (read-line) command in the REPL window, you will have the chance to enter some input in the console window.</p>
+<pre class="prettyprint notranslate">
+user->(read-line)
+Hello World
+</pre>
+<p>The above code will produce the following output.</p>
+<pre class="result notranslate">
+“Hello World”
+</pre>
+<hr />
+<div class="pre-btn">
+<a href="/clojure/clojure_recursion.htm"><i class="icon icon-arrow-circle-o-left big-font"></i> Previous Page</a>
+</div>
+<div class="print-btn center">
+<a href="/cgi-bin/printpage.cgi" target="_blank"><i class="icon icon-print big-font"></i> Print</a>
+</div>
+<div class="nxt-btn">
+<a href="/clojure/clojure_strings.htm">Next Page <i class="icon icon-arrow-circle-o-right big-font"></i>&nbsp;</a>
+</div>
+<hr />
+<!-- PRINTING ENDS HERE -->
+<div class="bottomgooglead">
+<div class="bottomadtag">Advertisements</div>
+<script type="text/javascript"><!--
+var width = 580;
+var height = 400;
+var format = "580x400_as";
+if( window.innerWidth < 468 ){
+   width = 300;
+   height = 250;
+   format = "300x250_as";
+}
+google_ad_client = "pub-7133395778201029";
+google_ad_width = width;
+google_ad_height = height;
+google_ad_format = format;
+google_ad_type = "image";
+google_ad_channel ="";
+//--></script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3" id="rightbar">
+<div class="simple-ad">
+<a href="javascript:void(0)" onclick="var sTop = window.screen.height/2-(218); var sLeft = window.screen.width/2-(313);window.open('https://www.facebook.com/sharer.php?u=' + 'http://www.tutorialspoint.com/clojure/clojure_file_io.htm','sharer','toolbar=0,status=0,width=626,height=456,top='+sTop+',left='+sLeft);return false;">
+<img src="/images/facebookIcon.jpg" alt="img" />
+</a>
+<a  href="javascript:void(0)" onclick="var sTop = window.screen.height/2-(218); var sLeft = window.screen.width/2-(313);window.open('https://twitter.com/share?url=' + 'http://www.tutorialspoint.com/clojure/clojure_file_io.htm','sharer','toolbar=0,status=0,width=626,height=456,top='+sTop+',left='+sLeft);return false;">
+<img src="/images/twitterIcon.jpg" alt="img" />
+</a>
+<a  href="javascript:void(0)" onclick="var sTop = window.screen.height/2-(218); var sLeft = window.screen.width/2-(313);window.open('https://www.linkedin.com/cws/share?url=' + 'http://www.tutorialspoint.com/clojure/clojure_file_io.htm&amp;title='+ document.title,'sharer','toolbar=0,status=0,width=626,height=456,top='+sTop+',left='+sLeft);return false;">
+<img src="/images/linkedinIcon.jpg" alt="img" />
+</a>
+<a  href="javascript:void(0)" onclick="var sTop = window.screen.height/2-(218); var sLeft = window.screen.width/2-(313);window.open('https://plus.google.com/share?url=http://www.tutorialspoint.com/clojure/clojure_file_io.htm','sharer','toolbar=0,status=0,width=626,height=456,top='+sTop+',left='+sLeft);return false;">
+<img src="/images/googlePlusIcon.jpg" alt="img" />
+</a>
+<a  href="javascript:void(0)" onclick="var sTop = window.screen.height/2-(218); var sLeft = window.screen.width/2-(313);window.open('https://www.stumbleupon.com/submit?url=http://www.tutorialspoint.com/clojure/clojure_file_io.htm&amp;title='+ document.title,'sharer','toolbar=0,status=0,width=626,height=456,top='+sTop+',left='+sLeft);return false;">
+<img src="/images/StumbleUponIcon.jpg" alt="img" />
+</a>
+<a  href="javascript:void(0)" onclick="var sTop = window.screen.height/2-(218); var sLeft = window.screen.width/2-(313);window.open('https://reddit.com/submit?url=http://www.tutorialspoint.com/clojure/clojure_file_io.htm&amp;title='+ document.title,'sharer','toolbar=0,status=0,width=626,height=656,top='+sTop+',left='+sLeft);return false;">
+<img src="/images/reddit.jpg" alt="img" />
+</a>
+</div>
+<div class="rightgooglead">
+<script type="text/javascript"><!--
+google_ad_client = "pub-7133395778201029";
+google_ad_width = 300;
+google_ad_height = 250;
+google_ad_format = "300x250_as";
+google_ad_type = "image";
+google_ad_channel ="";
+//--></script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<div class="rightgooglead">
+<script type="text/javascript"><!--
+google_ad_client = "pub-7133395778201029";
+google_ad_width = 300;
+google_ad_height = 600;
+google_ad_format = "300x600_as";
+google_ad_type = "image";
+google_ad_channel ="";
+//--></script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<div class="rightgooglead">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-2537027957187252";
+/* Right Side Ad */
+google_ad_slot = "right_side_ad";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer-copyright">
+<div class="container">
+<div class="row">
+<div class="col-md-1">
+<a href="index.htm" class="logo"> <img alt="Tutorials Point" class="img-responsive" src="/scripts/img/logo-footer.png"> </a>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+   <nav id="sub-menu">
+      <ul>
+         <li><a href="/about/tutorials_writing.htm">Write for us</a></li>
+         <li><a href="/about/faq.htm">FAQ's</a></li>
+         <li><a href="/about/about_helping.htm">Helping</a></li>
+         <li><a href="/about/contact_us.htm">Contact</a></li>
+      </ul>
+   </nav>
+</div>
+<div class="col-md-3 col-sm-12 col-xs-12">
+<p>&copy; Copyright 2016. All Rights Reserved.</p>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+   <div class="news-group">
+      <input type="text" class="form-control-foot search" name="textemail" id="textemail" autocomplete="off" placeholder="Enter email for newsletter" onfocus="if (this.value == 'Enter email for newsletter...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Enter email for newsletter...';}">
+      <span class="input-group-btn"> <button class="btn btn-default btn-footer" id="btnemail" type="submit" onclick="javascript:void(0);">go</button> </span>
+      <div id="newsresponse"></div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Libs -->
+<script type="text/javascript" src="/theme/js/custom-min.js"></script>
+<script src="https://www.google-analytics.com/urchin.js">
+</script>
+<script type="text/javascript">
+_uacct = "UA-232293-6";
+urchinTracker();
+$('.pg-icon').click(function(){
+   $('.wrapLoader').show();
+});
+</script>
+<script type="text/javascript" src="/theme/js/jquery.colorbox-min.js"></script>
+<script type="text/javascript">
+   var tryit = new $.TryIt('/clojure/try_clojure.php');
+   tryit.compile();
+</script></div>
+</body>
+</html>
+�n���      X,8X,;=Y�       ;:https://www.tutorialspoint.com/clojure/clojure_file_io.htm necko:classified 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAQAAgAAAAAAAAAAAAAAAAAAAAAB4vFIJp5wRkeyPxAQ9RJGKPqbqVvKO0mKuIl8ec8o/uhmCjImkVxP+7sgiYWmMt8F+O2DZM7ZTG6GukivU8OT5gAAAAAAAAjCMIIIvjCCB6agAwIBAgIQAzXqFzPiwZT/Vv2Q4qDFVTANBgkqhkiG9w0BAQsFADBNMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMScwJQYDVQQDEx5EaWdpQ2VydCBTSEEyIFNlY3VyZSBTZXJ2ZXIgQ0EwHhcNMTUxMDIzMDAwMDAwWhcNMTgxMTA3MTIwMDAwWjB8MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEVMBMGA1UEBxMMU2FudGEgTW9uaWNhMSAwHgYDVQQKExdFZGdlQ2FzdCBOZXR3b3JrcywgSW5jLjEfMB0GA1UEAxMWczIud2FjLmVkZ2VjYXN0Y2RuLm5ldDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALfukNveDneSVExvjwuaEaebUv1KyNYqefB8MHdSDxFzSn94iQMf+Ebg5aNCvGLHxaaIjiZbPFg89sTbJ/WU/tu8TSa8vFLbio6ZyzW+CVCn06VodAa6LWCxcm15w/sUhyeZV6AvdNHmv3OSYL6e3lrlDaYaQ5qNNpe60/GqftjAsXEcPlvzkce3rOPJ4DZTqnjYJVBkQngV69PwJpmNYcgwz7tTNB/wyzfytSLtbqRLug0QC5pfQEUFDSOIDtfLwUGL/lf6x2xyMy+i24vLNPKKucqfWkx4o1SriE4lrhXque0gncC1mKYiOMgUS5LyzP33RxY9QOX3xY/NBdspY3UCAwEAAaOCBWkwggVlMB8GA1UdIwQYMBaAFA+AYRyCMWHVLyjnjUY4tCzhxtniMB0GA1UdDgQWBBTLhUtgcWshZdPr8hu0ITLJoXtkzTCCA6sGA1UdEQSCA6IwggOeghZzMi53YWMuZWRnZWNhc3RjZG4ubmV0ghhyYWRpdXMtc3RhdGljLmlzZWF0ei5jb22CEmltYWdlcy5nb3R2YXBlLmNvbYIPd3d3LnRhY3RpY3MuY29tghFpbWFnZXMuYm9venR4LmNvbYIRYXNzZXRzLmJvb3p0eC5jb22CDXd3dy5tYnVzYS5jb22CFWVjY29hc3NldHMuYm9venR4LmNvbYIRdGVzdGNkbi5vbGFyay5jb22CEHN0YXRpYy5vbGFyay5jb22CE2Nkbi53d3cuYmx1ZWZseS5jb22CFWNkbi5tZWRpYS5ibHVlZmx5LmNvbYISY2RuLmlzLmJsdWVmbHkuY29tghJjZG4uc2Nob29sbG9vcC5jb22CD3MubXJza2luY2RuLmNvbYIXY2RuLnBob25lLWFuYWx5dGljcy5jb22CD3N0YWdlLm1idXNhLmNvbYIMd3d3LmppbnguY29tgh1lbWJlZGRlZGNsb3VkLnByaWNlc3BpZGVyLmNvbYIQY2RuLmJyaWNrbmV0LmNvbYIRY2RuLnVuaWJldC5jb20uYXWCFHN0YXRpYy5leHBlcnRodWIuY29tgiFpLmZhbnRhc3lmb290YmFsbC50ZWxlZ3JhcGguY28udWuCIGkuZmFudGFzeWNyaWNrZXQudGVsZWdyYXBoLmNvLnVrgh9pLmZhbnRhc3lyYWNpbmcudGVsZWdyYXBoLmNvLnVrggljLnJtYmwud3OCIGF0Z3N0YWdlLnZlcm1vbnRjb3VudHJ5c3RvcmUuY29tghVjbXMucmVhY2hsb2NhbHdlYi5jb22CFWZpbGVzLmhlbGxvbmV0Y2RuLmNvbYIOd3d3LmhvdHRlci5jb22CHmkuZmFudGFzeXJ1Z2J5LnRlbGVncmFwaC5jby51a4ISYXNzZXRzLmdldGNobG9lLnR2gg13d3cuc3RhY2suY29tghVzZWN1cmUucmVudGx5dGljcy5jb22CF2ltYWdlcy5jb3JiaW5zY29lZHMuY29tghZ1ZDE4My5pbmZ1c2lvbnNvZnQuY29tgg9jZG4uYml6aWJseS5jb22CHGNkbi5uZWFyYnljb25uZWN0aW9uc2luYy5jb22CFnd3dy50dXRvcmlhbHNwb2ludC5jb22CDmkudXNoaXBjZG4uY29tghBjYWNoZS5jZW1hY28uY29tghh3d3cuZnJhbmNoaXNlZm9yc2FsZS5jb20wDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBrBgNVHR8EZDBiMC+gLaArhilodHRwOi8vY3JsMy5kaWdpY2VydC5jb20vc3NjYS1zaGEyLWc1LmNybDAvoC2gK4YpaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL3NzY2Etc2hhMi1nNS5jcmwwTAYDVR0gBEUwQzA3BglghkgBhv1sAQEwKjAoBggrBgEFBQcCARYcaHR0cHM6Ly93d3cuZGlnaWNlcnQuY29tL0NQUzAIBgZngQwBAgIwfAYIKwYBBQUHAQEEcDBuMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wRgYIKwYBBQUHMAKGOmh0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydFNIQTJTZWN1cmVTZXJ2ZXJDQS5jcnQwDAYDVR0TAQH/BAIwADANBgkqhkiG9w0BAQsFAAOCAQEAVtMK2GLvw9bb1W6hXpZY+SwqSOzfTYk9ki4nPXaYLceZkXHQ5V+v0dpenB78HRmGSdHZOGKYf6ulMe5SEFHQmsv51cppOKww0RCkXgP5FFsfMEi0LzaEIft2F5Z00DbzVDeJy4AHFI8LGu/eJpBqnH35YNybMiHenlp+rWddBBTrF5vam/BmCY3c/AxDLN6KrH5E3dnohUQE0+xG8zMPPDFZ4pL8mi351BQK7RYXN2QkHfjS3nKx5EKH4DzlOnv4hr5LKxSZ9EJsIk7F9jODgYFg/cwPW8Q1tllnPoOLYx2N0xIK2rmMfJU7qQS82yK4HlAYQAiefkr7wLkltJvLDMAvAAMAAAAAAQEAAA== request-method GET request-User-Agent Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:44.0) Gecko/20100101 Firefox/44.0 response-head HTTP/1.1 200 OK
+Access-Control-Allow-Headers: X-Requested-With
+Access-Control-Allow-Origin: *
+Content-Type: text/html; charset=UTF-8
+Date: Sun, 23 Oct 2016 21:31:37 GMT
+Server: Apache/2.4.6 (CentOS) PHP/5.4.16
+Vary: User-Agent
+X-Powered-By: PHP/5.4.16
+ charset UTF-8 uncompressed-len 0 predictor::resource-count 32 predictor::https://www.tutorialspoint.com/theme/js/script-min-v4.js 1,1,1477258296,0 predictor::https://www.tutorialspoint.com/theme/css/style-min.css 1,1,1477258296,0 predictor::https://www.tutorialspoint.com/images/loading-cg.gif 1,1,1477258296,0 predictor::https://www.tutorialspoint.com/clojure/images/logo.png 1,1,1477258296,0 predictor::https://www.tutorialspoint.com/theme/css/icons/image-editor.png 1,1,1477258296,0 predictor::https://www.tutorialspoint.com/clojure/images/clojure-mini-logo.jpg 1,1,1477258296,0 predictor::https://pagead2.googlesyndication.com/pagead/show_ads.js 1,1,1477258296,0 predictor::https://www.tutorialspoint.com/images/facebookIcon.jpg 1,1,1477258296,0 predictor::https://www.tutorialspoint.com/images/twitterIcon.jpg 1,1,1477258296,0 predictor::https://www.tutorialspoint.com/images/linkedinIcon.jpg 1,1,1477258296,0 predictor::https://www.tutorialspoint.com/images/googlePlusIcon.jpg 1,1,1477258296,0 predictor::https://www.tutorialspoint.com/images/StumbleUponIcon.jpg 1,1,1477258296,0 predictor::https://www.tutorialspoint.com/images/reddit.jpg 1,1,1477258296,0 predictor::https://www.tutorialspoint.com/scripts/img/logo-footer.png 1,1,1477258296,0 predictor::https://www.tutorialspoint.com/theme/js/custom-min.js 1,1,1477258296,0 predictor::https://www.google-analytics.com/urchin.js 1,1,1477258296,0 predictor::https://www.tutorialspoint.com/theme/js/jquery.colorbox-min.js 1,1,1477258296,0 predictor::https://www.tutorialspoint.com/images/tools-menu.png 1,1,1477258296,0 predictor::https://www.tutorialspoint.com/theme/img/social-sprites.png 1,1,1477258296,0 predictor::https://www.tutorialspoint.com/images/tutor.png 1,1,1477258296,0 predictor::https://www.tutorialspoint.com/images/pattern.png 1,1,1477258296,0 predictor::https://www.tutorialspoint.com/images/list-icon.png 1,1,1477258296,0 predictor::https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2 1,1,1477258296,0 predictor::https://www.tutorialspoint.com/theme/css/fonts/font-awesome/fonts/fontawesome-webfont.woff?v=4.1.0 1,1,1477258296,0 predictor::https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2 1,1,1477258296,0 predictor::https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNShampu5_7CjHW5spxoeN3Vs.woff2 1,1,1477258296,0 predictor::https://pagead2.googlesyndication.com/pub-config/r20160913/ca-pub-7133395778201029.js 1,1,1477258296,0 predictor::https://pagead2.googlesyndication.com/pagead/js/r20161019/r20161020/show_ads_impl.js 1,1,1477258296,0 predictor::https://www.tutorialspoint.com/images/icon-bullet.png 1,1,1477258296,0 predictor::https://pagead2.googlesyndication.com/pagead/osd.js 1,1,1477258296,0 predictor::https://pagead2.googlesyndication.com/pagead/js/r20161019/r20161020/creativetoolset/expansion_publ.js 1,1,1477258296,0 predictor::https://ssl.google-analytics.com/__utm.gif?utmwv=1.4&utmn=424097400&utmcs=UTF-8&utmsr=1920x975&utmsc=24-bit&utmul=en-us&utmje=0&utmfl=-&utmcn=1&utmdt=Clojure%20File%20I%2FO&utmhn=www.tutorialspoint.com&utmhid=542619128&utmr=https://www.google.ca&utmp=/clojure/clojure_file_io.htm&utmac=UA-232293-6&utmcc=__utma%3D55973678.1909540477.1477258299.1477258299.1477258299.1%3B%2B__utmz%3D55973678.1477258299.1.1.utmccn%3D(referral)%7Cutmcsr%3Dgoogle.ca%7Cutmcct%3D%7Cutmcmd%3Dreferral%3B%2B 1,1,1477258296,0   [�

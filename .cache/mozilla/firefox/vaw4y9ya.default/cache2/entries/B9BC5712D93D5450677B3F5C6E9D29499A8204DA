@@ -1,0 +1,2763 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en">
+
+<head>
+
+<link rel="apple-touch-icon" href="http://introcs.cs.princeton.edu/apple-touch-icon.png"></link>
+<link rel="shortcut icon"    href="http://introcs.cs.princeton.edu/favicon.ico"></link>
+
+<link rel="stylesheet"       href="http://introcs.cs.princeton.edu/introcs.css" type="text/css" media="screen"></link>
+
+<meta name="google-site-verification" content="nYspbl5bNBQrNZKguiAAFTMVM7sq2P1WQYc8Oi6Okl0" />
+<meta name="msvalidate.01" content="D4B7F6DF793EFF34DE96F611C2A367A5" />
+<!-- IE HACKS -->
+<!--[if IE]>
+<style type="text/css" media="screen">
+ #menu ul li {float: left; width: 100%;}
+</style>
+<![endif]-->
+<!--[if lt IE 7]>
+<style type="text/css" media="screen">
+body {
+behavior: url(/csshover.htc);
+} 
+#menu ul li {float: left; width: 100%;}
+#menu ul li a {height: 1%;} 
+
+#menu a, #menu h2 {
+font: bold 0.9em/1.5em arial, helvetica, sans-serif;
+} 
+
+</style>
+<![endif]-->
+
+<!--  use // instead of https:// or http:// to let it use whatever was used to access the page initially -->
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<!-- scale font size for MathJax -->
+<script type="text/x-mathjax-config"> 
+    MathJax.Hub.Config({ 
+        "HTML-CSS": { scale: 90, linebreaks: { automatic: true } }, 
+        SVG: { linebreaks: { automatic:true } }, 
+        displayAlign: "left" });
+</script>
+
+<title>
+Input and Output</title>
+<script type='text/javascript' src='http://algs4.cs.princeton.edu/media/swfobject.js'></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-10811519-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
+<META NAME="AUTHOR" CONTENT="Robert Sedgewick and Kevin Wayne">
+<META NAME="KEYWORDS" CONTENT="Input and Output,Java,Programming,interdisciplinary,Computer science,cs,intro,introduction,sedgewick,wayne">
+<META NAME="DESCRIPTION" CONTENT="This textbook provides an interdisciplinary approach to the CS 1 curriculum. We teach the classic elements of programming, using an "objects-in-the-middle" approach that emphasizes data abstraction. A key feature of the book is the manner in which we motivate each programming concept by examining its impact on specific applications, taken from science, engineering, and commerce.">
+<META NAME="TITLE" CONTENT="Input and Output. Introduction to Programming in Java by Sedgewick and Wayne">
+<META NAME="ROBOTS" CONTENT="INDEX,FOLLOW">
+<META name="verify-v1" content="D4o9ikkHbNKapHncCP8ZmiD9Z2DBbrJyaSV0lyce+3w=">
+
+
+</head>
+
+
+
+
+
+<body>
+
+<div id = "menu">
+   <div align="center">
+<a class = picture href = "/home">
+<img src="../cover.png" width=190 height = 235 border=0 alt = "Introduction to Programming in Java">
+</a>
+</div>
+
+
+
+
+
+
+<ul>
+  <li><a class = title href = "/java/home">Intro to Programming</a>
+    <ul>
+
+      <li> <a href = "http://introcs.cs.princeton.edu/java/10elements">1.&nbsp;&nbsp;Elements of Programming</a>
+        <ul>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/11hello">1.1&nbsp;&nbsp;Your First Program</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/12types">1.2&nbsp;&nbsp;Built-in Types of Data</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/13flow">1.3&nbsp;&nbsp;Conditionals and Loops</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/14array">1.4&nbsp;&nbsp;Arrays</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/15inout">1.5&nbsp;&nbsp;Input and Output</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/16pagerank">1.6&nbsp;&nbsp;Case Study: PageRank</a>
+        </ul>
+
+      <li> <a href = "http://introcs.cs.princeton.edu/java/20functions">2.&nbsp;&nbsp;Functions</a>
+        <ul>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/21function">2.1&nbsp;&nbsp;Static Methods</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/22library">2.2&nbsp;&nbsp;Libraries and Clients</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/23recursion">2.3&nbsp;&nbsp;Recursion</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/24percolation">2.4&nbsp;&nbsp;Case Study: Percolation</a>
+        </ul>
+
+      <li> <a href = "http://introcs.cs.princeton.edu/java/30oop">3.&nbsp;&nbsp;OOP</a>
+        <ul>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/31datatype">3.1&nbsp;&nbsp;Using Data Types</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/32class">3.2&nbsp;&nbsp;Creating Data Types</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/33design">3.3&nbsp;&nbsp;Designing Data Types</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/34nbody">3.4&nbsp;&nbsp;Case Study: N-Body</a>
+        </ul>
+
+      <li> <a href = "http://introcs.cs.princeton.edu/java/40algorithms">4.&nbsp;&nbsp;Data Structures</a>
+        <ul>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/41analysis">4.1&nbsp;&nbsp;Performance</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/42sort">4.2&nbsp;&nbsp;Sorting and Searching</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/43stack">4.3&nbsp;&nbsp;Stacks and Queues</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/44st">4.4&nbsp;&nbsp;Symbol Tables</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/45graph">4.5&nbsp;&nbsp;Case Study: Small World</a>
+        </ul>
+    </ul>
+</ul>
+
+
+
+
+
+<ul>
+  <li><a class = title href = "/java/cs">Computer Science</a>
+    <ul>
+
+      <li> <a href = "http://introcs.cs.princeton.edu/java/50theory">5.&nbsp;&nbsp;Theory of Computing</a>
+        <ul>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/51language">5.1&nbsp;&nbsp;Formal Languages</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/52turing">5.2&nbsp;&nbsp;Turing Machines</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/53universality">5.3&nbsp;&nbsp;Universality</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/54computability">5.4&nbsp;&nbsp;Computability</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/55intractability">5.5&nbsp;&nbsp;Intractability</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/99crypto">9.9&nbsp;&nbsp;Cryptography</a>
+        </ul>
+
+      <li> <a href = "http://introcs.cs.princeton.edu/java/60machine">6.&nbsp;&nbsp;A Computing Machine</a>
+        <ul>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/61data">6.1&nbsp;&nbsp;Representing Info.</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/62toy">6.2&nbsp;&nbsp;TOY Machine</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/63programming">6.3&nbsp;&nbsp;TOY Programming</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/64simulator">6.4&nbsp;&nbsp;TOY Simulator</a>
+        </ul>
+
+      <li> <a href = "http://introcs.cs.princeton.edu/java/70circuits">7.&nbsp;&nbsp;Building a Computer</a>
+        <ul>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/71boolean">7.1&nbsp;&nbsp;Boolean Logic</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/72circuit">7.2&nbsp;&nbsp;Basic Circuit Model</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/73combinational">7.3&nbsp;&nbsp;Combinational Circuits</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/74sequential">7.4&nbsp;&nbsp;Sequential Circuits</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/75architecture">7.5&nbsp;&nbsp;Digital Devices</a>
+        </ul>
+    </ul>
+</ul>
+
+
+
+<ul>
+  <li><a class = title href = "/java/home">Beyond</a>
+    <ul>
+
+      <li> <a href = "http://introcs.cs.princeton.edu/java/80systems">8.&nbsp;&nbsp;Systems</a>
+        <ul>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/81library">8.1&nbsp;&nbsp;Library Programming</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/82compiler">8.2&nbsp;&nbsp;Compilers</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/83os">8.3&nbsp;&nbsp;Operating Systems</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/84network">8.4&nbsp;&nbsp;Networking</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/85application">8.5&nbsp;&nbsp;Applications Systems</a>
+        </ul>
+
+      <li> <a href = "http://introcs.cs.princeton.edu/java/90scientific">9.&nbsp;&nbsp;Scientific Computation</a>
+        <ul>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/91float">9.1&nbsp;&nbsp;Floating Point</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/92symbolic">9.2&nbsp;&nbsp;Symbolic Methods</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/93integration">9.3&nbsp;&nbsp;Numerical Integration</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/94diffeq">9.4&nbsp;&nbsp;Differential Equations</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/95linear">9.5&nbsp;&nbsp;Linear Algebra</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/96optimization">9.6&nbsp;&nbsp;Optimization</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/97data">9.7&nbsp;&nbsp;Data Analysis</a>
+          <li> <a href = "http://introcs.cs.princeton.edu/java/98simulation">9.8&nbsp;&nbsp;Simulation</a>
+        </ul>
+    </ul>
+</ul>
+
+
+
+
+
+
+
+<ul>
+
+<li><a class = title> Related Booksites</a>
+<table width = 100% border = 0 cellspacing = 0 cellpadding = 0>
+<tr>
+<td align = center>
+<a class = booksite href = "http://introcs.cs.princeton.edu/python">
+   <img src = "http://introcs.cs.princeton.edu/java/cover-python.png"
+        width = 73 height = 91 border=0
+        alt = "Introduction to Programming in Python
+               by Robert Sedgewick, Kevin Wayne, and Robert Dondero">
+</a>
+<td align = center>
+<a class = booksite href = "http://algs4.cs.princeton.edu">
+   <img src = "http://algs4.cs.princeton.edu/cover.png"
+        width = 73 height = 91 border=0
+        alt = "Algorihtms, 4th Edition by Robert Sedgewick and Kevin Wayne">
+</a>
+</tr>
+</table>
+
+
+  <li><a class = title href = "/home">Web Resources</a>
+    <ul>
+
+      <li> <a href = "/java/faq">FAQ</a>
+      <li> <a href = "/java/data">Data</a>
+      <li> <a href = "/java/code">Code</a>
+      <li> <a href = "/java/errata">Errata</a>
+      <li> <a href = "/java/11appendix">Appendices</a>
+        <ul>
+          <li> <a href = "/java/11precedence">A. &nbsp; Operator Precedence</a>
+          <li> <a href = "/java/11style">B. &nbsp; Writing Clear Code</a>
+          <li> <a href = "/java/11glossary">C. &nbsp; Glossary</a>
+          <li> <a href = "/java/11cheatsheet">D. &nbsp; Java Cheatsheet</a>
+          <li> <a href = "/java/11matlab">E. &nbsp; Matlab</a>
+        </ul>
+      <li> <a href="/java/lectures">Lecture Slides</a>
+      <li> <a href="/java/assignments">Programming Assignments</a>
+   </ul>
+
+
+</ul>
+
+<p><br>
+
+
+<script>
+  (function() {
+    var cx = '005649317310637734940:_d158dlngnk';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox-only></gcse:searchbox-only>
+
+<p><br>
+</div>
+
+<div id = "content">
+   <h1>1.5 &nbsp; Input and Output</h1>
+
+<p><br>
+
+<p>
+In this section we extend the set of simple abstractions
+(command-line input and standard output) that we have been
+using as the interface between our Java programs and the
+outside world to include <em>standard input</em>, <em>standard drawing</em>,
+and <em>standard audio</em>.
+Standard input makes it convenient for us to write programs that process 
+arbitrary amounts of input and to interact with our programs; standard 
+draw makes it possible for us to work with graphics;
+and standard audio adds sound.
+
+
+<IMG SRC="images/birds-eye.png"  width = 250 align=right hspace=25 alt = "Bird's eye view">
+<p><h2>Bird's-eye view.</h2>
+A Java program takes input values from the command line and prints 
+a string of characters as output. By default, both command-line
+arguments and standard output are associated with an application that takes
+commands, which we refer to as the <em>terminal window</em>.
+Here are some instructions for using the command line on your
+system.
+[
+<a href = "../mac/index.html#CLI">Mac</a> &middot;
+<a href = "../windows/index.html#CLI">Windows</a> &middot;
+<a href = "linux-cmd.html">Linux</a>
+]
+
+
+<ul>
+
+<li><em>Command-line arguments.</em>
+All of our classes have a <tt>main()</tt> method that takes a
+<tt>String</tt> array <tt>args[]</tt> as argument. That array is the sequence
+of command-line arguments that we type.
+If we intend for an argument to be a number, we must use
+a method such as <tt>Integer.parseInt()</tt> to convert it from 
+<tt>String</tt> to the appropriate type. 
+</li>
+
+
+<li><em>Standard output.</em>
+To print output values in our programs, we have been 
+using <tt>System.out.println()</tt>.
+Java sends the results to an abstract stream of
+characters known as <em>standard output</em>. By default, the
+operating system connects standard output to the
+terminal window. All of the output in our programs
+so far has been appearing in the terminal window. 
+</li>
+
+</ul>
+
+<a name = "1.5.1"></a>
+<p>
+<a href = "RandomSeq.java.html">RandomSeq.java</a> uses this model:
+It takes a command-line argument <em>n</em> and prints to standard output
+a sequence of <em>n</em> random numbers between 0 and 1.
+
+<p>
+To complete our programming model, we add the following libraries:
+
+<ul>
+
+<li><em>Standard input.</em>
+Read numbers and strings from the user.
+
+<li><em>Standard drawing.</em>
+Plot graphics.
+
+<li><em>Standard audio.</em>
+Create sound.
+
+</li>
+
+</ul>
+
+<!--
+To use these libraries, download
+<a href = "StdIn.java.html">StdIn.java</a>,
+<a href = "StdOut.java.html">StdOut.java</a>,
+<a href = "StdDraw.java.html">StdDraw.java</a>, and
+<a href = "StdAudio.java.html">StdAudio.java</a>
+into the same directory as your program.
+-->
+
+<p><h2>Standard output.</h2>
+Java's <tt>System.out.print()</tt> and <tt>System.out.println()</tt> methods
+implement the basic standard output abstraction that we need.
+Nevertheless, to treat standard input and standard output in a
+uniform manner (and to provide a few technical improvements), 
+we use similar methods that are defined in our 
+<a href = "../stdlib/javadoc/StdOut.html">StdOut</a>
+library:
+ 
+
+<p>
+<blockquote>
+<img src = "../11cheatsheet/images/stdout-api.png" width = 500 alt = "Standard output API">
+</blockquote>
+
+
+Java's <tt>print()</tt> and <tt>println()</tt>
+methods are the ones that you have been using.
+The <tt>printf()</tt> method gives us more 
+control over the appearance of the output.
+
+
+<!--
+<p>
+Since the first time that we printed <tt>double</tt> values
+we have been distracted by excessive precision in the 
+printed output. For example, when we use <tt>System.out.print(Math.PI)</tt>
+we get the output <tt>3.141592653589793</tt> even though we might prefer to see 
+<tt>3.14</tt> or <tt>3.14159</tt>.
+With <tt>printf()</tt>, we can write <tt>StdOut.printf("%7.5f", Math.PI)</tt>
+to get <tt>3.14159</tt>.
+-->
+
+<ul>
+
+<li><em>Formatted printing basics.</em>
+In its simplest form, <tt>printf()</tt> takes two arguments.
+The first argument is called the <em>format string</em>.
+It contains a <em>conversion specification</em> that describes how the second
+argument is to be converted to a string for output.
+
+<p>
+<blockquote>
+<img src = "../11cheatsheet/images/printf.png" width = 250 alt = "anatomy of printf() call">
+</blockquote>
+
+
+Format strings begin with <tt>%</tt>
+and end with a one-letter <em>conversion code</em>.
+The following table summarizes the most frequently used codes: 
+
+<p>
+<blockquote>
+<img src = "../11cheatsheet/images/printf-formatting.png" width = 450 alt = "formatting examples for printf()">
+</blockquote>
+
+
+</li>
+
+<li><em>Format string.</em>
+The format string can contain characters in addition to those for the conversion specification.
+The conversion specification is replaced by the argument value
+(converted to a string as specified) and all remaining characters are passed through to the output.
+</li>
+
+<li><em>Multiple arguments.</em>
+The <tt>printf()</tt> function can take more than two arguments.
+In this case, the format string will have an additional conversion specification
+for each additional argument.
+
+</li>
+
+</ul>
+
+Here is more documentation on
+<a href = "http://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html#syntax">printf format string syntax</a>.
+
+
+<p><h2>Standard input.</h2>
+Our 
+<a href = "../stdlib/javadoc/StdIn.html">StdIn</a>
+library takes data from a <em>standard input stream</em> that contains
+a sequence of values separated by whitespace.
+Each value is a string or a value from one of Java's primitive types. 
+One of the key features of the standard input stream is that your
+program <em>consumes</em> values when it reads them. Once your 
+program has read a value, it cannot back up and read it again.
+The library is defined by the following API: 
+
+<p>
+<blockquote>
+<img src = "../11cheatsheet/images/stdin-api.png" width = 500 alt = "Standard input API">
+</blockquote>
+
+
+We now consider several examples in detail. 
+
+
+
+
+<p>
+<ul>
+
+<li><em>Typing input.</em>
+When you use the <tt>java</tt> command to invoke a Java program
+from the command line, you actually are doing three things: (1) 
+issuing a command to start executing your program, (2)
+specifying the 
+values of the command-line arguments, and (3) beginning to define the 
+standard input stream. The string of characters that you type
+in the terminal window after the command line is the standard
+input stream. 
+For example, <a href = "AddInts.java.html">AddInts.java</a>
+takes a command-line argument <tt>n</tt>, then reads <tt>n</tt> numbers
+from standard input and adds them, and prints the result to standard output:
+
+
+<p>
+<blockquote>
+<img src = "images/add-ints.png" width = 500 alt = "anatomy of a command">
+</blockquote>
+
+</tr>
+</table>
+</blockquote>
+
+
+<!--
+When you type <tt>java AddInts 4</tt>, after taking the
+command-line arguments, the program calls the method
+<tt>StdIn.readInt()</tt> and waits for you to type an integer.
+Suppose that you want <tt>144</tt> to be the first input: as you 
+type <tt>1</tt>, then <tt>4</tt>, and then <tt>4</tt>,
+nothing happens, because <tt>StdIn</tt> does not know 
+that you are done typing the integer, but when you then type 
+<tt>&lt;return&gt;</tt> to signify the end of your integer,
+<tt>StdIn.readInt()</tt> immediately returns 
+the value <tt>144</tt>. After you have typed four 
+numbers in this way, <tt>AddInts</tt>
+expects no more input and prints out the sum, as desired.
+-->
+
+</li>
+
+<li><em>Input format.</em>
+ If you type <tt>abc</tt> or <tt>12.2</tt> or <tt>true</tt>
+when <tt>StdIn.readInt()</tt> is expecting an <tt>int</tt>,
+then it will respond with an <tt>InputMismatchException</tt>. 
+<!--
+The format for each type is the same as you have been using for literal 
+values within Java programs.
+-->
+<tt>StdIn</tt>
+treats strings of consecutive whitespace characters as identical
+to one space and allows you to delimit your numbers with such strings.
+
+<!--
+It does not matter how many spaces you put between numbers,
+whether you enter numbers on one line 
+or separate them with tab characters or spread them out over several lines, 
+(except that your terminal application processes standard input one line 
+at a time, so it will wait until you type <tt>&lt;return&gt;</tt>
+before sending all of the 
+numbers on that line to standard input). You can mix values of different 
+types in an input stream, but each time that the program expects a value 
+of a particular type, there needs to be a value of that type in the input 
+stream. 
+-->
+</li>
+
+<a name = "1.5.2"></a>
+<li><em>Interactive user input.</em>
+<a href = "TwentyQuestions.java.html">TwentyQuestions.java</a>
+is a simple example of a program that interacts with its user.
+The program generates a random integer and then gives 
+clues to a user trying to guess the number.
+The fundamental difference between this program and others that
+we have written is that the user has the ability to 
+change the control flow <em>while</em> the program is executing.
+
+<a name = "1.5.3"></a>
+<li><em>Processing an arbitrary-size input stream.</em>
+Typically, input streams are finite: your program marches 
+through the input stream, consuming values until the stream is empty. But 
+there is no restriction of the size of the input stream.
+<a href = "Average.java.html">Average.java</a> reads in a sequence
+of real numbers from standard input and prints their average. 
+
+<!--
+It illustrates a key property of using an input stream: the length of the 
+stream is not known to the program. We type all the numbers that we 
+have, then the program averages them. Before reading each number, the 
+program uses the method <tt>StdIn.isEmpty()</tt> to check whether there are 
+any more numbers in the input stream. How do we signal that we have 
+no more data to type? By convention, we type a special sequence
+of characters known as the <em>end-of-file sequence</em>.
+It is <tt>&lt;ctrl-d&gt;</tt> on OS X and Linux, and it is
+<tt>&lt;ctrl-z&gt;</tt> on Windows; on some systems the end-of-file
+sequence must appear on its own line.
+-->
+
+</li>
+
+</ul>
+
+
+
+
+<p><h2>Redirection and piping.</h2>
+For many applications, typing input data as 
+a standard input stream from the terminal window is untenable because 
+doing so limits our program's processing power by the amount of
+data that we can type. Similarly, we often want to save the 
+information printed on the standard output stream for later use.
+We can use operating system mechanisms to address both issues.
+
+<ul>
+
+<li><em>Redirecting standard output to a file.</em>
+By adding a simple directive to the 
+command that invokes a program, we can <em>redirect</em> its standard output to 
+a file, either for permanent storage or for input to some other program at a later 
+time. For example, the command
+
+
+<p>
+<blockquote>
+<IMG SRC="../11cheatsheet/images/redirect-stdout.png" width = 225 alt = "Redirecting standard output">
+</blockquote>
+
+
+specifies that the standard output stream is not to be printed in the
+terminal window, but instead is to be written to a text file named
+<tt>data.txt</tt>.
+Each call to <tt>StdOut.print()</tt> or <tt>StdOut.println()</tt> appends 
+text at the end of that file. In this example, the end result
+is a file that contains 1,000 random values.
+
+</li>
+
+
+<li><em>Redirecting standard output from a file.</em>
+Similarly, we can redirect standard input so 
+that <tt>StdIn</tt> reads data from a file instead of the terminal
+window. For example, the command 
+
+<p>
+<blockquote>
+<IMG SRC="../11cheatsheet/images/redirect-stdin.png" width = 225 alt = "Redirecting standard input">
+</blockquote>
+
+reads a sequence of numbers from the file <tt>data.txt</tt>
+and computes their average value.
+Specifically, the <tt>&lt;</tt> symbol is a directive to
+implement the standard input stream by reading from the 
+file <tt>data.txt</tt> instead of by waiting for the 
+user to type something into the terminal window. When the program
+calls <tt>StdIn.readDouble()</tt>, the operating system reads the 
+value from the file.
+This facility to redirect standard input 
+from a file enables us to process huge amounts of data from any
+source with our programs, limited only by the size of the files
+that we can store.
+
+</li>
+
+<li><em>Connecting two programs.</em>
+The most flexible way to implement the 
+standard input and standard output abstractions is to specify that they are 
+implemented by our own programs!
+This mechanism is called <em>piping</em>. For 
+example, the following command 
+
+<p>
+<blockquote>
+<IMG SRC="../11cheatsheet/images/piping.png" width = 300 alt = "Piping">
+</blockquote>
+
+specifies that the standard output for <tt>RandomSeq</tt> and the standard input 
+stream for <tt>Average</tt> are the <em>same</em> stream.
+<!--
+That is, the result has the same effect as the following sequence of commands 
+<blockquote>
+<table>
+<TR><TD><pre>
+% java RandomSeq 1000 > data.txt 
+% java Average < data.txt 
+</pre></td></tr>
+</table>
+</blockquote>
+
+but the <tt>file data.txt</tt> is not needed.
+-->
+</li>
+
+<a name = "1.5.4"></a>
+<li><em>Filters.</em>
+For many common tasks, it is convenient 
+to think of each program as a filter that converts a standard input stream 
+to a standard output stream in some way,
+<a href = "RangeFilter.java.html">RangeFilter.java</a>
+takes two command-line arguments
+and prints on standard output those numbers from standard input
+that fall within the specified range.
+
+<p>
+Your operating system also provides a number of filters.
+For example, the <tt>sort</tt> filter puts the lines on standard 
+input in sorted order: 
+<blockquote>
+<table>
+<TR><TD><pre>
+% <b>java RandomSeq 5 | sort</b>
+0.035813305516568916 
+0.14306638757584322 
+0.348292877655532103 
+0.5761644592016527 
+0.9795908813988247 
+</pre></td></tr>
+</table>
+</blockquote>
+
+Another useful filter is <tt>more</tt>, which reads data from 
+standard input and displays it in your terminal window one screenful at a 
+time. For example,  if you type 
+
+<blockquote>
+<table>
+<TR><TD><pre>
+% <b>java RandomSeq 1000 | more</b>
+</pre></td></tr>
+</table>
+</blockquote>
+
+you will see as many numbers as fit in your terminal window, but more 
+will wait for you to hit the space bar before displaying each succeeding 
+screenful. 
+
+</li>
+
+</ul>
+
+
+<p><h2>Standard drawing.</h2>
+Now we introduce a simple abstraction for producing drawings as output.
+We imagine an abstract drawing device capable of drawing lines and
+points on a two-dimensional canvas. The device is capable of
+responding to the commands that our programs issue in the form of
+calls to static methods in 
+<a href = "../stdlib/javadoc/StdDraw.html">StdDraw</a>.
+The primary interface consists of two kinds of methods: <em>drawing commands</em>
+that cause the device to take an action (such as drawing a line or drawing 
+a point) and <em>control commands</em> that set parameters such as the pen size or 
+the coordinate scales. 
+
+<ul>
+
+<li><em>Basic drawing commands.</em>
+We first consider the drawing commands:
+
+<p>
+<blockquote>
+<img src = "images/stddraw-drawing.png" width = 400 alt = "Standard drawing API: drawing commands">
+</blockquote>
+
+These methods are nearly self-documenting: <tt>StdDraw.line(x0, y0, x1, y1)</tt>
+draws a straight line segment connecting the point
+(<em>x</em><sub>0</sub>, <em>y</em><sub>0</sub>) with the point
+(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>).
+<tt>StdDraw.point(x, y)</tt> draws a spot centered on the point 
+(<em>x</em>, <em>y</em>).
+The default 
+coordinate scale is the unit square (all <em>x</em>- and <em>y</em>-coordinates between 0 and 1).
+The standard implementation displays the canvas in a window on
+your computer's screen, with black lines and points on a white background.
+<!-- The window includes a menu option to save your drawing to a file,
+in a format suitable for publishing on the Web.
+-->
+
+<p><em>Your first drawing.</em>
+The <tt>HelloWorld</tt> for graphics programming with <tt>StdDraw</tt>
+is to draw a triangle with a point inside.
+<a href = "Triangle.java.html">Triangle.java</a> accomplishes this 
+with three calls to <tt>StdDraw.line()</tt> and one call to <tt>StdDraw.point()</tt>.
+</li>
+
+<li><em>Control commands.</em>
+The default canvas size is 512-by-512 pixels
+and the default coordinate system is the unit square, but
+we often want to draw plots at different scales.
+Also, we often want to draw line segments of different
+thickness or points of different size from the standard.
+To accommodate these needs, <tt>StdDraw</tt> has the following methods:
+
+<p>
+<blockquote>
+<img src = "images/stddraw-control.png" width = 425 alt = "Standard drawing API: control commands">
+</blockquote>
+
+For example, the two-call sequence 
+
+<blockquote>
+<table>
+<TR><TD><pre>
+StdDraw.setXscale(x0, x1);
+StdDraw.setYscale(y0, y1); 
+</pre></td></tr>
+</table>
+</blockquote>
+
+sets the drawing coordinates to be within a <em>bounding box</em>
+whose lower-left 
+corner is at 
+(<em>x</em><sub>0</sub>, <em>y</em><sub>0</sub>)
+and whose upper-right corner is at
+(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>).
+
+<!--
+The pen is circular, so that lines have rounded ends, and when you 
+set the pen radius to r and draw a point, you get a circle of radius r.
+The default pen radius is 0.005 and is not affected by coordinate scaling.
+This default is about 1/200 the width of the default window,
+so that if you draw 50 points equally spaced along a horizontal or vertical 
+line, you will be able to see individual circles, but if you draw
+100 such points, the result will look like a line. When you issue the 
+command <tt>StdDraw.setPenRadius(0.01)</tt>,
+you are saying that you want the thickness 
+of the lines and the size of the points to be 
+two times the 0.005 standard. 
+-->
+
+<ul>
+
+<a name = "1.5.5"></a>
+<li><em>Filtering data to a standard drawing.</em>
+<a href = "PlotFilter.java.html">PlotFilter.java</a> reads a sequence 
+of points defined by (<em>x</em>, <em>y</em>) coordinates from standard input
+and draws a spot at each point.
+It adopts the convention that the first four 
+numbers on standard input specify the bounding box, so that
+it can scale the plot.
+
+
+<p>
+<blockquote>
+<tt>% <b>java PlotFilter &lt;</tt> <a href = "USA.txt"><tt>USA.txt</tt></a></b><br><br>
+<img src = "images/usa.png" width = 500 alt = "13509 cities in the US">
+</blockquote>
+
+</li>
+
+<li><em>Plotting a function graph.</em>
+<a href = "FunctionGraph.java.html">FunctionGraph.java</a>
+plots the function <em>y</em> = sin(4<em>x</em>) + sin(20<em>x</em>)
+in the interval (0, &pi;).
+There are an infinite number of points in the interval, so we have 
+to make do with evaluating the function at a finite number of
+points within the interval. We <em>sample</em> the function by 
+choosing a set of <em>x</em>-values, then computing <em>y</em>-values by evaluating
+the function at each <em>x</em>-value. Plotting the function 
+by connecting successive points with lines produces what is known
+as a <em>piecewise linear approximation</em>.
+
+<p>
+<blockquote>
+<IMG SRC="images/function-graph.png" width = 300 alt = "Plotting a function graph">
+</blockquote>
+
+</li>
+
+</ul>
+
+</li>
+
+<li><em>Outline and filled shapes.</em>
+<tt>StdDraw</tt> also includes 
+methods to draw circles, rectangles, and arbitrary polygons.
+Each shape defines an outline. When the method name 
+is just the shape name, that outline is traced by the drawing pen.
+When the method name begins with <tt>filled</tt>,
+the named shape is instead filled 
+solid, not traced.
+
+<p>
+<blockquote>
+<img src = "images/stddraw-shapes.png" width = 450 alt = "Standard drawing API: shapes">
+</blockquote>
+
+
+The arguments for <tt>circle()</tt> define a circle of radius
+r; the arguments for <tt>square()</tt> define a square of side length 2r
+centered on the given point; and the arguments for <tt>polygon()</tt>
+define a sequence of points that we connect 
+by lines, including one from the last point to the first point.
+
+<p>
+<blockquote>
+<IMG SRC="images/shapes.png" width = 550 alt = "Standard drawing shapes">
+</blockquote>
+
+</li>
+
+<li><em>Text and color.</em> 
+To annotate or highlight various elements in your drawings,
+<tt>StdDraw</tt> includes methods for
+drawing text, setting the font, and setting the the
+ink in the pen.
+
+<p>
+<blockquote>
+<IMG SRC="images/stddraw-text.png" width = 350 alt = "Standard drawing text and color commands">
+</blockquote>
+
+In this code,
+<a href = "http://docs.oracle.com/javase/8/docs/api/java/awt/Font.html">java.awt.Font</a>
+and 
+<a href = "http://docs.oracle.com/javase/8/docs/api/java/awt/Color.html">java.awt.Color</a>
+are abstractions that are implemented with non-primitive types
+that you will learn about in Section 3.1.
+Until then, we leave the details to <tt>StdDraw</tt>.
+<!--
+The available pen colors are <tt>BLACK</tt>, <tt>BLUE</tt>, 
+<tt>CYAN</tt>, <tt>DARK_GRAY</tt>, <tt>GRAY</tt>, <tt>GREEN</tt>,
+<tt>LIGHT_GRAY</tt>, <tt>MAGENTA</tt>, <tt>ORANGE</tt>, <tt>PINK</tt>,
+<tt>RED</tt>, <tt>WHITE</tt>, and <tt>YELLOW</tt>,
+defined as constants within <tt>StdDraw</tt>.
+-->
+The default ink color is black; 
+the default font is a 16-point plain Serif font.
+
+</li>
+
+<li><em>Double buffering.</em>
+<tt>StdDraw</tt> supports a powerful computer graphics feature known as
+<em>double buffering</em>. When double buffering is enabled by calling
+<tt>enableDoubleBuffering()</tt>,
+all drawing takes place on the <em>offscreen canvas</em>.
+The offscreen canvas is not displayed; it exists only in computer 
+memory. Only when you call <tt>show()</tt> does your drawing get copied
+from the offscreen canvas to the <em>onscreen canvas</em>,
+where it is displayed in the standard drawing window. You can think 
+of double buffering as collecting all of the lines, points, shapes,
+and text that you tell it to draw, and then drawing them all simultaneously,
+upon request. 
+One reason to use double buffering is for efficiency when performing a large number of 
+drawing commands.
+
+</li>
+
+<li><em>Computer animations.</em>
+Our most important use of double buffering is to produce
+<em>computer animations</em>, where we create the illusion of 
+motion by rapidly displaying static drawings. 
+We can produce animations by repeating the following four steps:
+
+<ul>
+<li> Clear the offscreen canvas.
+<li> Draw objects on the offscreen 
+<li> Copy the offscreen canvas to the onscreen canvas.
+<li> Wait for a short while.
+</ul>
+
+<p>
+In support of these steps, the <tt>StdDraw</tt> has several methods:
+
+<p>
+<blockquote>
+<IMG SRC="images/stddraw-animation.png" width = 475 alt = "Standard drawing animation commands">
+</blockquote>
+
+
+<a name = "1.5.6"></a>
+<p>
+The "Hello, World" program for animation is to produce a black ball 
+that appears to move around on the canvas, bouncing off the boundary according
+to the laws of elastic collision. Suppose that the ball is at 
+position (<em>x</em>, <em>y</em>) and we want to create the impression
+of having it move to a new position, say (<em>x</em> + 0.01, <em>y</em> + 0.02).
+We do so in four steps:
+<ul>
+<li> Clear the offscreen canvas to white.
+</li>
+<li> Draw a black ball at the new position on the offscreen canvas.
+</li>
+<li> Copy the offscreen canvas to the onscreen canvas.
+</li>
+<li> Wait for a short while.
+</li>
+</ul>
+
+<p>
+To create the illusion of movement,
+<a href = "BouncingBall.java.html">BouncingBall.java</a>
+iterates these steps 
+for a whole sequence of positions of the ball.
+
+<!--
+The images below, which show the track of the ball, are produced by a
+modified version of this code (see Exercise 1.5.34).
+-->
+
+<p>
+<blockquote>
+<IMG SRC="images/bouncing-ball.png" width = 450 alt = "Bouncing ball">
+</blockquote>
+
+</li>
+
+<li><em>Images.</em>
+Our standard draw library supports drawing pictures as well as geometric
+shapes.
+The command <tt>StdDraw.picture(x, y, filename)</tt> plots
+the image in the given filename (either JPEG, GIF, or PNG format)
+on the canvas, centered on (x, y).
+<a href = "BouncingBallDeluxe.java.html">BouncingBallDeluxe.java</a>
+illustrates an example where the bouncing ball is replaced by
+an image of a tennis ball.
+
+</li>
+
+<li><em>User interaction.</em>
+Our standard draw library also includes methods so that the user
+can interact with the window using the mouse.
+
+
+<p>
+<blockquote>
+<table>
+<TR><TD><pre>
+double mouseX()          return x-coordinate of mouse
+double mouseY()          return y-coordinate of mouse
+boolean mousePressed()   is the mouse currently being pressed?
+</pre></td>
+</tr>
+</table>
+</blockquote>
+
+
+<ul>
+
+<li><em>A first example.</em>
+<a href = "MouseFollower.java.html">MouseFollower.java</a>
+is the <tt>HelloWorld</tt> of mouse interaction. It draws
+a blue ball, centered on the location of the mouse.
+When the user holds down the mouse button, the ball changes
+color from blue to cyan.
+
+</li>
+
+<li><em>A simple attractor.</em>
+<a href = "OneSimpleAttractor.java.html">OneSimpleAttractor.java</a>
+simulates the motion of a blue ball that is attracted to the mouse.
+It also accounts for a drag force.
+
+</li>
+
+<li><em>Many simple attractors.</em>
+<a href = "SimpleAttractors.java.html">SimpleAttractors.java</a>
+simulates the motion of 20 blue balls that are attracted to the mouse.
+It also accounts for a drag force. When the user clicks, the 
+balls disperse randomly.
+
+</li>
+
+<li><em>Springs.</em>
+<a href = "Springs.java.html">Springs.java</a>
+implements a spring system.
+
+</li>
+
+</ul>
+
+</li>
+
+</ul>
+
+
+
+<p>
+<h2>Standard audio.</h2>
+<a href = "../stdlib/javadoc/StdAudio.html">StdAudio</a>
+is a library that you can use to play and manipulate sound files.
+It allows you to play, manipulate and synthesize sound.
+
+<!-- For reference, the frequency range of human hearing is about 20 to 20,000 
+hertz. The amplitude (y value) corresponds to the volume. We assume
+it is scaled to be between &minus;1 and +1. -->
+
+<p>
+<blockquote>
+<IMG SRC="../11cheatsheet/images/stdaudio-api.png" width = 450 alt = "Standard audio API">
+</blockquote>
+
+
+We introduce some
+some basic concepts behind one of the oldest and most important areas of 
+computer science and scientific computing:
+<em>digital signal processing</em>.
+
+<ul>
+<li><em>Concert A.</em>
+<!--
+Sound is the vibration of matter that we perceive, in particular, 
+by the vibration of our eardrums, so oscillation is the key to
+understanding sound. Perhaps the simplest place to start is to consider the musical 
+note A above middle C, which is known as <em>concert A</em>.
+-->
+Concert A is a sine wave, scaled to oscillate at a frequency of 440 times per 
+second. The function sin(<em>t</em>) repeats itself once every 2&pi;
+units on the <em>x</em>-axis, so if we measure <em>t</em> in seconds and plot the function
+sin(2&pi;<em>t</em> &times; 440) we get
+a curve that oscillates 440 times per second.
+The amplitude (<em>y</em>-value) corresponds to the volume. We assume
+it is scaled to be between &minus;1 and +1.
+<!--
+We measure frequency in <a href = "http://en.wikipedia.org/wiki/Hertz">hertz</a>
+(cycles per second).
+-->
+
+</li>
+
+<li><em>Other notes.</em>
+A simple mathematical formula characterizes the other notes on the chromatic scale.
+They are divided equally on a logarithmic 
+(base 2) scale: there are twelve notes on the chromatic scale, and we get the 
+<em>i</em>th note above a given note by multiplying its frequency by the (<em>i</em>/12)th 
+power of 2. 
+
+<p>
+<blockquote>
+<IMG SRC="images/notes.png" width = 500 alt = "Musical notes, numbers, and waves">
+</blockquote>
+
+When you double or
+halve the frequency, you move up or down an octave on the scale.
+For example 880 hertz is one octave above concert A and 110 hertz is two octaves below concert A.
+<!--
+In other words, the frequency of each note in the chromatic 
+scale is precisely the frequency of the previous note in the scale multiplied 
+by the twelfth root of two. This information suffices to create music!
+For 
+example, to play the tune <em>Frere Jacques</em>, we just need to play each of the 
+notes A B C A by producing sine waves of the appropriate frequency for 
+about half a second each and then repeat the pattern.
+-->
+
+</li>
+
+<li><em>Sampling.</em>
+For digital sound, we represent a curve by sampling it at regular 
+intervals, in precisely the same manner as when we plot function graphs. 
+We sample sufficiently often that we have an accurate representation
+of the curve&mdash;a widely used sampling rate is 44,100 samples per second.
+It is that simple: we represent sound as an array of numbers
+(real numbers that are between &minus;1 and +1).
+
+
+<p>
+<blockquote>
+<table>
+<TR>
+<td>
+<IMG SRC="images/sampling1.png" width = 250 alt = "Sampling a sine wave at various rates">
+</td>
+
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+
+<td>
+<IMG SRC="images/sampling2.png" width = 250 alt = "Sampling a sine wave at 44,100 Hertz">
+</td>
+
+</tr>
+</table>
+</blockquote>
+
+
+For example, the following code fragment plays concert A for 10 seconds.
+
+
+<blockquote>
+<table>
+<TR><TD><pre>
+int SAMPLE_RATE = 44100;
+double hz = 440.0;
+double duration = 10.0;
+int n = (int) (SAMPLING_RATE * duration);
+double[] a = new double[n+1];
+for (int i = 0; i <= n; i++) {
+   a[i] = Math.sin(2 * Math.PI * i * hz / SAMPLE_RATE); 
+}
+StdAudio.play(a); 
+</pre></td></tr>
+</table>
+</blockquote>
+
+</li>
+
+<a name = "1.5.7"></a>
+<li><em>Play that tune.</em>
+<a href = "PlayThatTune.java.html">PlayThatTune.java</a>
+is an example that shows how easily we can create music with
+<tt>StdAudio</tt>.  It takes notes 
+from standard input, indexed on the chromatic scale from concert A, and 
+plays them on standard audio. 
+
+</li>
+
+<!--
+<li><em>Chords and harmonics.</em>
+Notes like concert A have a pure sound that is a 
+not very musical, because the sounds that you are accustomed to hearing 
+have many other components. The sound from the guitar string echos off 
+the wooden part of the instrument, the walls of the room that you are in, 
+and so forth. You may think of such effects as modifying the basic sine wave. 
+For example, most musical instruments produce harmonics (the same note in 
+different octaves and not as loud), or you might play chords (multiple notes 
+at the same time). To combine multiple sounds, we can simply add their 
+waves together (and rescale to make sure they stay between &minus;1 and +1).
+
+<p>
+<blockquote>
+<IMG SRC="images/superposition.png" alt = "Adding waves to make a composite sound">
+</blockquote>
+
+When we add sine waves of different frequency, we can get arbitrarily 
+complicated waves. Indeed, one of the triumphs of 19th century
+mathematics was the development of the ideas that any periodic function can 
+be expressed as a sum of sine and cosine waves, known as a <em>Fourier series</em>. 
+This mathematical idea corresponds to the idea that we can create a large 
+range of sounds with musical instruments or our vocal chords and that 
+all sound consists of a composition of various oscillating curves. Any 
+sound corresponds to a curve and any curve corresponds to a sound. 
+
+-->
+</li>
+
+
+</ul>
+
+<!--
+<p><br>
+<h2>Graphical user interfaces.</h2>
+A <em>graphical user interface</em> (GUI) is....
+Swing is Java's built-in library of GUI widgets. It includes primitives
+for creating buttons, menus, scrollbars, and many other common
+graphical components that everyday applications (browser, email client,
+word processor) use. The text editor JEdit that you have been using to
+write your programs is written in Java.
+We will defer interactive graphics until later, but just to give you an idea
+of what is possible,
+<a href = "GUI.java.html">GUI.java</a> is a bare-bones
+Java program that contains a clickable button. Each operating system
+displays the program using its own <em>look-and-feel</em> to blend
+in with native applications. Below is the same program under
+Windows XP and Mac OS X.
+
+<p>
+<blockquote>
+<TABLE BORDER = 0 CELLPADDING =2 CELLSPACING = 0>
+<tr>
+<td><IMG SRC="images/gui-xp.png"   alt = "Swing GUI under Windows XP">
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<td><IMG SRC="images/gui-osx.png"  alt = "Swing GUI under Mac OS X">
+</tr>
+</table>
+</blockquote>
+
+
+<p><br>
+<h2>Standard draw 3D.</h2>
+The library <a href = "../stddraw3d">StdDraw3D</a> supports
+3D graphics.
+
+-->
+
+<!--
+<H4>Q + A</H4>
+
+
+<p><b>Q.</b>
+How does <tt>StdIn</tt> differ from <a href = "http://docs.oracle.com/javase/7/docs/api/java/util/Scanner.html">java.util.Scanner</a>?
+<p><b>A.</b> There are several differences.
+<ul>
+<p><li>It is a library of static methods, so you do not need to create objects to use it.
+<p><li>It coerces the character encoding to UTF-8, which is a standard character encoding for Unicode.
+<p><li>It coerces the locale to <tt>Locale.US</tt>. This means that your program will be able to read
+the data files in the book even if your system defaults to a different locale (e.g., one which uses
+a different decimal separator).
+<p><li>It adds utility methods for reading one character at a time.
+</ul>
+The original version of <tt>StdIn.java</tt> predates <tt>java.util.Scanner</tt>.
+Now, it is implemented by calling the appropriate methods in <tt>java.util.Scanner</tt>.
+
+<p><b>Q.</b>
+How does <tt>StdOut</tt> differ from <tt>System.out.println()</tt>?
+<p><b>A.</b> There are a few technical differences.
+<ul>
+<p><li>It coerces the character encoding to UTF-8, which is a standard character encoding for Unicode.
+<p><li>It coerces the locale to <tt>Locale.US</tt>, for consistency with <tt>StdIn</tt>
+and <tt>Double.parseDouble()</tt>.
+<p><li>It "flushes" standard output after each call to <tt>print()</tt> so that
+text will appear immediately in the terminal.
+</ul>
+
+In summary, we want <tt>StdIn</tt> and <tt>StdOut</tt> to behave the same on all systems,
+including being able to read and write the same input files.
+
+<p><b>Q.</b>
+Can I re-read data from standard input.
+<p><b>A.</b>
+No. You only get one shot. 
+
+<p><b>Q.</b>
+How do I enter the end-of-file sequence if I am redirecting
+standard input from a file?
+<p><b>A.</b>
+It is automatically included by your operating system.
+
+
+<p><b>Q.</b>
+How do I print the <tt>%</tt> symbol within <tt>printf()</tt>?
+<p><b>A.</b>
+Use <tt>%%</tt>.
+
+<p><b>Q.</b>
+What happens if my program attempts to read data from standard input
+after it is exhausted?
+<p><b>A.</b>
+You will get the following error
+<blockquote>
+<table>
+<TR><TD><pre>
+java.lang.RuntimeException: Tried to read from empty stdin
+</pre></td></tr>
+</table>
+</blockquote>
+Use <tt>StdIn.isEmpty()</tt> to check whether there is more
+input available.
+
+
+<p><b>Q.</b>
+What is the symbol for the end of a line?
+<p><b>A.</b>
+Different operating systems use different symbols.
+On Unix systems, the newline character is <tt>'\n'</tt>, on Windows each
+line is terminated by a string of two characters <tt>"\r\n"</tt>, on Macs
+each line is terminated by the string <tt>"\n\r"</tt>. When writing a program,
+you should avoid using operating system specific features or else it
+might not work as expected on other systems.
+Use <tt>System.out.println()</tt> to print a new line, or the following
+to determine the sequence of characters that represents a new line.
+<blockquote>
+<table>
+<TR><TD><pre>
+String NEWLINE = System.getProperty("line.separator");
+</pre></td></tr>
+</table>
+</blockquote>
+
+
+<p><b>Q.</b>
+Which of the following is more efficient?
+
+<blockquote>
+<table>
+<TR><TD><pre>
+String s;                         
+while (!StdIn.isEmpty()) {        while (!StdIn.isEmpty()) {
+    s = StdIn.readString();           String s = StdIn.readString();
+    ...                               ...
+}                                 }
+</pre></td></tr>
+</table>
+</blockquote>
+
+<p><b>A.</b>
+No difference in terms of efficiency.
+The second is better style because it limits
+the scope of the variable <tt>s</tt>.
+
+
+<p><b>Q.</b>
+How is the Java coordinate system different from the one in 
+<tt>StdDraw</tt>?
+<p><b>A.</b>
+<tt>StdDraw</tt> arranges the axes in Cartesian form - (0, 0) is lower
+left, whereas Java uses (0, 0) for upper left.
+<tt>StdDraw</tt> uses real-valued coordinates, whereas Java uses integer
+coordinates.
+
+
+<p><b>Q.</b>
+How do I create colors for use with the graphics library?
+<p><b>A.</b>
+Here's a primer on <a href = "colors.html">using colors in Java</a>.
+
+<p><b>Q.</b>
+What are the main differences of the PNG, JPEG, and PostScript graphics
+formats?
+<p><b>A.</b>
+The graphics on most web pages are in PNG, GIF, or JPEG format.
+All three formats are <em>raster-based</em> - they store the set of pixels
+and color gradations needed to represent a picture.
+PNG and GIF are ideal for displaying figures with straight lines and geometric
+figures, while JPEG is best suited for photographs.
+PostScript is a <em>vector-based</em> format. For example,
+it represents a circle as a geometric object instead of a collection of 
+thousands of pixels. The quality does not degrade if you enlarge or shrink it.
+For this reason, most printers use PostScript to print documents and graphics.
+
+<p><b>Q.</b>
+What does the error message 
+<tt>Exception in thread "main" java.lang.NoClassDefFoundError: StdIn</tt>
+mean?
+<p><b>A.</b>
+You probably forgot to put <tt>StdIn.java</tt> in your 
+current working directory and compile it.
+
+
+<p><b>Q.</b>
+How can I create an animated GIF?
+<p><b>A.</b>
+Currently our graphics library does not support saving animated
+file formats like MPEG, animated GIF, or AVI. However, with an external
+utility (e.g., <a href = "http://www.imagemagick.org/">ImageMagick</a>)
+the process is not difficult, and we have
+used it to create some of the animations on this booksite. The idea
+is to use <tt>StdDraw.save()</tt> to save a sequence of PNG files named
+<tt>frame100.png</tt>, <tt>frame101.png</tt>, <tt>frame102.png</tt>,
+and so on. Assuming ImageMagick is installed (Unix, Linux, OS X, 
+and Windows are all supported) you can use the command
+<blockquote>
+<table>
+<TR><TD><pre>
+convert -delay 10 -loop 5 T*.png duke.gif
+</pre></td></tr>
+</table>
+</blockquote>
+<p>
+The <tt>convert</tt> program stitches together the frames
+(in lexicographic order), displays them every 10 milliseconds 
+(ten per second), and repeats the loop 5 times.
+
+-->
+
+<p>
+
+<H4><a name = "exercises">Exercises</a></H4>
+
+<ol>
+
+<a name = "Ex1.5.1"></a>
+<li value = 1>
+Write a program <a href = "MaxMin.java.html">MaxMin.java</a>
+that reads in integers (as many as the user enters)
+from standard input and prints out the maximum and minimum values.
+
+<!--
+<li>
+Modify your program from the previous exercise to insist that the
+integers must be positive (by prompting the user to enter positive
+integers whenever the value entered is not positive).
+-->
+
+<a name = "Ex1.5.3"></a>
+<li value = 3>
+Write a program <a href = "Stats.java.html">Stats.java</a>
+that takes an integer command-line argument <em>n</em>,
+reads <em>n</em> floating-point numbers from
+standard input, and prints their <em>mean</em> (average value) and 
+<em>sample standard deviation</em> (square root of the sum of the squares
+of their differences from the average, divided by <em>n</em>&minus;1). 
+
+<!--
+<li>
+Extend your program from the previous exercise to create a filter that prints 
+all the values that are further than 1.5 standard deviations from the mean.
+-->
+
+<a name = "Ex1.5.5"></a>
+<li value = 5>
+Write a program <a href = "LongestRun.java.html">LongestRun.java</a>
+that reads in a sequence of integers and prints out both 
+the integer that appears in a longest consecutive run and the length of the run. For 
+example, if the input is <tt>1 2 2 1 5 1 1 7 7 7 7 1 1</tT>, then your program should 
+print  <tt>Longest run: 4 consecutive 7s</tt>. 
+
+<!--
+<li>
+Write a filter that reads in a sequence of integers and prints out the integers, 
+removing repeated values that appear consecutively. For example, if the input is 
+<tt>1 2 2 1 5 1 1 7 7 7 7 1 1 1 1 1 1 1 1 1</tt>, your program should print out 
+<tt>1 2 1 5 1 7 1</tt>. 
+
+<li>
+Write a program that takes a command-line argument N, reads in N-1
+distinct integers between 1 and N, and determines the missing value. 
+
+
+<a name = "Ex1.5.8"></a>
+<li value = 8>
+Write a program 
+<tt>GeometricMean.java</tt> that reads positive floating-point numbers from
+standard input and prints out their <em>geometric mean</em>.
+The <em>geometric mean</em> of n positive numbers x<sub>1</sub>, x<sub>2</sub>,
+..., x<sub>n</sub> is
+(x<sub>1</sub> * x<sub>2</sub> * ... * x<sub>n</sub>)<sup>1/n</sup>.
+Write a program 
+<tt>HarmonicMean.java</tt> that reads in positive floating-point numbers from
+standard input and prints out their <em>harmonic mean</em>.
+The harmonic mean of n positive numbers x<sub>1</sub>, x<sub>2</sub>,
+..., x<sub>n</sub> is
+(1/x<sub>1</sub> + 1/x<sub>2</sub> + ... + 1/x<sub>n</sub>) / (1 / n).
+<p><em>Hint</em>: for the geometric mean, consider taking logs to avoid overflow.
+-->
+
+<!--
+<li>
+Suppose that the file <tt>input.txt</tt> contains the two strings F and F.
+What does the following command do (see Exercises 1.2.35)?
+Here is the Java program <a href = "Dragon.java.html">Dragon.java</a>.
+
+<p>
+<blockquote>
+<table>
+<TR><TD><pre>
+java Dragon < input.txt | java Dragon | java Dragon 
+</pre></td></tr>
+</table>
+</blockquote>
+<p>
+
+
+<li>
+Write a filter <tt>TenPerLine.java</tt>
+that takes a sequence of integers between 0 and 99
+and prints 10 integers per line, with columns aligned.
+Then write a program <tt>RandomIntSeq</tt> that takes two
+command-line arguments M and N and outputs N 
+random integers between 0 and M-1. Test your programs with the
+command <tt>java RandomIntSeq 200 100 | java TenPerLine</tt>.
+-->
+
+<a name = "Ex1.5.11"></a>
+<li value = 11>
+Write a program <a href = "WordCount.java.html">WordCount.java</a>
+that reads in text from standard input and prints out the 
+number of words in the text. For the purpose of this exercise, a word is a sequence 
+of non-whitespace characters that is surrounded by whitespace. 
+
+<!--
+<li>
+Write a program that reads in lines from standard input with each line 
+containing a name and two integers and then uses <tt>printf()</tt>
+to print a table with a column of the names, the integers, and the result of
+dividing the first by the second, accurate to three decimal places.
+You could use a program like this to tabulate batting averages
+for baseball players or grades for students. 
+
+<li>
+Which of the following require saving all the values from standard input (in 
+an array, say), and which could be implemented as a filter using only a fixed number 
+of variables? For each, the input comes from standard input and consists of N real 
+numbers between 0 and 1. 
+
+<ul>
+<li> Print the maximum and minimum numbers. 
+<li> Print the kth smallest value. 
+<li> Print the sum of the squares of the numbers. 
+<li> Print the average of the N numbers. 
+<li> Print the percentage of numbers greater than the average. 
+<li> Print the N numbers in increasing order. 
+<li> Print the N numbers in random order. 
+</ul>
+
+<li>
+Write a program that prints a table of the monthly payments, remaining 
+principal, and interest paid for a loan, taking three numbers as
+command-line arguments: the number of years, the principal,
+and the interest rate (see Exercise 1.2.24). 
+-->
+
+<a name = "Ex1.5.15"></a>
+<li value = 15>
+Write a program <a href = "Closest.java.html">Closest.java</a>
+that takes three floating-point command-line arguments
+\(x, y, z\), reads from standard input a sequence of point coordinates
+\((x_i, y_i, z_i)\), and prints the
+coordinates of the point closest to \((x, y, z)\).
+Recall that the square of the distance between
+\((x, y, z)\) and \((x_i, y_i, z_i)\) 
+is 
+\((x - x_i)^2 + (y - y_i)^2 + (z - z_i)^2\).
+For efficiency, do not use <tt>Math.sqrt()</tt> or <tt>Math.pow()</tt>.
+
+<a name = "Ex1.5.16"></a>
+<li value = 16>
+Given the positions and masses of a sequence of objects, write a program
+to compute their center-of-mass or <em>centroid.</em> The centroid is
+the average position of the <em>n</em> objects, weighted by mass.
+If the positions and masses are given by
+(<em>x<sub>i</sub></em>, <em>y<sub>i</sub></em>, <em>m<sub>i</sub></em>),
+then the centroid (<em>x</em>, <em>y</em>, <em>m</em>) is given by:
+<blockquote>
+<table>
+<TR><TD><pre>
+m  = <em>m<sub>1</sub></em> + <em>m<sub>2</sub></em> + ... + <em>m<sub>n</sub></em>
+x  = (<em>m<sub>1</sub>x<sub>1</sub></em> +  ... + <em>m<sub>n</sub>x<sub>n</sub></em>) / m
+y  = (<em>m<sub>1</sub>y<sub>1</sub></em> +  ... + <em>m<sub>n</sub>y<sub>n</sub></em>) / m
+</pre></td></tr>
+</table>
+</blockquote>
+<p>
+Write a program <tt>Centroid.java</tt> that reads in a sequence of
+positions and masses
+(<em>x<sub>i</sub></em>, <em>y<sub>i</sub></em>, <em>m<sub>i</sub></em>)
+from standard input and prints out their center of mass
+(<em>x</em>, <em>y</em>, <em>m</em>).
+<em>Hint</em>: model your program after
+ <a href = "Average.java.html">Average.java</a>.
+
+<!--
+<li>
+Write a program <tt>SignalAnalyzer.java</tt> that reads in a sequence
+of real numbers between -1 and 1 and prints out their
+average magnitude, average power, and the   
+number of zero crossings.
+The <em>average magnitude</em> is the average of the absolute values
+of the data values.
+The <em>average power</em> is the average of the squares of the
+data values.
+The <em>number of zero crossings</em> is the number of times a data
+value transitions from a strictly negative number to a
+strictly positive number, or vice versa.
+These three statistics are widely used to analyze digital signals.
+-->
+
+<a name = "Ex1.5.18"></a>
+<li>
+Write a program <a href = "CheckerBoard.java.html">CheckerBoard.java</a>
+that takes a command-line argument n and plots an n-by-n checkerboard
+with red and black squares. Color the lower left square red.
+
+<p>
+<blockquote>
+<TABLE BORDER = 0 CELLPADDING =2 CELLSPACING = 0  WIDTH = 500>
+<tr>
+<td><IMG SRC="images/checkerboard5.png" alt = "5-by-5 checkerboard">
+<td><IMG SRC="images/checkerboard8.png" alt = "8-by-8 checkerboard">
+<td><IMG SRC="images/checkerboard25.png" alt = "25-by-25 checkerboard">
+</tr>
+</table>
+</blockquote>
+
+<!--
+<li>
+Write a program that takes as command-line arguments an integer N and 
+a double value p (between 0 and 1), plots N equally spaced points
+of size on the circumference of a circle, and then, with probability
+p for each pair of points, draws a gray line connecting them. 
+
+<p>
+<blockquote>
+<TABLE BORDER = 0 CELLPADDING =2 CELLSPACING = 0  WIDTH = 500>
+<tr>
+<td><IMG SRC="images/erdos.png" alt = "erdos">
+</tr>
+</table>
+</blockquote>
+
+
+<li>
+Write code to draw hearts, spades, clubs, and diamonds. To draw a heart, 
+draw a diamond, then attach two semicircles to the upper left and upper right sides. 
+-->
+
+<a name = "Ex1.5.21"></a>
+<li value = 21>
+Write a program <a href = "Rose.java.html">Rose.java</a>
+that takes a command-line argument n
+and plots a rose with n petals (if n is odd) or 2n petals
+(if n is even) by plotting the polar coordinates (r, &theta;) of the
+function <em>r = sin(n &times; &theta;)</em> for 
+&theta; ranging from 0 to 2&pi; radians.
+Below is the desired output for n = 4, 7, and 8.
+
+<p>
+<blockquote>
+<TABLE BORDER = 0 CELLPADDING =2 CELLSPACING = 0  WIDTH = 500>
+<tr>
+<td><IMG SRC="images/rose.png" alt = "rose">
+</tr>
+</table>
+</blockquote>
+
+
+<a name = "Ex1.5.22"></a>
+<li value = 22>
+Write a program <a href = "Banner.java.html">Banner.java</a>
+that takes a string s from the command line and display it
+in banner style on the screen, moving from left to right and
+wrapping back to the beginning of the string as the end is reached.
+Add a second command-line argument to control the speed.
+
+<!--
+<li>
+Modify <a href = "PlayThatTune.java.html">PlayThatTune.java</a>
+to take additional command-line arguments that control the volume
+(multiply each sample value by the volume) and the tempo 
+(multiply each notes duration by the tempo). 
+
+<li>
+Write a program that takes the name of a .wav file and a playback rate r as 
+command-line arguments and plays the file at the given rate.
+First, use <tt>StdAudio.read()</tt>
+to read the file into an array <tt>a[]</tt>. If r = 1,
+just play <tt>a[]</tt>; otherwise create 
+a new array <tt>b[]</tt> of approximate size r times <tt>a.length</tt>.
+If r < 1, populate <tt>b[]</tt> by sampling from the original;
+if r > 1, populate <tt>b[]</tt> by interpolating from the original. 
+Then play <tt>b[]</tt>. 
+
+<li>
+Write programs that uses <tt>StdDraw</tt> to create each of the following designs.
+
+<p>
+<blockquote>
+<img src = "images/designs.png" alt = "geometric designs">
+</blockquote>
+-->
+
+<a name = "Ex1.5.26"></a>
+<li value = 26>
+Write a program <tt>Circles.java</tt>
+that draws filled circles of random size at random positions in the unit
+square, producing images like those below. Your program 
+should take four command-line arguments: the number of circles, the probability 
+that each circle is black, the minimum radius, and the maximum radius. 
+
+<p>
+<blockquote>
+<img src = "images/circles.png" alt = "random circles">
+</blockquote>
+
+
+</ol>
+
+<H4>Creative Exercises</H4>
+<ol start = 27>
+
+<!--
+<li><b>Visualizing audio.</b>
+Modify <a href = "PlayThatTune.java.html">PlayThatTune.java</a>
+ to send the values played to standard drawing, so that you
+can watch the sound waves as they are played. You will 
+have to experiment with plotting multiple curves in the drawing
+canvas to synchronize the sound and the picture. 
+
+<li><b>Statistical polling.</b>
+When collecting statistical data for certain political polls, 
+it is very important to obtain an unbiased sample of registered voters. Assume that 
+you have a file with N registered voters, one per line.
+Write a filter that prints out a random sample of size M
+(see Program 1.4.1).
+
+<li><b>Terrain analysis.</b>
+Suppose that a terrain is represented by a two-dimensional grid of
+elevation values (in meters). A peak is a grid point whose four neighboring 
+cells (left, right, up, and down) have strictly lower elevation values. Write a program 
+<tt>Peaks.java</tt> that reads a terrain from standard input and then computes and
+prints the number of peaks in the terrain. 
+
+<li><b>Histogram.</b>
+Suppose that the standard input stream is a sequence of <tt>double</tt> values.
+Write a program that takes an integer N and two double values l and r 
+from the command line and uses <tt>StdDraw</tt> to plot a histogram of the count of the 
+numbers in the standard input stream that fall in each of the N intervals defined by 
+dividing (l , r) into N equal-sized intervals. 
+-->
+
+<a name = "Ex1.5.31"></a>
+<li value = 31>
+<b>Spirographs.</b> Write a program <a href = "Spirograph.java.html">Spirograph.java</a>
+that takes three command-line arguments
+R, r, and a and draws the resulting spirograph.
+A <a href = "http://www.math.dartmouth.edu/~dlittle/java/SpiroGraph">spirograph</a>
+(technically, an epicycloid) is a 
+curve formed by rolling a circle of radius r
+around a larger fixed circle or radius R. If the pen offset from the center of
+the rolling circle is (r+a), then the equation of
+the resulting curve at time t is given by
+<blockquote>
+<table>
+<TR><TD><pre>
+x(t) = (R+r)*cos(t) - (r+a)*cos(((R+r)/r)*t)
+y(t) = (R+r)*sin(t) - (r+a)*sin(((R+r)/r)*t)
+</pre></td></tr>
+</table>
+</blockquote>
+<p>
+
+Such curves were popularized by a best-selling toy that contains discs with
+gear teeth on the edges and small  holes that you could put a pen in
+to trace spirographs.
+<p>
+For a dramatic 3d effect, draw a circular image, e.g., 
+<a href = "earth.gif">earth.gif</a> instead of a dot,
+and show it rotating over time. Here's a picture of the resulting 
+<a href = "spirograph.png">spirograph</a> when R = 180, r = 40, and a = 15.
+
+<a name = "Ex1.5.32"></a>
+<li value = 32>
+<b>Clock.</b>
+Write a program <a href = "Clock.java.html">Clock.java</a>
+that displays
+an animation of the second, minute, and hour hands of an analog clock.
+Use the method <tt>StdDraw.show(1000)</tt>
+to update the display roughly once per second.
+<p><em>Hint</em>: this may be one of the rare times when you want to use
+the % operator with a <tt>double</tt> - it works the way you
+would expect.
+
+<a name = "Ex1.5.33"></a>
+<li value = 33>
+<b>Oscilloscope.</b>
+Write a program <a href = "Oscilloscope.java.html">Oscilloscope.java</a>
+to simulate the output of an oscilloscope and produce Lissajous patterns.
+These patterns are named after the French physicist, Jules A. Lissajous, who
+studied the patterns that arise when two mutually perpendicular periodic
+disturbances occur simultaneously.
+Assume that the inputs are sinusoidal, so tha the following parametric
+equations describe the curve:
+<blockquote>
+<table>
+<TR><TD><pre>
+x = Ax sin (w<sub>x</sub>t + &theta;<sub>x</sub>)
+y = Ay sin (w<sub>y</sub>t + &theta;<sub>y</sub>)
+Ax, Ay = amplitudes
+w<sub>x</sub>, w<sub>y</sub> = angular velocity
+&theta;<sub>x</sub>, &theta;<sub>y</sub> = phase factors
+</pre></td></tr>
+</table>
+</blockquote>
+
+<p>
+Take the six parameters A<sub>x</sub>, w<sub>x</sub>, &theta;<sub>x</sub>,
+&theta;<sub>y</sub>, w<sub>y</sub>, and &theta;<sub>y</sub> from the command line.
+
+<p>
+For example, the first image below has
+Ax = Ay = 1, w<sub>x</sub> = 2, w<sub>y</sub> = 3,
+&theta;<sub>x</sub> = 20 degrees, &theta;<sub>y</sub> = 45 degrees.
+The other has parameters (1, 1, 5, 3, 30, 45)
+<p>
+<blockquote>
+<TABLE BORDER = 0 CELLPADDING =2 CELLSPACING = 0  WIDTH = "95%">
+<tr>
+<td><IMG SRC="images/oscilloscope2.png"   alt = "Oscilloscope 2">
+<td><IMG SRC="images/oscilloscope3.png"   alt = "Oscilloscope 3">
+</tr>
+</table>
+</blockquote>
+<p>
+
+<!--
+<li><b>Bouncing ball with tracks</b>.
+Modify <a href = "BouncingBall.java.html">BouncingBall.java</a>
+to produce images like the ones shown in the text,
+which show the track of the ball on a gray background. 
+
+<li><b>Bouncing ball with gravity.</b>
+Modify <a href = "BouncingBall.java.html">BouncingBall.java</a>
+to incorporate gravity in the vertical direction.
+Add calls to <tt>StdAudio.play()</tt> to add one sound effect when
+the ball hits a wall and a different one when it hits the floor.
+
+<li><b>Random tunes.</b>
+Write a program that uses <tt>StdAudio</tt> to play random tunes. 
+Experiment with keeping in key, assigning high probabilities to whole steps,
+repetition, and other rules to produce reasonable melodies. 
+
+<li><b>Tile patterns.</b>
+Using your solution to Exercise 1.5.25, write a program 
+<tt>TilePattern</tt> that takes a command-line argument n and draws an n-by-n pattern, 
+using the tile of your choice. Add a second command-line argument that adds a 
+checkerboard option. Add a third command-line argument for color selection.
+Using the patterns below as a starting point, design a tile floor. Be creative! 
+
+<p>
+<blockquote>
+<img src = "images/tiles.png" alt = "tiles">
+</blockquote>
+
+<p>
+Note: These are all designs from antiquity that you can find in many
+ancient (and modern) buildings such as from
+from San Giovanni in Laterno (Basilica of St. John Latern) in Rome
+[
+<a href = "images/IMG_0252.jpg">1</a>
+<a href = "images/IMG_0253.jpg">2</a>
+<a href = "images/IMG_0255.jpg">3</a>
+<a href = "images/IMG_0256.jpg">4</a>
+<a href = "images/IMG_0257.jpg">5</a>
+<a href = "images/IMG_0260.jpg">6</a>
+]
+
+or from the
+Tile Museum in Lisbon
+[
+<a href = "images/IMG_0480.jpg">1</a>
+<a href = "images/IMG_0481.jpg">2</a>
+<a href = "images/IMG_0482.jpg">3</a>
+<a href = "images/IMG_0483.jpg">4</a>
+<a href = "images/IMG_0484.jpg">5</a>
+<a href = "images/IMG_0485.jpg">6</a>
+<a href = "images/IMG_0486.jpg">7</a>
+<a href = "images/IMG_0487.jpg">8</a>
+<a href = "images/IMG_0498.jpg">9</a>
+<a href = "images/IMG_0500.jpg">10</a>
+]
+
+-->
+
+
+</ol>
+
+
+
+<H4>Web Exercises</H4>
+
+<ol>
+
+
+<li><b>Word and line count.</b>
+Modify <a href = "WordCount.java.html">WordCount.java</a> so that reads in text
+from standard input and prints out the number of characters, words, and lines
+in the text.
+
+
+<li><b>Rainfall problem.</b>
+Write a program <tt>Rainfall.java</tt> that reads in nonnegative
+integers (representing rainfall) one at a time until 999999 is entered,
+and then prints out the average of value (not including 999999).
+
+
+
+<li><b>Remove duplicates.</b>
+Write a program <tt>Duplicates.java</tt> that reads in a sequence
+of integers and prints back out the integers, except that it removes
+repeated values if they appear consecutively.
+For example, if the input is 1 2 2 1 5 1 1 7 7 7 7 1 1, your
+program should print out 1 2 1 5 1 7 1.
+
+<li><b>Run length encoding.</b>
+Write a program 
+<a href = "RunLengthEncoder.java.html">RunLengthEncoder.java</a> that 
+encodes a binary input using run length encoding.
+Write a program <tt>RunLengthDecoder.java</tt> that 
+decodes a run length encoded message.
+
+<li><b>Head and tail.</b>
+Write programs <tt>Head.java</tt> and <tt>Tail.java</tt> that
+take an integer command line input N and print out the first or last
+N lines of the given file. (Print the whole file if it consists of
+<= N lines of text.)
+
+<li><b>Print a random word.</b>
+Read a list of N words from standard input, where N is unknown ahead
+of time, and print out one of the N words uniformly at random.
+Do not store the word list. Instead, use Knuth's method: when
+reading in the ith word, select it with probability 1/i to be
+the selected word, replacing the previous champion. Print out
+the word that survives after reading in all of the data.
+
+<li><b>Caesar cipher.</b>
+Julius Caesar sent secret messages to Cicero using a scheme that
+is now known as a <em>Caesar cipher</em>. Each letter is replaced
+by the letter k positions ahead of it in the alphabet (and you
+wrap around if needed). The table below gives the Caesar cipher
+when k = 3.
+<blockquote>
+<table>
+<TR><TD><pre>
+Original:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+Caesar:    D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+</pre></td></tr>
+</table>
+</blockquote>
+<p>
+For example the message "VENI, VIDI, VICI" is converted to
+"YHQL, YLGL, YLFL".
+Write a program <tt>Caesar.java</tt> that takes a command-line argument
+k and applies a Caesar cipher with shift = k to a sequence of
+letters read from standard input. If a letter is not an uppercase letter,
+simply print it back out.
+
+<li>
+<b>Caesar cipher decoding.</b>
+How would you decode a message encrypted using a Caesar cipher?
+<em>Hint</em>: you should not need to write any more code.
+
+<li>
+<b>Parity check.</b>
+A Boolean matrix has the <em>parity property</em>
+when each row and each column has an even sum. This is a simple type of 
+error-correcting code because if one bit is corrupted in transmission
+(bit is flipped from 0 to 1 or from 1 to 0) it can be detected and
+repaired. Here's a 4 x 4 input file which has the parity property:
+<blockquote>
+<table>
+<TR><TD><pre>
+1 0 1 0
+0 0 0 0
+1 1 1 1
+0 1 0 1
+</pre></td></tr>
+</table>
+</blockquote>
+
+<p>
+Write a program ParityCheck.java that takes an integer N as a command
+line input and reads in an N-by-N Boolean matrix
+from standard input, and outputs if
+(i) the matrix has the parity property, or (ii) indicates which single
+corrupted bit (i, j) can be flipped to restore the parity property,
+or (iii) indicates that the matrix was corrupted (more than two bits
+would need to be changed to restore the parity property).
+Use as little internal storage as possible. Hint: you do not even
+have to store the matrix!
+
+
+<li><b>Takagi's function.</b>
+Plot Takagi's function: everywhere continuous, nowhere differentiable.
+
+<li><b>Hitchhiker problem.</b>
+You are interviewing N candidates for the sole position
+of American Idol.
+Every minute you get to see a new candidate, and you have
+one minute to decide whether or not to declare that person
+the American Idol. You may not change your mind once you
+finish interviewing the candidate.
+Suppose that you can immediately rate each candidate with a single real
+number between 0 and 1,
+but of course, you don't know the rating of the candidates not yet seen.
+Devise a strategy and write a program <tt>AmericanIdol</tt> that has
+at least a 25% chance of picking the best candidate
+(assuming the candidates arrive in random order),
+reading the 500 data values from standard input.
+<p>
+<em>Solution:</em> interview for N/2 minutes and record the rating of 
+the best candidate seen so far. In the next N/2 minutes, pick
+the first candidate that has a higher rating than the recorded one.
+This yields at least a 25% chance since you will get the best candidate
+if the second best candidate arrives in the first N/2 minutes, and
+the best candidate arrives in the final N/2 minutes.
+This can be improved slightly to 1/e = 0.36788 by using essentially
+the same strategy, but switching over at time N/e.
+
+
+
+<li>
+<b>Nested diamonds.</b>
+Write a program <tt>Diamonds.java</tt>
+that takes a command line input N and plots N nested squares
+and diamonds.
+Below is the desired output for N = 3, 4, and 5.
+
+<p>
+<blockquote>
+<TABLE BORDER = 0 CELLPADDING =2 CELLSPACING = 0  WIDTH = 500>
+<tr>
+<td><IMG SRC="images/diamond3.png" alt = "diamond 3">
+<td><IMG SRC="images/diamond4.png" alt = "diamond 4">
+<td><IMG SRC="images/diamond5.png" alt = "diamond 5">
+</tr>
+</table>
+</blockquote>
+
+
+<p>
+<li>
+<b>Regular polygons.</b>
+Create a function to plot an N-gon, centered on (x, y) of size
+length s.
+Use the function to draws nested polygons like the picture below.
+
+<p>
+<blockquote>
+<img src = "images/polygons.png" alt = "nested polygons">
+</blockquote>
+
+<li><b>Bulging squares.</b>
+Write a program <tt>BulgingSquares.java</tt> that draws the
+following optical illusion from
+<a href = "http://www.ritsumei.ac.jp/~akitaoka/index-e.html">Akiyoshi Kitaoka</a>
+The center appears to bulge outwards even though all squares
+are the same size.
+<p>
+<blockquote>
+<img src = "images/bulge.jpg" alt = "bulging squares">
+</blockquote>
+
+
+<li><b>Spiraling mice.</b>
+Suppose that N mice that start on the vertices of a regular polygon with N sides,
+and they each head toward the nearest other mouse (in counterclockwise direction)
+until they all meet.
+Write a program to draw the logarithmic spiral paths that they trace
+out by drawing nested N-gons, rotated and shrunk as
+in <a href = "http://mathworld.wolfram.com/Whirl.html">this animation</a>.
+
+<li>
+<b>Spiral.</b>
+Write a program to draw a spiral like the one below.
+<p>
+<blockquote>
+<TABLE BORDER = 0 CELLPADDING =2 CELLSPACING = 0  WIDTH = 400>
+<tr>
+<td><img src = "spiral.gif" alt = "spiral">
+</tr>
+</table>
+</blockquote>
+<p>
+
+
+<li>
+<b>Globe.</b>
+Write a program <a href = "Globe.java.html">Globe.java</a>
+that takes a real command-line argument &alpha;
+and plots a globe-like pattern with parameter &alpha;.
+ Plot the polar coordinates (r, &theta;) of the function
+<em>f(&theta;) = cos(&alpha; &times; &theta;)</em> for &theta;
+ranging from 0 to 7200 degrees. Below is the desired output
+for &alpha; = 0.8, 0.9, and 0.95.
+
+<p>
+<blockquote>
+<TABLE BORDER = 0 CELLPADDING =2 CELLSPACING = 0  WIDTH = 500>
+<tr>
+<td><IMG SRC="images/globe80.png" alt = "globe pattern with alpha = 0.8">
+<td><IMG SRC="images/globe90.png" alt = "globe pattern with alpha = 0.9">
+<td><IMG SRC="images/globe95.png" alt = "globe pattern with alpha = 0.95">
+</tr>
+</table>
+</blockquote>
+
+
+<li><b>Drawing strings.</b>
+Write a program <a href = "RandomText.java.html">RandomText.java</a>
+that takes a string s and an integer N as command line
+inputs, and writes the string N times at a random location,
+and in a random color.
+
+<p>
+<blockquote>
+<TABLE BORDER = 0 CELLPADDING =2 CELLSPACING = 0  WIDTH = 500>
+<tr>
+<td><IMG SRC="images/hello10.png" alt = "hello">
+<td><IMG SRC="images/world15.png" alt = "world">
+<td><IMG SRC="images/java20.png" alt = "java">
+</tr>
+</table>
+</blockquote>
+<p>
+<br>
+
+
+<li><b>2D random walk.</b>
+Write a program <a href = "RandomWalk.java.html">RandomWalk.java</a>
+to simulate a 2D random walk and animate the results.
+Start at the center of a 2N-by-2N grid. The current location
+is displayed in blue; the trail in white.
+
+<p>
+<blockquote>
+<TABLE BORDER = 0 CELLPADDING =2 CELLSPACING = 0>
+<tr>
+<td><IMG SRC="images/randomwalk5.png"   alt = "random walk in 2d after 5 steps">
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<td><IMG SRC="images/randomwalk25.png"  alt = "random 2d walk after 25 steps">
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<td><IMG SRC="images/randomwalk106.png" alt = "random 2d walk after 106 steps">
+</tr>
+</table>
+</blockquote>
+
+
+
+
+<li><b>Rotating table.</b>
+You are seated at a rotating square table (like a lazy Susan), and
+there are four coins placed in the four corners of the table.
+Your goal is to flip the coins so that they are either all heads or
+all tails, at which point a bell rings to notify you that you are done.
+You may select any two of them, determine their orientation,
+and (optionally) flip either or both of them over.
+To make things challenging, you are blindfolded, and the table is
+spun after each time you select two coins.
+Write a program <tt>RotatingTable.java</tt> that initializes the
+coins to random orientations. Then, it prompts the user to
+select two positions (1-4), and identifies the orientation of each
+coin. Next, the user can specify which, if any of the two
+coins to flip. The process repeats until the user solves the puzzle.
+
+<li><b>Rotating table solver.</b>
+Write another program <tt>RotatingTableSolver.java</tt>
+to solve the rotating table puzzle.
+One effective strategy is to choose two coins at random and flip them to
+heads. However, if you get really unlucky, this could take an arbitrary
+number of steps. Goal: devise a strategy that always solves the puzzle
+in at most 5 steps.
+<p>
+
+<!--
+Do the following, but stop if you hear the bell at any point.
+1.  Turn two adjacent glasses up.
+2.  Turn two diagonal glasses up.
+1 1
+1 0
+3.  Pull out two diagonal glasses.  If one is down, turn it up and you're done.
+    If not, turn one down and replace.
+1 1
+0 0
+4.  Take two adjacent glasses.  Invert them both.
+1 0
+0 1
+5.  Take two diagonal glasses.  Invert them both.
+-->
+
+
+
+<li><b>Hex.</b>
+<a href = "http://mathworld.wolfram.com/GameofHex.html">Hex</a>
+is a two-player board game popularized by John Nash while a
+graduate student at Princeton University, and later commercialized
+by Parker Brothers.
+It is played on a hexagonal grid in the shape of an
+<a href = "http://www.wikipedia.org/wiki/Hex_(game)"> 11-by-11 diamond</a>.
+Write a program <tt>Hex.java</tt> that draws the board.
+
+
+
+
+<li>
+<b>Projectile motion with drag.</b>
+Write a program <a href = "BallisticMotion.java.html">BallisticMotion.java</a>
+that plots the trajectory of a ball that is shot with velocity v
+at an angle theta. Account for gravitational and drag forces.
+Assume that the drag force is proportional to the square of the velocity.
+Using Newton's equations of motions and the Euler-Cromer method,
+update the position, velocity, and acceleration according to the
+following equations:
+<blockquote>
+<table>
+<TR><TD><pre>
+v  = sqrt(vx*vx + vy*vy) 
+ax = - C * v * vx          ay = -G - C * v * vy
+vx = vx + ax * dt          vy = vy + ay * dt
+ x =  x + vx * dt           y =  y + vy * dt
+</pre></td></tr>
+</table>
+</blockquote>
+
+<p>
+Use G = 9.8, C = 0.002, and set the initial velocity to 180 and the angle
+to 60 degrees.
+
+<li><b>Heart.</b>
+Write a program <a href = "Heart.java.html">Heart.java</a> to draw
+a pink heart: Draw a diamond, then draw two circles to the upper left
+and upper right sides.
+
+<p>
+<blockquote>
+<img src = "images/heart.png" alt = "Heart">
+</blockquote>
+
+
+<li><b>Changing square.</b>
+Write a program that draws a square and changes its color each second.
+
+
+<li><b>Simple harmonic motion.</b>
+Repeat the previous exercise, but animate the Lissajous patterns
+as in <a href = "http://www.dcs.napier.ac.uk/~andrew/shm/liss3by2.html">this applet</a>.
+Ex: A = B = w<sub>x</sub> = w<sub>y</sub> = 1, but at each time t draw 100 (or so)
+points with &phi;<sub>x</sub> ranging from 0 to 720 degrees, and &phi;<sub>x</sub>
+ranging from 0 to 1080 degrees.
+
+
+
+<li><b>Bresenham's line drawing algorithm.</b>
+To plot a line segment from (x1, y1) to (x2, y2) on a monitor, say 1024-by-1024,
+you need to make a discrete approximation to the continuous line and determine
+exactly which pixels to turn on.
+<a href = "http://www.cs.helsinki.fi/group/goa/mallinnus/lines/bresenh.html">
+Bresenham's line drawing algorithm</a> is a
+clever solution that works when the slope is between 0 and 1 and x1 < x2.
+<blockquote>
+<table>
+<TR><TD><pre>
+int dx  = x2 - x1;
+int dy  = y2 - y1;
+int y   = y1;
+int eps = 0;
+    
+for (int x = x1; x <= x2; x++) {
+    StdDraw.point(x, y);
+    eps += dy;
+    if (2*eps >= dx)  {
+       y++;
+       eps -= dx;
+    }
+}
+</pre></td></tr>
+</table>
+</blockquote>
+
+<li>
+Modify Bresenham's algorithm to handle arbitrary line segments.
+
+<li><b>Miller's madness.</b>
+Write a program <a href = "Madness.java.html">Madness.java</a>
+to plot the parametric equation:
+
+<blockquote>
+<table>
+<TR><TD><pre>
+x = sin(0.99 t) - 0.7 cos( 3.01 t)
+y = cos(1.01 t) + 0.1 sin(15.03 t)
+</pre></td></tr>
+</table>
+</blockquote>
+where the parameter t is in radians.
+You should get the following
+<a href = "images/madness.png">complex picture</a>.
+Experiment by changing the parameters and produce
+original pictures.
+
+<li><b>Fay's butterfly.</b>
+Write a program <a href = "Butterfly.java.html">Butterfly.java</a>
+to plot the polar equation:
+
+<blockquote>
+<table>
+<TR><TD><pre>
+r = e^(cos t) - 2 cos(4t) + (sin(t/12)^5)
+</pre></td></tr>
+</table>
+</blockquote>
+where the parameter t is in radians.
+You should get an image like the following
+butterfly-like figure.
+Experiment by changing the parameters and produce
+original pictures.
+
+<p>
+<blockquote>
+<img src = "images/butterfly.png" alt = "Butterfly">
+</blockquote>
+
+
+<li><b>Student database.</b>
+The file <a href = "students.txt">students.txt</a> contains a list  
+of students enrolled in an introductory computer science class at Princeton.
+The first line contains an integer N that specifies the number of students
+in the database.
+Each of the next N lines consists of four pieces of information,
+separated by whitespace: first name, last name, email address, and section number.
+The program <a href = "Students.java.html">Students.java</a>
+reads in the integer N and then N lines of data of standard input,
+stores the data in four parallel arrays (an integer array
+for the section number and string arrays for the other fields).
+Then, the program prints out a list of students in section 4 and 5.
+
+<li><b>Shuffling.</b>
+In the October 7, 2003 California state runoff election for governor, there
+were <a href = "../datafiles/california-gov.txt">135 official candidates</a>.
+To avoid the natural prejudice against
+candidates whose names appear at the end of the alphabet (Jon W. Zellhoefer),
+California election officials sought to order the candidates in
+random order. Write a program program
+<a href = "Shuffle.java.html">Shuffle.java</a> that takes a command-line
+argument N, reads in N strings from standard input, and 
+prints them back out in shuffled order.
+(California decided to <a href = "http://www.cnn.com/2003/ALLPOLITICS/08/12/calif.recall/">
+randomize the alphabet</a> instead of shuffling the candidates.
+Using this strategy, not all N! possible outcomes are equally likely
+or even possible! For example, two candidates with very similar last names will
+always end up next to each other.)
+
+
+<li><b>Reverse.</b>
+Write a program <a href = "Reverse.java.html">Reverse.java</a> that
+reads in an arbitrary number of real values from standard input
+and prints them in reverse order.
+
+
+<li><b>Time series analysis.</b>
+This problem investigates two methods for forecasting in time series
+analysis. Moving average or exponential smoothing.
+
+<li><b>Polar plots.</b>
+Create any of these
+<a href = "http://www.mapleapps.com/powertools/calcII/html/L27-polarGraphs.html">polar plots</a>.
+
+<li><b>Java games.</b>
+Use <tt>StdDraw.java</tt> to implement one of the
+games at
+<a href = "http://javaunlimited.net/games/java4k_2006.php">javaunlimited.net</a>.
+
+
+
+<li>
+Consider the following program.
+<p>
+<table>
+<TR><TD><pre>
+public class Mystery {
+   public static void main(String[] args) {
+      int N = Integer.parseInt(args[0]);
+      int[] a = new int[M];
+
+      while(!StdIn.isEmpty()) {
+         int num = StdIn.readInt();
+         a[num]++;
+      }
+
+      for (int i = 0; i < M; i++)
+         for (int j = 0; j < a[i]; j++)
+            System.out.print(i + " ");
+      System.out.println();
+   }
+}
+</pre></td></tr>
+</table>
+<p>
+
+Suppose the file <tt>input.txt</tt> contains the following integers:
+<p>
+<table>
+<TR><TD><pre>
+8 8 3 5 1 7 0 9 2 6 9 7 4 0 5 3 9 3 7 6
+</pre></td></tr>
+</table>
+<p>
+
+What is the contents of the array <tt>a</tt> after running
+the following command
+
+<p>
+<table>
+<TR><TD><pre>
+java Mystery 10 < input.txt
+</pre></td></tr>
+</table>
+
+<li><b>High-low.</b>
+Shuffle a deck of cards, and deal one to the player.
+Prompt the player to guess whether the next card is higher or lower 
+than the current card. Repeat until player guesses it wrong.
+Game show: ???? used this.
+
+
+
+<li><b>Elastic collisions.</b>
+Write a program <tt>CollidingBalls.java</tt>
+that takes a command-line argument n and plots the trajectories of n bouncing
+balls that bounce of the walls and each other according to the laws of
+elastic collisions. Assume all the balls have the same mass.
+
+<li><b>Elastic collisions with obstacles.</b>
+Each ball should have its own mass. Put a large ball in the
+center with zero initial velocity. Brownian motion.
+
+<li><b>Statistical outliers.</b>
+Modify <a href = "Average.java.html">Average.java</a> to print out all the
+values that are larger than 1.5 standard deviations from the mean.
+You will need an array to store the values.
+
+<li><b>Optical illusions.</b>
+Create a <a href = "http://web.mit.edu/persci/gaz/gaz-teaching/flash/koffka-movie.swf">
+Kofka ring</a> or one of the other 
+<a href = "http://web.mit.edu/persci/gaz/gaz-teaching/index.html">optical
+illusions</a> collected by Edward Adelson.
+
+
+<li><b>Computer animation.</b>
+In 1995 James Gosling presented a demonstration of Java
+to Sun executives, illustrating
+its potential to deliver dynamic and interactive
+Web content.  At the time, web pages were fixed and non-interactive.
+To demonstrate what the Web could be, Gosling presented applets
+to rotate 3D molecules, visualize sorting routines, and 
+Duke cart-wheeling across the screen.
+Java was officially introduced in May 1995 and widely
+adopted in the technology sector.
+The Internet would never be the same.
+
+
+<blockquote>
+<img src = "duke.gif" alt = "Duke doing cartwheels">
+</blockquote>
+
+Program <a href = "Duke.java.html">Duke.java</a> reads in the 
+17 images
+<a href = "T1.gif">T1.gif</a> through
+<a href = "T17.gif">T17.gif</a> and produces the animation.
+To execute on your computer, download the 17 GIF files and
+put in the same directory as <tt>Duke.java</tt>.
+(Alternatively, download and unzip the file
+<a href = "duke.zip">duke.zip</a> 
+or
+<a href = "duke.jar">duke.jar</a> 
+to extract all 17 GIFs.)
+
+<li><b>Cart-wheeling Duke.</b>
+Modify <a href = "Duke.java.html">Duke.java</a> so that it 
+cartwheels 5 times across the screen, from right to left, 
+wrapping around when it hits the window boundary.
+Repeat this cart-wheeling cycle 100 times.
+<em>Hint</em>: after displaying a sequence of 17 frames,
+move 57 pixels to the left and repeat.
+Name your program <a href = "MoreDuke.java.html">MoreDuke.java</a>.
+
+<li><b>Tac (cat backwards).</b>
+Write a program <tt>Tac.java</tt> that reads lines of
+text from standard input and prints the lines out in reverse
+order.
+
+<li><b>Game.</b>
+Implement the game <a href = "http://www.lewpen.com/game/">dodge</a>
+using <tt>StdDraw</tt>: move a blue disc within the unit square
+to touch a randomly placed green disc, while avoiding the moving
+red discs. After each touch, add a new moving red disc.
+
+
+<li><b>Simple harmonic motion.</b>
+Create an animation like the one below from <a href = "http://en.wikipedia.org/wiki/Image:Simple_harmonic_motion_animation.gif">
+Wikipedia</a> of simple harmonic motion.
+
+<p>
+<IMG SRC="images/harmonic.gif" width = 50% alt = "Simple harmonic motion">
+
+
+<li><b>Yin yang.</b>
+Draw a <a href = "http://www.krazydad.com/bestiary/bestiary_yinyang.html">yin yang</a>
+using <tt>StdDraw.arc()</tt>.
+
+
+<li><b>Twenty questions.</b>
+Write a program <a href = "QuestionsTwenty.java.html">QuestionsTwenty.java</a>
+that plays 20 questions from the opposite point of view: the user thinks of
+a number between 1 and a million and the computer makes the guesses.
+Use <em>binary search</em> to ensure that the computer needs at most 20 guesses.
+
+<li>
+Write a program <tt>DeleteX.java</tt> that reads in text from
+standard input and deletes all occurrences of the letter X.
+To filter a file and remove all X's, run your program with the
+following command:
+<blockquote>
+<table>
+<TR><TD><pre>
+% <b>java DeleteX < input.txt > output.txt</b>
+</pre></td></tr>
+</table>
+</blockquote>
+
+<li>
+Write a program 
+<tt>ThreeLargest.java</tt> that reads 
+integers from standard input and prints out the three largest
+inputs.
+
+
+
+
+<li>
+Write a program 
+<tt>Pnorm.java</tt> that takes a command-line argument p,
+reads in real numbers from standard input,
+and prints out their <em>p-norm</em>.
+The p-norm norm of a vector (x<sub>1</sub>, ..., x<sub>N</sub>)
+is defined to be the pth root
+of (|x<sub>1</sub>|<sup>p</sup> + |x<sub>2</sub>|<sup>p</sup> + ... + |x<sub>N</sub>|<sup>p</sup>).
+
+
+<li>
+Consider the following Java program.
+<blockquote>
+<table>
+<TR><TD><pre>
+public class Mystery {
+   public static void main(String[] args) {
+      int i = StdIn.readInt();
+      int j = StdIn.readInt();
+      System.out.println((i-1));
+      System.out.println((j*i));
+   }
+}
+</pre></td></tr>
+</table>
+</blockquote>
+
+<p>
+Suppose that the file <tt>input.txt</tt> contains
+
+<blockquote>
+<table>
+<TR><TD><pre>
+5 1
+</pre></td></tr>
+</table>
+</blockquote>
+
+What does the following command do?
+
+<blockquote>
+<table>
+<TR><TD><pre>
+java Mystery < input.txt
+</pre></td></tr>
+</table>
+</blockquote>
+
+
+<li>
+Repeat the previous exercise but use the following command instead
+
+<blockquote>
+<table>
+<TR><TD><pre>
+java Mystery < input.txt | java Mystery | java Mystery | java Mystery
+</pre></td></tr>
+</table>
+</blockquote>
+
+
+
+<li>
+Consider the following Java program.
+<blockquote>
+<table>
+<TR><TD><pre>
+public class Mystery {
+   public static void main(String[] args) {
+      int i = StdIn.readInt();
+      int j = StdIn.readInt();
+      int k = i + j;
+      System.out.println(j);
+      System.out.println(k);
+   }
+}
+</pre></td></tr>
+</table>
+</blockquote>
+<p>
+Suppose that the file <tt>input.txt</tt> contains the
+integers 1 and 1. What does the following command do?
+<blockquote>
+<table>
+<TR><TD><pre>
+java Mystery < input.txt | java Mystery | java Mystery | java Mystery
+</pre></td></tr>
+</table>
+</blockquote>
+
+
+<li>
+Consider the Java program <a href = "Ruler.java.html">Ruler.java</a>.
+<blockquote>
+<table>
+<TR><TD><pre>
+public class Ruler { 
+   public static void main(String[] args) { 
+      int n = StdIn.readInt();
+      String s = StdIn.readString();
+      System.out.println((n+1) + " " + s + (n+1)  + s);
+   }
+}
+</pre></td></tr>
+</table>
+</blockquote>
+<p>
+Suppose that the file <tt>input.txt</tt> contains the
+integers 1 and 1. What does the following command do?
+<blockquote>
+<table>
+<TR><TD><pre>
+java Ruler < input.txt | java Ruler | java Ruler | java Ruler
+</pre></td></tr>
+</table>
+</blockquote>
+
+<li>
+Modify <a href = "Add.java.html">Add.java</a>
+so that it re-asks the user to enter two positive integers if the
+user types in a non-positive integer.
+
+<li>
+Modify <a href = "TwentyQuestions.java.html">TwentyQuestions.java</a>
+so that it re-asks the user to enter a response if the user types in something
+other than <tt>true</tt> or <tt>false</tt>. 
+Hint: add a <tt>do-while</tt> loop within the main loop.
+
+
+<li><b>Nonagram.</b>
+Write a program to plot
+a <a href = "http://mathworld.wolfram.com/Nonagram.html">nonagram</a>.
+
+<li><b>Star polygons.</b>
+Write a program <tt>StarPolygon.java</tt> that takes two command
+line inputs p and q, and plots the 
+<a href = "http://mathworld.wolfram.com/StarPolygon.html">{p/q}-star polygon</a>.
+
+<li><b>Complete graph.</b>
+Write a program to plot that takes an integer N, plots an N-gon,
+where each vertex lies on a circle of radius 256. Then draw a gray
+line connecting each pair of vertices.
+
+<li><b>Necker cube.</b>
+Write a program <tt>NeckerCube.java</tt> to plot  a
+<a href = "http://mathworld.wolfram.com/NeckerCube.html">Necker cube</a>.
+
+<li>
+What happens if you move the <tt>StdDraw.clear(Color.BLACK)</tt> command
+to before the beginning of the <tt>while</tt> loop in
+<a href = "BouncingBall.java.html">BouncingBall.java</a>?
+<em>Answer</em>: try it and observe a nice woven 3d pattern
+with the given starting velocity and position.
+
+<li>
+What happens if you change the parameter of
+<tt>StdDraw.show()</tt> to 0 or 1000 in
+<a href = "BouncingBall.java.html">BouncingBall.java</a>?
+
+<li>
+Write a program to plot a circular ring of width 10 like
+the one below using two calls to <tt>StdDraw.filledCircle()</tt>.
+
+<li>
+Write a program to plot a circular ring of width 10 like
+the one below using a nested <tt>for</tt> loop and
+many calls to <tt>StdDraw.point()</tt>.
+
+<li>
+Write a program to plot the Olympic rings.
+<p>
+<center>
+<img src = "images/rings.gif" alt = "Olympic rings http://www.janecky.com/olympics/rings.html">
+</center>
+
+<li>
+Write a program
+<a href = "BouncingBallDeluxe.java.html">BouncingBallDeluxe.java</a>
+that embellishes <a href = "BouncingBall.java.html">BouncingBall.java</a>
+by playing a sound effect
+upon collision with the wall using <tt>StdAudio</tt>
+and the sound file <a href = "pipepang.wav">pipebang.wav</a>.
+
+
+</ol>
+
+
+
+<br><br>
+<p class = footer>
+<em>Last modified on September 26, 2016.</em><br><br>
+Copyright &copy; 2000&ndash;2016
+<a href = "http://www.cs.princeton.edu/~rs" class = footer>Robert Sedgewick</a>
+and
+<a href = "http://www.cs.princeton.edu/~wayne" class = footer>Kevin Wayne</a>.
+All rights reserved.
+</div>
+
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10811519-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+ 
+·≠ÅÙ<}      X1∞UX1∞[=!©M       .:http://introcs.cs.princeton.edu/java/15inout/ necko:classified 1 request-method GET response-head HTTP/1.1 200 OK
+Date: Sun, 20 Nov 2016 14:16:53 GMT
+Server: Apache/2.2.15 (Red Hat)
+x-powered-by: PHP/5.3.3
+Content-Type: text/html; charset=UTF-8
+ charset UTF-8 uncompressed-len 0 predictor::resource-count 75 predictor::http://introcs.cs.princeton.edu/introcs.css 1,1,1479651413,0 predictor::http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML 1,1,1479651413,0 predictor::http://algs4.cs.princeton.edu/media/swfobject.js 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/cover.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/cover-python.png 1,1,1479651413,0 predictor::http://algs4.cs.princeton.edu/cover.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/birds-eye.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/11cheatsheet/images/stdout-api.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/11cheatsheet/images/printf.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/11cheatsheet/images/printf-formatting.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/11cheatsheet/images/stdin-api.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/add-ints.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/11cheatsheet/images/redirect-stdout.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/11cheatsheet/images/redirect-stdin.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/11cheatsheet/images/piping.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/stddraw-drawing.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/stddraw-control.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/usa.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/function-graph.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/stddraw-shapes.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/shapes.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/stddraw-text.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/stddraw-animation.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/bouncing-ball.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/11cheatsheet/images/stdaudio-api.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/notes.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/sampling1.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/sampling2.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/checkerboard5.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/checkerboard8.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/checkerboard25.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/rose.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/circles.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/oscilloscope2.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/oscilloscope3.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/diamond3.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/diamond4.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/diamond5.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/polygons.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/bulge.jpg 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/spiral.gif 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/globe80.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/globe90.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/globe95.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/hello10.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/world15.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/java20.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/randomwalk5.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/randomwalk25.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/randomwalk106.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/heart.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/butterfly.png 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/duke.gif 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/harmonic.gif 1,1,1479651413,0 predictor::http://introcs.cs.princeton.edu/java/15inout/images/rings.gif 1,1,1479651413,0 predictor::http://cdn.mathjax.org/mathjax/2.7-latest/config/TeX-AMS-MML_HTMLorMML.js?V=2.7.0 1,1,1479651413,0 predictor::https://cdn.mathjax.org/mathjax/contrib/a11y/accessibility-menu.js?V=2.7.0 1,1,1479651413,0 predictor::http://www.google-analytics.com/analytics.js 1,1,1479651413,0 predictor::http://www.google.com/cse/cse.js?cx=005649317310637734940:_d158dlngnk 1,1,1479651413,0 predictor::http://www.google-analytics.com/ga.js 1,1,1479651413,0 predictor::http://www.google-analytics.com/r/collect?v=1&_v=j47&a=650844634&t=pageview&_s=1&dl=http%3A%2F%2Fintrocs.cs.princeton.edu%2Fjava%2F15inout%2F&dr=https%3A%2F%2Fwww.google.ca&ul=en-us&de=UTF-8&dt=Input%20and%20Output&sd=24-bit&sr=1920x975&vp=1905x855&je=0&_u=AEAAAEABI~&jid=1777745097&cid=1048751358.1479651417&tid=UA-10811519-1&_r=1&z=410743615 1,1,1479651413,0 predictor::http://cdn.mathjax.org/mathjax/2.7-latest/jax/output/HTML-CSS/jax.js?V=2.7.0 1,1,1479651413,0 predictor::https://www.google.com/jsapi?autoload=%7B%22modules%22%3A%5B%7B%22name%22%3A%22search%22%2C%22version%22%3A%221.0%22%2C%22callback%22%3A%22__gcse.scb%22%2C%22style%22%3A%22https%3A%2F%2Fwww.google.com%2Fcse%2Fstyle%2Flook%2Fdefault.css%22%2C%22language%22%3A%22en%22%7D%5D%7D 1,1,1479651413,0 predictor::https://www.google.com/uds/api/search/1.0/0c3990ce7a056ed50667fe0c3873c9b6/default+en.css 1,1,1479651413,0 predictor::https://www.google.com/cse/style/look/default.css 1,1,1479651413,0 predictor::https://www.google.com/uds/api/search/1.0/0c3990ce7a056ed50667fe0c3873c9b6/default+en.I.js 1,1,1479651413,0 predictor::http://cdn.mathjax.org/mathjax/2.7-latest/jax/output/HTML-CSS/fonts/TeX/fontdata.js?V=2.7.0 1,1,1479651413,0 predictor::https://www.googleapis.com/generate_204 1,1,1479651413,0 predictor::http://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff?V=2.7.0 1,1,1479651413,0 predictor::http://cse.google.com/adsense/search/async-ads.js 1,1,1479651413,0 predictor::https://www.google.com/uds/css/small-logo.png 1,1,1479651413,0 predictor::http://clients1.google.com/generate_204 1,1,1479651413,0 predictor::http://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff?V=2.7.0 1,1,1479651413,0 predictor::http://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff?V=2.7.0 1,1,1479651413,0 predictor::http://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff?V=2.7.0 1,1,1479651413,0  nb

@@ -1,0 +1,27 @@
+------------------------------------------------------------
+/usr/bin/pip run on Thu Nov 17 13:00:41 2016
+Downloading/unpacking python-devel
+  Getting page https://pypi.python.org/simple/python-devel/
+  Could not fetch URL https://pypi.python.org/simple/python-devel/: 404 Client Error: Not Found
+  Will skip URL https://pypi.python.org/simple/python-devel/ when looking for download links for python-devel
+  Getting page https://pypi.python.org/simple/
+  URLs to search for versions for python-devel:
+  * https://pypi.python.org/simple/python-devel/
+  Getting page https://pypi.python.org/simple/python-devel/
+  Could not fetch URL https://pypi.python.org/simple/python-devel/: 404 Client Error: Not Found
+  Will skip URL https://pypi.python.org/simple/python-devel/ when looking for download links for python-devel
+  Could not find any downloads that satisfy the requirement python-devel
+Cleaning up...
+  Removing temporary dir /tmp/pip_build_gayanath...
+No distributions at all found for python-devel
+Exception information:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/pip/basecommand.py", line 122, in main
+    status = self.run(options, args)
+  File "/usr/lib/python2.7/dist-packages/pip/commands/install.py", line 278, in run
+    requirement_set.prepare_files(finder, force_root_egg_info=self.bundle, bundle=self.bundle)
+  File "/usr/lib/python2.7/dist-packages/pip/req.py", line 1178, in prepare_files
+    url = finder.find_requirement(req_to_install, upgrade=self.upgrade)
+  File "/usr/lib/python2.7/dist-packages/pip/index.py", line 277, in find_requirement
+    raise DistributionNotFound('No distributions at all found for %s' % req)
+DistributionNotFound: No distributions at all found for python-devel

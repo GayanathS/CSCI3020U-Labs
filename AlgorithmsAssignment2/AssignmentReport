@@ -1,0 +1,47 @@
+					Assignment 2 Report 
+
+
+Observing the different hash functions with varying the parameters it is seen that f3 produces the best results. When testing f1 using N = 100000 and m = 1000 the following graph was produced.
+
+
+When testing f1 using N = 1000000 and m = 100 the following graph was produced.
+When testing f2 using N = 1000000 and m = 1000 the following graph was produced 
+
+When testing f2 using N = 10000 and m = 100 the following graph was produced
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+When testing f3 using N = 100000 and m = 1000 the following graph was produced
+
+W
+
+When testing f3 using N = 10000000 and m = 10000 the following graph was produced
+
+When testing f4 using N = 1000000 and m = 1000
+
+
+From the results it is proven that the has function with A  = 0.618034 produces the best result

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Description" content="Writing Files in Clojure -  Beacon Hill" />
+<meta name="Keywords" content="Writing files in clojure, writing files clojure, write, beacon hill, brad lucas" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="Distribution" content="Global" />
+<meta name="Author" content="Brad Lucas - brad@beaconhill.com" />
+<meta name="Robots" content="index,follow" />
+
+<link href='http://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../../../styles.css" type="text/css" />
+
+<meta name="google-site-verification" content="lE8QZbHPuPvfLLrG6e0jGJLP-jThrBGi-7j9Ucm08So" />
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1064337-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<title>Writing Files in Clojure | Beacon Hill</title>
+
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+</head>
+<body>
+
+
+      <div class="container main">
+
+            <!-- Start Header-->
+            <div class="row">
+                <div class="span4 logo">
+                    <a href="../../../index.html">
+                  <img src="../../../images/logo.png"/>
+                    </a>
+                    <span class="slogan"></span>
+                </div>
+                <div class="span8">
+                    <div class="row">
+                        <div class="span8 header_info">
+                          <b><a href="mailto:info@beaconhill.com">info@beaconhill.com</a> | 914-834-2820</b>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span8 header_info visit_bhi">
+                          <!-- 
+                               <A href="http://beaconhillinteractive.com"><img src="../../../images/bhi.png"/></a>
+                          -->
+                          <a class="btn btn-primary btn-lg" href="../../../about/contact.html">Contact</a>       
+                          </div>
+                      </div>
+                </div>
+            </div>
+            <!-- End Header-->
+
+            <!-- Start Navigation -->
+            <div class="row">
+                <div class="span12">
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="container" style="width: auto;">
+                                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </a>
+                                <div class="nav-collapse">
+                                    <ul class="nav pull-right">
+                                        <li><a href="../../../index.html">Home</a></li>
+                                        <li><a href="../../../services/index.html">Services</a></li>
+                                        <li class="dropdown">
+                                            <a href="../../../solutions/index.html" class="dropdown-toggle" data-toggle="dropdown">Solutions <b class="caret"></b></a>
+                                            <ul class="dropdown-menu">
+                                              <li><a href="../../../solutions/index.html">Solutions Overview</a></li>
+                                              <li class="divider"></li>
+                                              <li><a href="../../../solutions/casestudies/index.html">Case Studies</a></li>
+                                              <li><a href="../../../solutions/opensource/index.html">Open Source</a></li>
+                                              <li><a href="../../../solutions/kb/index.html">Knowledge Base</a></li>
+                                              <li><a href="../../../solutions/kb/clojure/index.html">Clojure</a></li>
+                                              <li><a href="../../../solutions/booksquire.html">Book Squire</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                        <a href="../../../about/index.html" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                          <li><a href="../../../about/index.html">About Beacon Hill</a></li>
+                                          <li class="divider"></li>
+                                          <li><a href="../../../about/contact.html">Contact</a></li>
+                                          <li><a href="../../../about/clients.html">Clients</a></li>
+                                        </ul>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr/>
+                </div>
+            </div>
+            <!-- End Navigation -->
+
+
+    <div id="body">
+      <div id="content">
+        <h1>Writing Files in Clojure</h1>
+<p>
+<p>
+In the <a href='reading-files-in-clojure2.html'>previous post</a> we saw how to read files and then introduced a function to write them. The example presented downloaded stock quotes from Yahoo and then writes the data to a local file. Let's look a bit more into writing to files in Clojure.<p>
+<h2>Writing Short Strings</h2>
+<p>
+The opposite of slurp is <a href='http://clojuredocs.org/clojure_core/clojure.core/spit'>spit</a>. This is for writing short strings to files. You call the function with the name of the file and the string.<p>
+<pre><code>user=> (spit "testfile.txt" "This is my string")
+</code></pre>
+
+<p>
+After running the example you should see a file called 'testfile.txt' with the contents of 'This is my string'.<p>
+<h2>Writing Large Files</h2>
+<p>
+To write larger amounts of data we'll need to use a <a href='http://clojuredocs.org/clojure_core/clojure.java.io/writer'>writer</a>. To review, we can use clojure.io.writer to get a java.io.BufferedWriter. This is used within a with-open call.<p>
+Suppose for the purposes of demonstration we want to create a file that is simply a list of sequencial numbers from 1 to 999 with each number on it's own line. The first thing we'll need is the list of numbers from 1 to 999. This can be gathered with the <a href='http://clojuredocs.org/clojure_core/clojure.core/range'>range</a> function. For example here are the numbers from 1 to 10.<p>
+<pre><code>user=> (range 1 10)
+</code></pre>
+
+<p>
+We'll need to iterate over the list so lets print them as an example.<p>
+<pre><code>user=> (doseq [x (range 1 10)]
+          (println x))
+</code></pre>
+
+<p>
+Now, we just need to do the same but writing to a file. At this point you can review the second part of the <a href='reading-files-in-clojure2.html'>reading files article</a> which ends with an example that writes to a file.<p>
+<h2>Code</h2>
+<p>
+First we'll need a <a href='http://clojuredocs.org/clojure_core/clojure.java.io/writer'>writer</a> from the clojure.java.io namespace so we enter the following statement to setup clojure.java.io as io.<p>
+<pre><code>(require '[clojure.java.io :as io])
+</code></pre>
+
+<p>
+Next, we'll write our 'write-thousand-lines function as follows. In the function we wrap using the <a href='http://clojuredocs.org/clojure_core/clojure.core/with-open'>with-open</a> connect our writer to a file and keep the connection while we doseq over our range of numbers writing each value to the file on it's own line. Note the <a href='http://clojure.org/java_interop'>Dot special form</a> that calls the write member function of or writer accepting our string.<p>
+How would you know that? First you have to realize that the <a href='http://clojuredocs.org/clojure_core/clojure.java.io/writer'>writer</a> is a java.io.Writer which you can in the doc for the function (see  <a href='http://clojuredocs.org/clojure_core/clojure.java.io/writer'>writer</a>). Then you have to know what a java.io.Writer is from when you used to work in Java. If you don't here is the <a href='http://docs.oracle.com/javase/6/docs/api/java/io/Writer.html'>doc</a>. There you can see the <a href='http://docs.oracle.com/javase/6/docs/api/java/io/Writer.html#write(java.lang.String)'>write</a> method that you need to call.<p>
+<pre><code>(defn write-thousand-lines [filename]
+  (with-open [wrt (io/writer filename)]
+    (doseq [x (range 1 1000)]
+      (.write wrt (str x "\n")))))
+</code></pre>
+
+<p>
+Finally, we can create our thousand line file with the following statement.<p>
+<pre><code>(write-thousand-lines "thousand.txt")
+</code></pre>
+
+<p>
+Look for 'thousand.txt in your current directory.<p>
+<p>
+<h2><a href='loading-data-with-clojure.html'>Loading Data with Clojure</a></h2>
+<p>
+You might find the next article interesting. <a href='loading-data-with-clojure.html'>Loading Data with Clojure</a>
+      </div>
+
+      <div id="sidebar">
+        <!-- Place this tag where you want the +1 button to render -->
+        <g:plusone annotation="inline"></g:plusone>
+        <p></p>
+        <ul>
+          <li>
+            <ul class="blocklist">
+              <li><a href='../../../solutions/kb/clojure/index.html'>Home</a>
+<li><a href='../../../solutions/kb/clojure/reading-files-in-clojure.html'>Reading Files</a>
+<li><a href='../../../solutions/kb/clojure/writing-files-in-clojure.html'>Writing Files</a>
+<li><a href='../../../solutions/kb/clojure/loading-data-with-clojure.html'>Loading Data</a>
+<li><a href='../../../solutions/kb/clojure/building-command-line-applications-with-clojure.html'>Command Line Apps</a>
+
+<li><a href='../../../solutions/kb/clojure/clojure-books.html'>Clojure Books</a>
+<li><a href='../../../solutions/kb/clojure/project-euler-in-clojure.html'>Project Euler</a>
+<li><a href='../../../solutions/kb/clojure/clojure-problem-sites.html'>Clojure Problem Sites</a>
+
+
+            </ul>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <ul>
+              <li>
+                <p class="about">Beacon Hill, a New York based technology solutions provider to financial firms with expertise in enterprise system development.</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+
+     <footer>
+                <hr>
+                <div class="row">
+
+                    <div class="span3">
+                        <h4>&COPY; 2009 - 2016 Beacon Hill, Inc</h4><br/>
+                        All right are reserved.<br/>
+                        <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a>
+                    </div>
+                    <div class="span3">
+                        <h4>Contact Info</h4>
+                      <br/>
+                      Phone: 914-834-2820
+                      <br/>
+                      Email: info@beaconhill.com
+		      <br/>
+		      <br/>
+                    </div>
+
+                    <div class="span3">
+                        <h4>Quick Navigation</h4>
+                        <ul>
+
+
+			  <li><a href="http://beaconhill.com/">Beacon Hill, Inc.</a></li>
+                          <li><a href="http://beaconhillinteractive.com/">Beacon Hill Interactive</a></li>
+                          <!-- <li><a href="../../../about/clients.html">Clients</a></li> -->
+                          <li><a href="../../../solutions/kb/clojure/index.html">Clojure</a></li>
+                          <li><a href="../../../services/clojure-software-development.html">Clojure Software Development</a></li>
+                          
+
+                        </ul>
+		      <ul>
+                          <li><a href="http://www.bradlucas.com" title="Brad Lucas">Brad Lucas</a></li>
+                          <li><a href="http://www.linkedin.com/in/bradlucas">Brad Lucas (LinkedIn)</a></li>
+                          <li><a href="http://github.com/bradlucas">Brad Lucas (GitHub)</a></li>
+			  </ul>
+                      </ul>
+
+                    </div>
+                    <div class="span3">
+                        <h4>Connect with us</h4>
+                        <br/>
+                        <img width="16" height="16" alt="facebook" src="../../../images/facebook.png">&nbsp;<a href="http://www.facebook.com/pages/Beacon-Hill-Inc/128353979178" target="default">Facebook</a>
+                        <br/>
+                        <br/>
+                        <img width="16" height="16" alt="facebook" src="../../../images/twitter.png">&nbsp;<a href="http://twitter.com/beaconhillinc" target="default">Twitter</a>
+                        <br/>
+                        <br/>
+                        <img width="16" height="16" alt="facebook" src="../../../images/linkedin.png">&nbsp;<a href="http://www.linkedin.com/company/beacon-hill" target="default">LinkedIn</a>
+
+			<!--
+                           <li><a href="http://beaconhill.com/blog">Blog</a></li>
+			   -->
+
+		    </div>
+
+                </div>
+
+                <div class="row"><h3>Beacon Hill Technology Solutions</h3></div>
+                </footer>
+
+                </div>
+
+                <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" ></script>
+                <script type="text/javascript">if (typeof jQuery === 'undefined') document.write("<scr"+"ipt src='../../../js/jquery-1.7.2.min.js'></scr"+"ipt>"); </script>
+                <script type="text/javascript" src="../../../js/bootstrap.js"></script>
+                <script type="text/javascript" src="../../../js/jquery.form.js"></script>
+                <script type="text/javascript" src="../../../js/contact.js"></script>
+
+                <script type="text/javascript">
+                $('.dropdown-toggle').dropdown();
+                </script>
+
+</body>
+</html>
+–¹”¥o      X1gX1i=]FX¾‡   `:http://www.beaconhilltechnologysolutions.com/solutions/kb/clojure/writing-files-in-clojure.html necko:classified 1 request-method GET response-head HTTP/1.1 200 OK
+Date: Sun, 23 Oct 2016 21:54:25 GMT
+Server: Apache/2.2.3 (CentOS)
+Last-Modified: Wed, 19 Oct 2016 17:32:57 GMT
+Etag: "5a18a-3a99-33216440"
+Accept-Ranges: bytes
+Content-Length: 15001
+Content-Type: text/html; charset=UTF-8
+ charset UTF-8 uncompressed-len 0 predictor::resource-count 19 predictor::http://fonts.googleapis.com/css?family=Play:400,700 1,1,1477259623,0 predictor::http://www.beaconhilltechnologysolutions.com/styles.css 1,1,1477259623,0 predictor::http://www.beaconhilltechnologysolutions.com/images/logo.png 1,1,1477259623,0 predictor::http://www.beaconhilltechnologysolutions.com/images/facebook.png 1,1,1477259623,0 predictor::http://www.beaconhilltechnologysolutions.com/images/twitter.png 1,1,1477259623,0 predictor::http://www.beaconhilltechnologysolutions.com/images/linkedin.png 1,1,1477259623,0 predictor::http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js 1,1,1477259623,0 predictor::http://www.beaconhilltechnologysolutions.com/js/bootstrap.js 1,1,1477259623,0 predictor::http://www.beaconhilltechnologysolutions.com/js/jquery.form.js 1,1,1477259623,0 predictor::http://www.beaconhilltechnologysolutions.com/js/contact.js 1,1,1477259623,0 predictor::http://www.beaconhilltechnologysolutions.com/bootstrap.css 1,1,1477259623,0 predictor::http://www.beaconhilltechnologysolutions.com/main.css 1,1,1477259623,0 predictor::http://www.beaconhilltechnologysolutions.com/lambda.css 1,1,1477259623,0 predictor::http://www.google-analytics.com/ga.js 1,1,1477259623,0 predictor::https://apis.google.com/js/plusone.js 1,1,1477259623,0 predictor::http://fonts.gstatic.com/s/play/v7/ZNo-5SxCwH1CXgZ-n3bt2g.woff2 1,1,1477259623,0 predictor::http://fonts.gstatic.com/s/play/v7/d8o4OpWQkZkrWqhvSfqU1Q.woff2 1,1,1477259623,0 predictor::https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en.dTSXng23gwU.O/m=plusone/rt=j/sv=1/d=1/ed=1/am=EQ/rs=AGLTcCNBtT-e3tK3PhwmdxmYPO4cLDjsvQ/cb=gapi.loaded_0 1,1,1477259623,0 predictor::https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en.dTSXng23gwU.O/m=auth/exm=plusone/rt=j/sv=1/d=1/ed=1/am=EQ/rs=AGLTcCNBtT-e3tK3PhwmdxmYPO4cLDjsvQ/cb=gapi.loaded_1 1,1,1477259623,0   :™
